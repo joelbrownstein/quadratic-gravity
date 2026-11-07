@@ -1,0 +1,8 @@
+\section{Lattice formulation and numerical methods}
+\label{sec:numerics}
+
+We discretize eq.~\eqref{eq:ps-action} on a periodic hypercubic lattice with spacing $a$ and volume $L^4$.  The discretization is chosen to preserve the perfect-square form at finite lattice spacing.  The specific difference operators, normalization conventions, and counterterm policy are stated in appendix~\ref{app:lattice-action}; no continuum claim is made until sensitivity to these choices has been tested.
+
+Configurations will be generated using hybrid Monte Carlo with GPU-resident stencil operations.  Independent Markov chains, multiple lattice volumes, and a planned grid of bare couplings permit simultaneous tests of thermalization, autocorrelation, finite-volume effects, and discretization error.  We retain seeds, input files, and acceptance histories for every production ensemble.
+
+The initial validation target is the perturbative running along the perfect-square trajectory.  The nonperturbative program then measures correlation functions and step-scaling quantities over increasing lattice sizes.  All production results will quote statistical errors, autocorrelation-aware effective sample sizes, and systematic variations under changes of volume and lattice spacing.
