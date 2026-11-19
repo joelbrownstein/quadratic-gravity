@@ -6,3 +6,28 @@ We discretize eq.~\eqref{eq:ps-action} on a periodic hypercubic lattice with spa
 Configurations will be generated using hybrid Monte Carlo with GPU-resident stencil operations.  Independent Markov chains, multiple lattice volumes, and a planned grid of bare couplings permit simultaneous tests of thermalization, autocorrelation, finite-volume effects, and discretization error.  We retain seeds, input files, and acceptance histories for every production ensemble.
 
 The initial validation target is the perturbative running along the perfect-square trajectory.  The nonperturbative program then measures correlation functions and step-scaling quantities over increasing lattice sizes.  All production results will quote statistical errors, autocorrelation-aware effective sample sizes, and systematic variations under changes of volume and lattice spacing.
+
+
+\subsection{Ensemble definition and validation gates}
+\label{sec:ensemble-validation}
+
+The derivative-only action is invariant under $\sigma(x)\mapsto\sigma(x)+c$.  A finite-volume ensemble therefore requires a stated treatment of the constant mode; the planned prescription is to impose $\sum_x\sigma_x=0$ and project both fields and HMC momenta onto this subspace.  This defines the scalar ensemble and is not a gauge fixing of full quantum gravity.  Appendix~\ref{app:lattice-action} must specify the integration measure and constrained update before production sampling.
+
+Before interpreting an ensemble, the implementation should recover the nonzero-momentum free propagator of the chosen lattice operator, pass numerical force and HMC reversibility checks, and demonstrate step-size stability after the accept/reject correction.  Preserving the square algebraically does not restore every continuum symmetry.  Possible regulator-induced operators and the tuning required to recover the target continuum theory must be tested under the counterterm policy.  Numerical equilibration is distinct from a proof of continuum existence or a Lorentzian probability interpretation.
+
+\subsection{Evidence records and assisted analysis}
+\label{sec:evidence-records}
+
+Each ensemble will have an immutable manifest recording the source revision and local modifications, action and derivative conventions, bare parameters, volume, precision, random-number generator and seeds, software environment, hardware, and sampling settings.  Configuration and analysis artifacts will carry checksums.  Derived estimates must resolve to the configurations, estimator version, exclusions, fit range, and resampling procedure that produced them.  Checksums establish artifact integrity, not scientific correctness.
+
+Analysis choices will be developed on designated pilot ensembles and frozen before confirmatory ensembles are inspected.  Subsequent changes, failed fits, and discarded runs will remain in the record.  Resampling must respect Markov-chain correlations, and uncertainty estimates will distinguish sampling error from finite-volume, discretization, and fitting systematics.  An independently executed analysis will recompute the principal numerical summaries from retained artifacts.
+
+If AI tools assist with literature retrieval, code, or interpretation, their contributions and consequential tool executions will be recorded.  Citations will be checked against the original papers, and proposed calculations will pass the same numerical validation gates as other code.  Neither an agent's narrative nor agreement between related agents constitutes independent verification.  The authors retain responsibility for the claims and for distinguishing planned analyses from completed measurements.
+
+
+\subsection{Staged GPU scope and completion criteria}
+\label{sec:gpu-scope}
+
+The first computational stage is restricted to the PS scalar sector.  Its deliverables are a validated sampler, a documented ensemble grid, autocorrelation-aware observables, and finite-volume and lattice-spacing comparisons sufficient to assess the stated scaling tests.  Production resources will prioritize these deliverables and independent replication; a simulation of the full tensor sector is outside this stage.  A documented failure to obtain controlled scaling or adequate sampling is a scientific outcome and must not be hidden by an extrapolation.
+
+Allocation estimates should follow pilot measurements of memory use, thermalization, autocorrelation, and throughput.  Comparisons of implementations must use effective independent samples per GPU-hour for specified observables at fixed precision and error tolerance, rather than raw update rates.  These measurements will determine feasible volumes and coupling coverage.  No particular allocation size, GPU speedup, or continuum result is assumed in advance.  The later cosmological and tensor stages in section~\ref{sec:scalar-vertical-slice} require separate scientific designs and resource assessments.

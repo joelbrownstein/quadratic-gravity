@@ -21,6 +21,8 @@ The first LaTeX run requires BibTeX; `latexmk` handles the required sequence.  B
 - `main.tex` — JCAP title page, abstract, section order, bibliography setup.
 - `sections/model.tex` — the PS action and its relation to conformally flat quadratic gravity.
 - `sections/numerics.tex` — numerical strategy and reproducibility commitments.
+- `sections/cosmology.tex` — action-level connection, infrared matching requirements, and a prospective dark-energy/modified-gravity benchmark.
+- `sections/cosmological_identities.tex` — metric f(R) equations and interpretation checks.
 - `sections/results.tex` — placeholders for measured results only.
 - `sections/lattice_action.tex` and `sections/observables.tex` — reproducibility appendices.
 - `figures/` — source-controlled PDF, PNG, or JPG figures.
@@ -30,6 +32,9 @@ The first LaTeX run requires BibTeX; `latexmk` handles the required sequence.  B
 
 - Replace all bracketed placeholders and draft-only text before circulation.
 - Do not state that the PS model resolves the spin-two ghost problem; it does not contain the Weyl/tensor sector.
+- Treat the PS scalar calculation as the first independently useful computational vertical slice; infrared/cosmological matching and the Weyl/tensor sector are later stages with separate resource needs.
+- Keep the cosmological discussion prospective: the PS ensembles do not yet predict dark energy, and an f(R) control model is not a derived QQG prediction.
+- Record AI assistance and verify citations and numerical claims independently; no company participation or computational allocation is implied by the methods discussion.
 - Keep source data, figure-generation scripts, and analysis settings in version control.
 - Before submission, build a clean PDF, run a spell check, verify every citation, and include the generated `.bbl` file with any JCAP submission archive.
 

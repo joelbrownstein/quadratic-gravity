@@ -1,0 +1,95 @@
+\section{Cosmological interpretation and an observational roadmap}
+\label{sec:cosmology}
+
+This section sets out a prospective connection between the lattice program and cosmology.  It does not report cosmological constraints or identify the PS field with an observed dark-energy component.  The immediate target of this paper remains the continuum behavior of the Euclidean theory in eq.~\eqref{eq:ps-action}.
+
+\subsection{From curvature-squared gravity to the conformal sector}
+\label{sec:cosmological-action}
+
+To distinguish the relevant theories, consider the Lorentzian action, with signature $(-,+,+,+)$ and $\hbar=c=1$,
+\begin{equation}
+ S_{\rm QG}=\int\dd^4x\,\sqrt{-g}\left[
+ \frac{M_{\rm Pl}^2}{2}(R-2\Lambda)
+ +\alpha R^2+\beta C_{\mu\nu\rho\sigma}C^{\mu\nu\rho\sigma}
+ \right]+S_{\rm m},
+ \label{eq:qg-cosmological-action}
+\end{equation}
+where $M_{\rm Pl}^{-2}=8\pi G$, $C_{\mu\nu\rho\sigma}$ is the Weyl tensor, and $\alpha$ and $\beta$ are dimensionless.  A constant-coefficient Euler density and boundary terms are omitted from the local bulk equations in four dimensions.  The two curvature-squared operators represent distinct sectors; generic quadratic gravity cannot be expressed as a function of $R$ alone~\cite{Salvio:2018}.
+
+For the Euclidean metric in eq.~\eqref{eq:conformal-metric}, the curvature identity is
+\begin{equation}
+ R=-6\lambda e^{-2\lambda\sigma}
+ \left[\Box\sigma+\lambda(\partial\sigma)^2\right],
+ \qquad
+ \sqrt{g}\,R^2=36\lambda^2
+ \left[\Box\sigma+\lambda(\partial\sigma)^2\right]^2.
+ \label{eq:conformal-r-squared}
+\end{equation}
+Thus the restricted Euclidean functional $\alpha_E\int\dd^4x\sqrt{g}R^2$ equals $72\alpha_E\lambda^2S_{\rm PS}$; the normalization of eq.~\eqref{eq:ps-action} corresponds to $\alpha_E=1/(72\lambda^2)$ for nonzero $\lambda$.  Here $\alpha_E$ denotes the Euclidean coefficient, without assuming a continuation prescription for the full quantum theory.  This identity makes the action-level connection explicit.  It does not establish equality of quantum measures or supply the tensor constraints absent from the scalar simulation.  The perturbative Ward-identity argument for the conformally flat limit is discussed in ref.~\cite{Anderson:2026}.
+
+\subsection{Why late-time acceleration is a separate matching problem}
+\label{sec:infrared-matching}
+
+The simulation action contains neither an Einstein--Hilbert term nor a cosmological term.  Consequently, matching its renormalized coupling to $\alpha_E$ is insufficient to predict the observed expansion history.  A cosmological extension must specify the infrared gravitational action, matter couplings, a physical scale, and a justified connection to Lorentzian observables.  Restoring lower-derivative terms also changes the shift symmetry and numerical problem of the present PS model; it is not a reinterpretation of an existing ensemble.
+
+A useful algebraic check is provided by the classical metric theory
+\begin{equation}
+ S_f=\frac{M_{\rm Pl}^2}{2}\int\dd^4x\sqrt{-g}\,f(R)+S_{\rm m},
+ \qquad f(R)=R-2\Lambda+\gamma R^2,
+ \label{eq:quadratic-fr}
+\end{equation}
+where $\gamma=2\alpha/M_{\rm Pl}^2$ has dimensions of inverse mass squared.  For constant-curvature vacuum solutions, the trace equation reduces to
+\begin{equation}
+ R f_R-2f=0\quad\Longrightarrow\quad R=4\Lambda,
+ \label{eq:constant-curvature-check}
+\end{equation}
+as derived in appendix~\ref{app:cosmological-identities}.  The cancellation of $\gamma$ in this condition shows that the polynomial correction alone does not select a new late-time de Sitter curvature.  It does not exclude time-dependent solutions or scalar excitations.  Pure $R^2$ gravity, with its Einstein--Hilbert term absent, is a different case and does not obey the conclusion $R=4\Lambda$ from this example.
+
+An exactly Friedmann--Lema\^{\i}tre--Robertson--Walker (FLRW) geometry is conformally flat.  The Weyl-squared contribution to its classical background field equations therefore vanishes, although perturbations need not be Weyl flat.  Restricting the action before variation can discard equations; cosmological constraints must be derived from the full specified theory before imposing a background ansatz.  In particular, a background expansion fit cannot determine the complete spin-two dynamics of eq.~\eqref{eq:qg-cosmological-action}.
+
+\subsection{Observational motivation: evolving dark energy or modified gravity?}
+\label{sec:dark-energy-motivation}
+
+Late-time observations provide a reason to develop this matching program without presupposing its outcome.  The DESI DR2 analysis reports a preference for an evolving equation of state over $\Lambda$CDM of $3.1\sigma$ for its BAO+CMB combination, and $2.8$--$4.2\sigma$ when different supernova samples are included~\cite{DESI:2025DR2}.  These statements concern specified datasets, likelihoods, and model comparisons.  They are not a detection of quadratic gravity.
+
+The commonly used parametrization
+\begin{equation}
+ w(a_{\rm cos})=w_0+w_a(1-a_{\rm cos})
+ \label{eq:cpl-dark-energy}
+\end{equation}
+uses the cosmological scale factor $a_{\rm cos}$, distinct from the lattice spacing $a$.  It summarizes a family of expansion histories rather than a unique covariant action.  Under an assumed general-relativistic interpretation, modified gravitational dynamics may instead appear as an effective dark-energy component.  Matching an expansion history therefore need not identify the physical origin of acceleration.
+
+Structure-growth measurements provide complementary information.  Hu--Sawicki $f(R)$ models illustrate how small changes to distance observables can accompany detectable changes to clustering~\cite{HuSawicki:2007}.  A DESI DR1 full-shape analysis explicitly tests their scale-dependent force signature and reports no evidence for a departure from general relativity within that model~\cite{Gonzalez:2026}.  The observational opportunity is to test distinguishability, including null results, rather than to presume that apparent dark-energy evolution selects a particular gravitational action.
+
+\subsection{The scalar sector as a sufficient first computational slice}
+\label{sec:scalar-vertical-slice}
+
+The immediate computational scope is a vertical slice through one interacting sector: a specified continuum action, a regulated ensemble, GPU sampling, renormalized observables, and independently reproducible conclusions.  The PS specialization of Holdom's scalar family provides this scope.  It is a toy model relative to the full gravitational field content, but its constrained interactions and perturbative benchmarks make it a substantive target in its own right.  Tensor simulations are not prerequisites for learning whether this scalar theory admits the proposed continuum behavior.
+
+Here ``sufficient'' refers to a defined scientific question.  Controlled scalar ensembles can establish numerical evidence for or against continuum scaling, test the predicted running, and expose discretization or sampling failures within the PS sector.  They cannot, by themselves, establish a physical probability interpretation, a complete quantum theory of gravity, or an explanation of dark energy.  Those limitations do not diminish a result whose claim is explicitly restricted to the scalar theory.
+
+We therefore separate the program into stages.  The first stage completes the scalar lattice calculation and its error budget.  A second stage would introduce and test a specified infrared or cosmological extension of that sector, if the first results and matching analysis justify it.  A later stage would address the remaining Weyl/tensor dynamics and coupled observables.  Increasing computational capability may enable the later stages, but additional hardware alone cannot supply their missing constraints, state prescription, or matching conditions.  Each stage must have its own independently useful question and completion criteria.
+
+For an initial GPU allocation, the priority is consequently scalar sampling across volumes, lattice spacings, and bare couplings, with validation and independent repeats.  AI assistance can be evaluated on this same calculation: reproducing benchmark analyses, proposing checked optimizations, and preserving the chain from an observable to its ensemble and code.  Any learned sampling proposal must preserve the target measure through a valid correction or demonstrate and quantify its bias.  Efficiency should be compared using effective independent samples per GPU-hour at fixed accuracy, including training and validation costs.  Cosmological inference and the full tensor theory are subsequent applications, not dependencies of this first allocation.
+
+\subsection{A controlled comparison of cosmological models}
+\label{sec:cosmological-benchmark}
+
+As a later observational slice, we propose a separate benchmark with three model families: general relativity with a cosmological constant; general relativity with a specified evolving-dark-energy prescription; and a viable metric $f(R)$ model with fully specified background and perturbation equations.  A Hu--Sawicki model would serve as an established modified-gravity control, not as an infrared prediction of the PS theory.  The evolving-dark-energy comparison must likewise state its perturbation prescription, including treatment of any $w=-1$ crossing; eq.~\eqref{eq:cpl-dark-energy} alone does not define it.
+
+The benchmark should first reproduce reference calculations, then assess parameter recovery on synthetic data with known generating models.  Expansion probes should be combined with growth or lensing information only through a likelihood that accounts for covariance and overlapping samples.  Model selection must retain prior dependence and distinguish a best-fit improvement from evidence averaged over parameter space.  When observables are degenerate, an inconclusive result is the correct outcome.
+
+Neural emulators or simulation-based inference could reduce the cost of repeated predictions~\cite{Cranmer:2020}.  Their evaluation would use withheld simulations, exact-solver spot checks, and tests of posterior calibration and false model preference under controlled systematic shifts.  Splits should separate independent realizations and reserve parameter regions for extrapolation tests.  Performance on a simulator's own output does not establish robustness to a different simulator or to the real sky.  Emulator error must enter the inference error budget, with its correlation structure assessed rather than replaced automatically by independent noise.
+
+\subsection{Requirements for a PS-derived cosmological prediction}
+\label{sec:ps-to-observations}
+
+Connecting this benchmark to the present lattice calculation requires the staged results below.  Completing the scalar stage is independently informative; the later steps are requirements for cosmological claims, not conditions for the value of the PS calculation:
+\begin{enumerate}
+ \item Establish a regulator-controlled continuum limit and a renormalization prescription for PS correlation functions and composite observables.
+ \item Define the infrared extension and its scale setting.  Determine which relevant operators and matter interactions are required, with matching conditions that can be checked independently.
+ \item Establish the physical-state and continuation prescription needed for causal Lorentzian predictions.  A nonnegative Euclidean action does not by itself establish reflection positivity or a positive physical probability interpretation for a higher-derivative theory.
+ \item Derive cosmological background and perturbation equations, including constraints and the degrees of freedom omitted by the conformally flat restriction.  Quantify the regime in which an effective description is valid.
+ \item Produce a distinguishing observable and confront it with observations and local-gravity bounds, propagating lattice, matching, theoretical, and observational uncertainties.
+\end{enumerate}
+These are proposed milestones, not results of this paper.  Recent quadratic-gravity work on the early universe~\cite{Liu:2026,Boyle:2026} supplies additional motivation, but its predictions cannot be transferred to late-time acceleration without the intervening calculation.  Neither a successful PS continuum limit nor a phenomenological $f(R)$ fit alone would validate the full QQG theory.
