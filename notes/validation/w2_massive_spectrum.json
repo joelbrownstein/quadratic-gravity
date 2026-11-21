@@ -1,0 +1,1492 @@
+{
+  "gate": "W2",
+  "units": "GM=1; p=2 GM m2; exp(-i omega t)",
+  "scope": "selected fundamental axial branches plus separate imported polar-monopole stability equation",
+  "versions": {
+    "python": "3.11.16",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1"
+  },
+  "benchmarks": [
+    {
+      "family": "tensor",
+      "ell": 2,
+      "overtone": 0,
+      "mu": 0.4,
+      "p": 0.8,
+      "literature_anchor": "AGP 2025 arXiv:2412.15037v3 Fig. 4, p=0.8; Appendix C recurrence",
+      "reference_type": "published recurrence reproduced; not a tabulated or digitized author data point",
+      "CF_convergence": [
+        {
+          "depth": 100,
+          "omega_rg": [
+            0.41039988111687015,
+            -0.0658643931268258
+          ],
+          "determinant_residual": 1.1181188834012995e-15
+        },
+        {
+          "depth": 200,
+          "omega_rg": [
+            0.41039988056349264,
+            -0.06586441191452592
+          ],
+          "determinant_residual": 1.091758082874917e-15
+        },
+        {
+          "depth": 400,
+          "omega_rg": [
+            0.41039988059225574,
+            -0.06586441190522113
+          ],
+          "determinant_residual": 2.162536020985754e-15
+        },
+        {
+          "depth": 800,
+          "omega_rg": [
+            0.41039988059225413,
+            -0.06586441190521805
+          ],
+          "determinant_residual": 3.011636936406974e-15
+        },
+        {
+          "depth": 1600,
+          "omega_rg": [
+            0.41039988059225413,
+            -0.06586441190521805
+          ],
+          "determinant_residual": 3.011636936406974e-15
+        }
+      ],
+      "matching_convergence": [
+        {
+          "settings": {
+            "rm": 5.0,
+            "radius": 35.0,
+            "angle": 1.4,
+            "epsilon": 0.04,
+            "order": 8,
+            "rtol": 1e-08
+          },
+          "omega_rg": [
+            0.4103998806596412,
+            -0.06586441192650425
+          ],
+          "difference_from_CF": 7.066910777062141e-11,
+          "relative_difference_from_CF": 1.7002008906933212e-10,
+          "determinant_residual": 9.971143996739205e-16,
+          "singular_values": [
+            1.5902079545461003,
+            0.9914884904983621,
+            0.6987053989397728,
+            7.953441526973155e-16
+          ],
+          "root_evaluations": 9
+        },
+        {
+          "settings": {
+            "rm": 5.0,
+            "radius": 55.0,
+            "angle": 1.4,
+            "epsilon": 0.02,
+            "order": 12,
+            "rtol": 2e-10
+          },
+          "omega_rg": [
+            0.41039988059393434,
+            -0.0658644119049593
+          ],
+          "difference_from_CF": 1.7000185391177535e-12,
+          "relative_difference_from_CF": 4.090009235414106e-12,
+          "determinant_residual": 8.738824448630632e-15,
+          "singular_values": [
+            1.590207889371437,
+            0.9914885350560354,
+            0.698705484044084,
+            7.874757130122083e-15
+          ],
+          "root_evaluations": 6
+        },
+        {
+          "settings": {
+            "rm": 6.0,
+            "radius": 70.0,
+            "angle": 1.45,
+            "epsilon": 0.01,
+            "order": 16,
+            "rtol": 2e-12
+          },
+          "omega_rg": [
+            0.4103998805922694,
+            -0.06586441190521046
+          ],
+          "difference_from_CF": 1.7048843965027998e-14,
+          "relative_difference_from_CF": 4.101715814598458e-14,
+          "determinant_residual": 4.366594361278833e-15,
+          "singular_values": [
+            1.5543789809417698,
+            1.0782147397218418,
+            0.6491216824702339,
+            3.999516894268967e-15
+          ],
+          "root_evaluations": 6
+        }
+      ],
+      "tail_checks": [
+        {
+          "tail": 0.5,
+          "difference": 0.0
+        },
+        {
+          "tail": 1.0,
+          "difference": 0.0
+        }
+      ],
+      "published_recurrence_omega_rg": [
+        0.41039988059225413,
+        -0.06586441190521806
+      ],
+      "published_recurrence_difference": 1.3877787807814457e-17,
+      "perturbed_matching_seed_result": [
+        0.41039988059393195,
+        -0.0658644119049534
+      ],
+      "CF_last_depth_change": 0.0,
+      "radial_classification": "below radial stability threshold"
+    },
+    {
+      "family": "tensor",
+      "ell": 2,
+      "overtone": 0,
+      "mu": 0.45,
+      "p": 0.9,
+      "literature_anchor": "AGP 2025 arXiv:2412.15037v3 Fig. 4, p=0.9; Appendix C recurrence",
+      "reference_type": "published recurrence reproduced; not a tabulated or digitized author data point",
+      "CF_convergence": [
+        {
+          "depth": 100,
+          "omega_rg": [
+            0.42200361782347995,
+            -0.056375389397872476
+          ],
+          "determinant_residual": 1.779020317046622e-15
+        },
+        {
+          "depth": 200,
+          "omega_rg": [
+            0.42200708585568947,
+            -0.0563738233289795
+          ],
+          "determinant_residual": 6.06283084684881e-15
+        },
+        {
+          "depth": 400,
+          "omega_rg": [
+            0.4220070285922102,
+            -0.05637382607788163
+          ],
+          "determinant_residual": 9.728516460858405e-16
+        },
+        {
+          "depth": 800,
+          "omega_rg": [
+            0.42200702874850665,
+            -0.056373826100433864
+          ],
+          "determinant_residual": 6.294765110559218e-15
+        },
+        {
+          "depth": 1600,
+          "omega_rg": [
+            0.4220070287485376,
+            -0.05637382610045709
+          ],
+          "determinant_residual": 4.558895975264806e-15
+        }
+      ],
+      "matching_convergence": [
+        {
+          "settings": {
+            "rm": 5.0,
+            "radius": 35.0,
+            "angle": 1.4,
+            "epsilon": 0.04,
+            "order": 8,
+            "rtol": 1e-08
+          },
+          "omega_rg": [
+            0.4220070286423068,
+            -0.05637382615736121
+          ],
+          "difference_from_CF": 1.2051166826056043e-10,
+          "relative_difference_from_CF": 2.8305354482976607e-10,
+          "determinant_residual": 1.1655412494156546e-15,
+          "singular_values": [
+            1.5473675192211336,
+            1.0414866076007157,
+            0.7217751773563476,
+            1.001764042961927e-15
+          ],
+          "root_evaluations": 14
+        },
+        {
+          "settings": {
+            "rm": 5.0,
+            "radius": 55.0,
+            "angle": 1.4,
+            "epsilon": 0.02,
+            "order": 12,
+            "rtol": 2e-10
+          },
+          "omega_rg": [
+            0.42200702874957735,
+            -0.05637382610011517
+          ],
+          "difference_from_CF": 1.0945024608747777e-12,
+          "relative_difference_from_CF": 2.570728675879567e-12,
+          "determinant_residual": 7.358005219749561e-15,
+          "singular_values": [
+            1.5473675610504023,
+            1.041486553926406,
+            0.7217751651306847,
+            6.228076049769297e-15
+          ],
+          "root_evaluations": 6
+        },
+        {
+          "settings": {
+            "rm": 6.0,
+            "radius": 70.0,
+            "angle": 1.45,
+            "epsilon": 0.01,
+            "order": 16,
+            "rtol": 2e-12
+          },
+          "omega_rg": [
+            0.422007028748545,
+            -0.05637382610045148
+          ],
+          "difference_from_CF": 9.27052845518183e-15,
+          "relative_difference_from_CF": 2.1774289407486368e-14,
+          "determinant_residual": 1.9902749885983746e-15,
+          "singular_values": [
+            1.6038848897910951,
+            1.0502887455236487,
+            0.5696023273531858,
+            2.081240535192739e-15
+          ],
+          "root_evaluations": 6
+        }
+      ],
+      "tail_checks": [
+        {
+          "tail": 0.5,
+          "difference": 5.721958498152797e-17
+        },
+        {
+          "tail": 1.0,
+          "difference": 5.594315114139762e-17
+        }
+      ],
+      "published_recurrence_omega_rg": [
+        0.4220070287485377,
+        -0.05637382610045704
+      ],
+      "published_recurrence_difference": 7.376145397762941e-17,
+      "perturbed_matching_seed_result": [
+        0.42200702874957446,
+        -0.05637382610011056
+      ],
+      "CF_last_depth_change": 3.871486504543218e-14,
+      "radial_classification": "above radial stability threshold"
+    },
+    {
+      "family": "tensor",
+      "ell": 2,
+      "overtone": 0,
+      "mu": 0.5,
+      "p": 1.0,
+      "literature_anchor": "AGP 2025 arXiv:2412.15037v3 Fig. 4, p=1; Appendix C recurrence",
+      "reference_type": "published recurrence reproduced; not a tabulated or digitized author data point",
+      "CF_convergence": [
+        {
+          "depth": 100,
+          "omega_rg": [
+            0.43520403794956536,
+            -0.044223446641253654
+          ],
+          "determinant_residual": 4.4630241700687267e-13
+        },
+        {
+          "depth": 200,
+          "omega_rg": [
+            0.43510371978475576,
+            -0.04444046467164017
+          ],
+          "determinant_residual": 1.4956928344309308e-14
+        },
+        {
+          "depth": 400,
+          "omega_rg": [
+            0.4350899560763271,
+            -0.04442603599844502
+          ],
+          "determinant_residual": 6.8582477811547655e-15
+        },
+        {
+          "depth": 800,
+          "omega_rg": [
+            0.4350901883190015,
+            -0.04442538948904634
+          ],
+          "determinant_residual": 3.18504001961049e-15
+        },
+        {
+          "depth": 1600,
+          "omega_rg": [
+            0.4350901842524127,
+            -0.044425393533293056
+          ],
+          "determinant_residual": 5.088338443325167e-15
+        }
+      ],
+      "matching_convergence": [
+        {
+          "settings": {
+            "rm": 5.0,
+            "radius": 35.0,
+            "angle": 1.4,
+            "epsilon": 0.04,
+            "order": 8,
+            "rtol": 1e-08
+          },
+          "omega_rg": [
+            0.4350901830721936,
+            -0.044425392774835246
+          ],
+          "difference_from_CF": 1.402916729019181e-09,
+          "relative_difference_from_CF": 3.207749328694071e-09,
+          "determinant_residual": 2.6560044544236256e-16,
+          "singular_values": [
+            1.5603248964585459,
+            1.0429986249586487,
+            0.691042752531272,
+            1.895152423401486e-16
+          ],
+          "root_evaluations": 9
+        },
+        {
+          "settings": {
+            "rm": 5.0,
+            "radius": 55.0,
+            "angle": 1.4,
+            "epsilon": 0.02,
+            "order": 12,
+            "rtol": 2e-10
+          },
+          "omega_rg": [
+            0.43509018425052026,
+            -0.04442539352674274
+          ],
+          "difference_from_CF": 6.8182058830142415e-12,
+          "relative_difference_from_CF": 1.5589731658148808e-11,
+          "determinant_residual": 4.96608999318045e-15,
+          "singular_values": [
+            1.5603248656157442,
+            1.0429986700531069,
+            0.6910427541105245,
+            4.389485619014156e-15
+          ],
+          "root_evaluations": 6
+        },
+        {
+          "settings": {
+            "rm": 6.0,
+            "radius": 70.0,
+            "angle": 1.45,
+            "epsilon": 0.01,
+            "order": 16,
+            "rtol": 2e-12
+          },
+          "omega_rg": [
+            0.43509018424986995,
+            -0.04442539352703013
+          ],
+          "difference_from_CF": 6.759423723887874e-12,
+          "relative_difference_from_CF": 1.5455327079761166e-11,
+          "determinant_residual": 1.6353178468242114e-15,
+          "singular_values": [
+            1.6471533890472816,
+            1.0586273076054402,
+            0.4076689055374611,
+            2.3025751575645944e-15
+          ],
+          "root_evaluations": 6
+        }
+      ],
+      "tail_checks": [
+        {
+          "tail": 0.5,
+          "difference": 3.5092722954244054e-13
+        },
+        {
+          "tail": 1.0,
+          "difference": 1.3450956521700506e-11
+        }
+      ],
+      "published_recurrence_omega_rg": [
+        0.4350901842524127,
+        -0.044425393533293056
+      ],
+      "published_recurrence_difference": 0.0,
+      "perturbed_matching_seed_result": [
+        0.43509018425052015,
+        -0.04442539352674693
+      ],
+      "CF_last_depth_change": 5.735248544249405e-09,
+      "radial_classification": "above radial stability threshold"
+    },
+    {
+      "family": "vector",
+      "ell": 2,
+      "overtone": 0,
+      "mu": 0.4,
+      "p": 0.8,
+      "literature_anchor": "AGP 2025 arXiv:2412.15037v3 Fig. 3, p=0.8; Appendix C recurrence",
+      "reference_type": "published recurrence reproduced; not a tabulated or digitized author data point",
+      "CF_convergence": [
+        {
+          "depth": 100,
+          "omega_rg": [
+            0.5407820874935351,
+            -0.07046638033491083
+          ],
+          "determinant_residual": 3.312831360503173e-15
+        },
+        {
+          "depth": 200,
+          "omega_rg": [
+            0.5407820874935322,
+            -0.07046638033493503
+          ],
+          "determinant_residual": 7.871534388155455e-16
+        },
+        {
+          "depth": 400,
+          "omega_rg": [
+            0.5407820874935322,
+            -0.07046638033493503
+          ],
+          "determinant_residual": 7.871534388155455e-16
+        },
+        {
+          "depth": 800,
+          "omega_rg": [
+            0.5407820874935322,
+            -0.07046638033493503
+          ],
+          "determinant_residual": 7.871534388155455e-16
+        },
+        {
+          "depth": 1600,
+          "omega_rg": [
+            0.5407820874935322,
+            -0.07046638033493503
+          ],
+          "determinant_residual": 7.871534388155455e-16
+        }
+      ],
+      "matching_convergence": [
+        {
+          "settings": {
+            "rm": 5.0,
+            "radius": 35.0,
+            "angle": 1.4,
+            "epsilon": 0.04,
+            "order": 8,
+            "rtol": 1e-08
+          },
+          "omega_rg": [
+            0.5407820875422398,
+            -0.0704663803919056
+          ],
+          "difference_from_CF": 7.49538203671489e-11,
+          "relative_difference_from_CF": 1.3744072039140922e-10,
+          "determinant_residual": 1.154181642187942e-14,
+          "singular_values": [
+            1.7351454586810837,
+            0.9129389576332706,
+            0.3947311703601421,
+            1.8454754406457983e-14
+          ],
+          "root_evaluations": 8
+        },
+        {
+          "settings": {
+            "rm": 5.0,
+            "radius": 55.0,
+            "angle": 1.4,
+            "epsilon": 0.02,
+            "order": 12,
+            "rtol": 2e-10
+          },
+          "omega_rg": [
+            0.5407820874951867,
+            -0.07046638033578818
+          ],
+          "difference_from_CF": 1.8615727235706413e-12,
+          "relative_difference_from_CF": 3.4135137466679988e-12,
+          "determinant_residual": 1.4756736004176033e-14,
+          "singular_values": [
+            1.7351454567255993,
+            0.9129389616546119,
+            0.39473116965538707,
+            2.3566092794369418e-14
+          ],
+          "root_evaluations": 6
+        },
+        {
+          "settings": {
+            "rm": 6.0,
+            "radius": 70.0,
+            "angle": 1.45,
+            "epsilon": 0.01,
+            "order": 16,
+            "rtol": 2e-12
+          },
+          "omega_rg": [
+            0.5407820874935722,
+            -0.07046638033493487
+          ],
+          "difference_from_CF": 3.996837582969501e-14,
+          "relative_difference_from_CF": 7.328889094645121e-14,
+          "determinant_residual": 2.6816481276568747e-14,
+          "singular_values": [
+            1.7538750579594655,
+            0.9253199343351808,
+            0.26020242156755335,
+            6.356153788194297e-14
+          ],
+          "root_evaluations": 6
+        }
+      ],
+      "tail_checks": [
+        {
+          "tail": 0.5,
+          "difference": 0.0
+        },
+        {
+          "tail": 1.0,
+          "difference": 0.0
+        }
+      ],
+      "published_recurrence_omega_rg": [
+        0.5407820874935322,
+        -0.07046638033493503
+      ],
+      "published_recurrence_difference": 0.0,
+      "perturbed_matching_seed_result": [
+        0.5407820874951837,
+        -0.07046638033578753
+      ],
+      "CF_last_depth_change": 0.0,
+      "radial_classification": "below radial stability threshold"
+    },
+    {
+      "family": "vector",
+      "ell": 2,
+      "overtone": 0,
+      "mu": 0.45,
+      "p": 0.9,
+      "literature_anchor": "AGP 2025 arXiv:2412.15037v3 Fig. 3, p=0.9; Appendix C recurrence",
+      "reference_type": "published recurrence reproduced; not a tabulated or digitized author data point",
+      "CF_convergence": [
+        {
+          "depth": 100,
+          "omega_rg": [
+            0.5611126809929563,
+            -0.0651519162382451
+          ],
+          "determinant_residual": 1.85859280994027e-14
+        },
+        {
+          "depth": 200,
+          "omega_rg": [
+            0.5611126809928826,
+            -0.06515191623831194
+          ],
+          "determinant_residual": 1.2635849559874825e-14
+        },
+        {
+          "depth": 400,
+          "omega_rg": [
+            0.5611126809928826,
+            -0.06515191623831194
+          ],
+          "determinant_residual": 1.3378978581038003e-14
+        },
+        {
+          "depth": 800,
+          "omega_rg": [
+            0.5611126809928826,
+            -0.06515191623831194
+          ],
+          "determinant_residual": 1.3378978581038003e-14
+        },
+        {
+          "depth": 1600,
+          "omega_rg": [
+            0.5611126809928826,
+            -0.06515191623831194
+          ],
+          "determinant_residual": 1.3378978581038003e-14
+        }
+      ],
+      "matching_convergence": [
+        {
+          "settings": {
+            "rm": 5.0,
+            "radius": 35.0,
+            "angle": 1.4,
+            "epsilon": 0.04,
+            "order": 8,
+            "rtol": 1e-08
+          },
+          "omega_rg": [
+            0.5611126810225388,
+            -0.06515191629880465
+          ],
+          "difference_from_CF": 6.737103187022243e-11,
+          "relative_difference_from_CF": 1.1926557221841453e-10,
+          "determinant_residual": 5.968723173081037e-15,
+          "singular_values": [
+            1.724088716363622,
+            0.9224958475036855,
+            0.42014224906107034,
+            8.960327576636578e-15
+          ],
+          "root_evaluations": 10
+        },
+        {
+          "settings": {
+            "rm": 5.0,
+            "radius": 55.0,
+            "angle": 1.4,
+            "epsilon": 0.02,
+            "order": 12,
+            "rtol": 2e-10
+          },
+          "omega_rg": [
+            0.5611126809947691,
+            -0.06515191623851367
+          ],
+          "difference_from_CF": 1.8972459379110036e-12,
+          "relative_difference_from_CF": 3.3586560297888364e-12,
+          "determinant_residual": 3.598389860216579e-14,
+          "singular_values": [
+            1.7240887100984037,
+            0.9224958599589489,
+            0.4201422474232064,
+            5.3892060551830985e-14
+          ],
+          "root_evaluations": 6
+        },
+        {
+          "settings": {
+            "rm": 6.0,
+            "radius": 70.0,
+            "angle": 1.45,
+            "epsilon": 0.01,
+            "order": 16,
+            "rtol": 2e-12
+          },
+          "omega_rg": [
+            0.5611126809929036,
+            -0.06515191623829686
+          ],
+          "difference_from_CF": 2.5842933860614383e-14,
+          "relative_difference_from_CF": 4.574922201913187e-14,
+          "determinant_residual": 1.559509180006044e-14,
+          "singular_values": [
+            1.7442188852103455,
+            0.938204603410161,
+            0.2783390066368034,
+            3.423551027887095e-14
+          ],
+          "root_evaluations": 6
+        }
+      ],
+      "tail_checks": [
+        {
+          "tail": 0.5,
+          "difference": 5.551115123125783e-17
+        },
+        {
+          "tail": 1.0,
+          "difference": 5.551115123125783e-17
+        }
+      ],
+      "published_recurrence_omega_rg": [
+        0.5611126809928828,
+        -0.06515191623831196
+      ],
+      "published_recurrence_difference": 2.2247786310271853e-16,
+      "perturbed_matching_seed_result": [
+        0.5611126809947791,
+        -0.06515191623850865
+      ],
+      "CF_last_depth_change": 0.0,
+      "radial_classification": "above radial stability threshold"
+    },
+    {
+      "family": "vector",
+      "ell": 2,
+      "overtone": 0,
+      "mu": 0.5,
+      "p": 1.0,
+      "literature_anchor": "AGP 2025 arXiv:2412.15037v3 Fig. 3, p=1; Appendix C recurrence",
+      "reference_type": "published recurrence reproduced; not a tabulated or digitized author data point",
+      "CF_convergence": [
+        {
+          "depth": 100,
+          "omega_rg": [
+            0.5833475974253203,
+            -0.05946921620388915
+          ],
+          "determinant_residual": 5.545768344058252e-14
+        },
+        {
+          "depth": 200,
+          "omega_rg": [
+            0.5833475974247367,
+            -0.05946921620384451
+          ],
+          "determinant_residual": 5.034643144335098e-14
+        },
+        {
+          "depth": 400,
+          "omega_rg": [
+            0.5833475974247367,
+            -0.059469216203844516
+          ],
+          "determinant_residual": 3.8108197706659407e-14
+        },
+        {
+          "depth": 800,
+          "omega_rg": [
+            0.5833475974247367,
+            -0.059469216203844516
+          ],
+          "determinant_residual": 3.8108197706659407e-14
+        },
+        {
+          "depth": 1600,
+          "omega_rg": [
+            0.5833475974247367,
+            -0.059469216203844516
+          ],
+          "determinant_residual": 3.8108197706659407e-14
+        }
+      ],
+      "matching_convergence": [
+        {
+          "settings": {
+            "rm": 5.0,
+            "radius": 35.0,
+            "angle": 1.4,
+            "epsilon": 0.04,
+            "order": 8,
+            "rtol": 1e-08
+          },
+          "omega_rg": [
+            0.5833475974636517,
+            -0.05946921625000303
+          ],
+          "difference_from_CF": 6.037370547634827e-11,
+          "relative_difference_from_CF": 1.029616069552445e-10,
+          "determinant_residual": 7.118945397475357e-15,
+          "singular_values": [
+            1.7095792908723721,
+            0.9361299162737747,
+            0.44832959759263485,
+            9.882690630665782e-15
+          ],
+          "root_evaluations": 8
+        },
+        {
+          "settings": {
+            "rm": 5.0,
+            "radius": 55.0,
+            "angle": 1.4,
+            "epsilon": 0.02,
+            "order": 12,
+            "rtol": 2e-10
+          },
+          "omega_rg": [
+            0.5833475974263868,
+            -0.05946921620299122
+          ],
+          "difference_from_CF": 1.857595085906214e-12,
+          "relative_difference_from_CF": 3.16795157110237e-12,
+          "determinant_residual": 1.5416823352909503e-14,
+          "singular_values": [
+            1.7095792678637547,
+            0.9361299619481624,
+            0.448329589959619,
+            2.1432117587286652e-14
+          ],
+          "root_evaluations": 6
+        },
+        {
+          "settings": {
+            "rm": 6.0,
+            "radius": 70.0,
+            "angle": 1.45,
+            "epsilon": 0.01,
+            "order": 16,
+            "rtol": 2e-12
+          },
+          "omega_rg": [
+            0.5833475974247367,
+            -0.059469216203844516
+          ],
+          "difference_from_CF": 0.0,
+          "relative_difference_from_CF": 0.0,
+          "determinant_residual": 2.0438505135804895e-14,
+          "singular_values": [
+            1.7310153174123775,
+            0.9562528838121481,
+            0.29860742302340126,
+            4.131311582021212e-14
+          ],
+          "root_evaluations": 6
+        }
+      ],
+      "tail_checks": [
+        {
+          "tail": 0.5,
+          "difference": 1.1295700899707568e-16
+        },
+        {
+          "tail": 1.0,
+          "difference": 1.1295700899707568e-16
+        }
+      ],
+      "published_recurrence_omega_rg": [
+        0.5833475974247367,
+        -0.059469216203844516
+      ],
+      "published_recurrence_difference": 0.0,
+      "perturbed_matching_seed_result": [
+        0.5833475974263923,
+        -0.059469216202989186
+      ],
+      "CF_last_depth_change": 0.0,
+      "radial_classification": "above radial stability threshold"
+    }
+  ],
+  "continuation": [
+    {
+      "family": "tensor",
+      "method": "stepwise continuation from the mu=0 limiting spectrum",
+      "massless_endpoint_is_not_finite_coupling_QQG": true,
+      "points": [
+        {
+          "mu": 0.0,
+          "p": 0.0,
+          "omega_rg": [
+            0.37367168441804177,
+            -0.08896231568893567
+          ],
+          "residual": 2.0962745104930507e-15
+        },
+        {
+          "mu": 0.025,
+          "p": 0.05,
+          "omega_rg": [
+            0.37377493462983813,
+            -0.088923400918576
+          ],
+          "residual": 4.589812767768628e-15
+        },
+        {
+          "mu": 0.05,
+          "p": 0.1,
+          "omega_rg": [
+            0.3740874145647906,
+            -0.0888029433380563
+          ],
+          "residual": 3.2357515213439053e-13
+        },
+        {
+          "mu": 0.07500000000000001,
+          "p": 0.15000000000000002,
+          "omega_rg": [
+            0.3746172085967287,
+            -0.08859015255724809
+          ],
+          "residual": 2.5064256007318337e-15
+        },
+        {
+          "mu": 0.1,
+          "p": 0.2,
+          "omega_rg": [
+            0.3753774314225882,
+            -0.08826812103864094
+          ],
+          "residual": 4.058177847621933e-15
+        },
+        {
+          "mu": 0.125,
+          "p": 0.25,
+          "omega_rg": [
+            0.37638565778880134,
+            -0.08781516008150919
+          ],
+          "residual": 2.23585363395298e-15
+        },
+        {
+          "mu": 0.15000000000000002,
+          "p": 0.30000000000000004,
+          "omega_rg": [
+            0.37766311006425574,
+            -0.08720620910969583
+          ],
+          "residual": 3.005927341787322e-15
+        },
+        {
+          "mu": 0.17500000000000002,
+          "p": 0.35000000000000003,
+          "omega_rg": [
+            0.37923365765912154,
+            -0.08641403999332307
+          ],
+          "residual": 3.791909716662305e-15
+        },
+        {
+          "mu": 0.2,
+          "p": 0.4,
+          "omega_rg": [
+            0.3811227208044279,
+            -0.0854100715828732
+          ],
+          "residual": 1.3297153605284324e-15
+        },
+        {
+          "mu": 0.225,
+          "p": 0.45,
+          "omega_rg": [
+            0.3833561709713876,
+            -0.08416472635411314
+          ],
+          "residual": 5.661658436602958e-16
+        },
+        {
+          "mu": 0.25,
+          "p": 0.5,
+          "omega_rg": [
+            0.38595927906264643,
+            -0.08264736006000382
+          ],
+          "residual": 3.7540467816022707e-16
+        },
+        {
+          "mu": 0.275,
+          "p": 0.55,
+          "omega_rg": [
+            0.3889556972907219,
+            -0.08082586003353176
+          ],
+          "residual": 2.033734681025161e-15
+        },
+        {
+          "mu": 0.30000000000000004,
+          "p": 0.6000000000000001,
+          "omega_rg": [
+            0.392366393300854,
+            -0.07866604934933447
+          ],
+          "residual": 2.705261532044676e-15
+        },
+        {
+          "mu": 0.325,
+          "p": 0.65,
+          "omega_rg": [
+            0.39620840783196315,
+            -0.07613108187120822
+          ],
+          "residual": 3.030560868206887e-15
+        },
+        {
+          "mu": 0.35000000000000003,
+          "p": 0.7000000000000001,
+          "omega_rg": [
+            0.4004933152915177,
+            -0.07318109786531984
+          ],
+          "residual": 7.043165656843179e-16
+        },
+        {
+          "mu": 0.375,
+          "p": 0.75,
+          "omega_rg": [
+            0.40522539904728144,
+            -0.06977352366237767
+          ],
+          "residual": 5.156506403212353e-15
+        },
+        {
+          "mu": 0.4,
+          "p": 0.8,
+          "omega_rg": [
+            0.41039988059225757,
+            -0.06586441190521863
+          ],
+          "residual": 1.8319015486575617e-13
+        },
+        {
+          "mu": 0.42500000000000004,
+          "p": 0.8500000000000001,
+          "omega_rg": [
+            0.41600192417504067,
+            -0.061410859430150386
+          ],
+          "residual": 2.402812312215335e-14
+        },
+        {
+          "mu": 0.45,
+          "p": 0.9,
+          "omega_rg": [
+            0.42200702874850604,
+            -0.05637382610043486
+          ],
+          "residual": 7.160032962742624e-14
+        },
+        {
+          "mu": 0.47500000000000003,
+          "p": 0.9500000000000001,
+          "omega_rg": [
+            0.42838262110029984,
+            -0.0507204287219237
+          ],
+          "residual": 1.9741902616878333e-14
+        },
+        {
+          "mu": 0.5,
+          "p": 1.0,
+          "omega_rg": [
+            0.4350901883190014,
+            -0.044425389489046126
+          ],
+          "residual": 1.3237238790451325e-14
+        }
+      ]
+    },
+    {
+      "family": "vector",
+      "method": "stepwise continuation from the mu=0 limiting spectrum",
+      "massless_endpoint_is_not_finite_coupling_QQG": true,
+      "points": [
+        {
+          "mu": 0.0,
+          "p": 0.0,
+          "omega_rg": [
+            0.4575955116298527,
+            -0.09500442581947172
+          ],
+          "residual": 4.485093463988699e-15
+        },
+        {
+          "mu": 0.025,
+          "p": 0.05,
+          "omega_rg": [
+            0.45795424699380555,
+            -0.0948779078542031
+          ],
+          "residual": 4.098710625506567e-15
+        },
+        {
+          "mu": 0.05,
+          "p": 0.1,
+          "omega_rg": [
+            0.45902811421041484,
+            -0.09450127732745302
+          ],
+          "residual": 1.1577319228229911e-14
+        },
+        {
+          "mu": 0.07500000000000001,
+          "p": 0.15000000000000002,
+          "omega_rg": [
+            0.46081019713350097,
+            -0.09388293614465487
+          ],
+          "residual": 3.215640869234266e-14
+        },
+        {
+          "mu": 0.1,
+          "p": 0.2,
+          "omega_rg": [
+            0.4632893169695256,
+            -0.09303574750912756
+          ],
+          "residual": 4.5540625711523515e-15
+        },
+        {
+          "mu": 0.125,
+          "p": 0.25,
+          "omega_rg": [
+            0.46645058216518326,
+            -0.09197560143497119
+          ],
+          "residual": 7.414829297217145e-16
+        },
+        {
+          "mu": 0.15000000000000002,
+          "p": 0.30000000000000004,
+          "omega_rg": [
+            0.4702761641888175,
+            -0.09071986111064466
+          ],
+          "residual": 1.652898941760982e-14
+        },
+        {
+          "mu": 0.17500000000000002,
+          "p": 0.35000000000000003,
+          "omega_rg": [
+            0.47474623516255865,
+            -0.08928596202955887
+          ],
+          "residual": 4.867200810234881e-14
+        },
+        {
+          "mu": 0.2,
+          "p": 0.4,
+          "omega_rg": [
+            0.4798399587215177,
+            -0.08769034109627599
+          ],
+          "residual": 2.7077761252510675e-13
+        },
+        {
+          "mu": 0.225,
+          "p": 0.45,
+          "omega_rg": [
+            0.48553641649646273,
+            -0.08594775638921735
+          ],
+          "residual": 6.032790232784356e-15
+        },
+        {
+          "mu": 0.25,
+          "p": 0.5,
+          "omega_rg": [
+            0.49181537998911984,
+            -0.08407096310442777
+          ],
+          "residual": 1.4816061301351025e-14
+        },
+        {
+          "mu": 0.275,
+          "p": 0.55,
+          "omega_rg": [
+            0.49865788335942296,
+            -0.08207065859493805
+          ],
+          "residual": 3.2249897639052175e-14
+        },
+        {
+          "mu": 0.30000000000000004,
+          "p": 0.6000000000000001,
+          "omega_rg": [
+            0.5060465961592875,
+            -0.07995559729806084
+          ],
+          "residual": 1.2561725571364782e-13
+        },
+        {
+          "mu": 0.325,
+          "p": 0.65,
+          "omega_rg": [
+            0.5139660242370262,
+            -0.07773279005748747
+          ],
+          "residual": 4.3144254274110646e-13
+        },
+        {
+          "mu": 0.35000000000000003,
+          "p": 0.7000000000000001,
+          "omega_rg": [
+            0.5224025798903996,
+            -0.07540772618107928
+          ],
+          "residual": 1.402960746733848e-12
+        },
+        {
+          "mu": 0.375,
+          "p": 0.75,
+          "omega_rg": [
+            0.531344562867286,
+            -0.07298457985009263
+          ],
+          "residual": 4.381093912970856e-12
+        },
+        {
+          "mu": 0.4,
+          "p": 0.8,
+          "omega_rg": [
+            0.5407820874935836,
+            -0.07046638033501931
+          ],
+          "residual": 1.3420300278416922e-11
+        },
+        {
+          "mu": 0.42500000000000004,
+          "p": 0.8500000000000001,
+          "omega_rg": [
+            0.5507069824391155,
+            -0.06785513699267032
+          ],
+          "residual": 4.0064006385088746e-11
+        },
+        {
+          "mu": 0.45,
+          "p": 0.9,
+          "omega_rg": [
+            0.5611126809928828,
+            -0.06515191623831212
+          ],
+          "residual": 4.338617796253174e-14
+        },
+        {
+          "mu": 0.47500000000000003,
+          "p": 0.9500000000000001,
+          "omega_rg": [
+            0.5719941122577336,
+            -0.06235687012931913
+          ],
+          "residual": 6.837410199072134e-14
+        },
+        {
+          "mu": 0.5,
+          "p": 1.0,
+          "omega_rg": [
+            0.583347597424737,
+            -0.05946921620384504
+          ],
+          "residual": 1.316875432179778e-13
+        }
+      ]
+    }
+  ],
+  "reverse_continuation": [
+    {
+      "family": "tensor",
+      "max_forward_reverse_difference": 1.3333225020474536e-14
+    },
+    {
+      "family": "vector",
+      "max_forward_reverse_difference": 2.460988806653215e-13
+    }
+  ],
+  "radial_finite_boxes": [
+    {
+      "mu": 0.3,
+      "left": -300.0,
+      "right": 100.0,
+      "spacing": 0.1,
+      "omega_squared": -0.0011753334528766112,
+      "growth_rate": 0.034283136567073484,
+      "interpretation": "unstable bound state"
+    },
+    {
+      "mu": 0.3,
+      "left": -500.0,
+      "right": 150.0,
+      "spacing": 0.1,
+      "omega_squared": -0.0011753334575468548,
+      "growth_rate": 0.034283136635186326,
+      "interpretation": "unstable bound state"
+    },
+    {
+      "mu": 0.3,
+      "left": -500.0,
+      "right": 150.0,
+      "spacing": 0.05,
+      "omega_squared": -0.001175144480930056,
+      "growth_rate": 0.034280380408187656,
+      "interpretation": "unstable bound state"
+    },
+    {
+      "mu": 0.3,
+      "left": -700.0,
+      "right": 200.0,
+      "spacing": 0.025,
+      "omega_squared": -0.001175097242766928,
+      "growth_rate": 0.034279691404196275,
+      "interpretation": "unstable bound state"
+    },
+    {
+      "mu": 0.4,
+      "left": -300.0,
+      "right": 100.0,
+      "spacing": 0.1,
+      "omega_squared": -0.00012538020063623145,
+      "growth_rate": 0.011197330067307628,
+      "interpretation": "unstable bound state"
+    },
+    {
+      "mu": 0.4,
+      "left": -500.0,
+      "right": 150.0,
+      "spacing": 0.1,
+      "omega_squared": -0.00012597215671004123,
+      "growth_rate": 0.011223731853088849,
+      "interpretation": "unstable bound state"
+    },
+    {
+      "mu": 0.4,
+      "left": -500.0,
+      "right": 150.0,
+      "spacing": 0.05,
+      "omega_squared": -0.00012591186798649337,
+      "growth_rate": 0.011221045761714609,
+      "interpretation": "unstable bound state"
+    },
+    {
+      "mu": 0.4,
+      "left": -700.0,
+      "right": 200.0,
+      "spacing": 0.025,
+      "omega_squared": -0.00012590337238122296,
+      "growth_rate": 0.01122066719857705,
+      "interpretation": "unstable bound state"
+    },
+    {
+      "mu": 0.45,
+      "left": -300.0,
+      "right": 100.0,
+      "spacing": 0.1,
+      "omega_squared": 4.7558388112023843e-05,
+      "growth_rate": null,
+      "interpretation": "no negative eigenvalue in this finite-box discretization"
+    },
+    {
+      "mu": 0.45,
+      "left": -500.0,
+      "right": 150.0,
+      "spacing": 0.1,
+      "omega_squared": 2.0484350408350003e-05,
+      "growth_rate": null,
+      "interpretation": "no negative eigenvalue in this finite-box discretization"
+    },
+    {
+      "mu": 0.45,
+      "left": -500.0,
+      "right": 150.0,
+      "spacing": 0.05,
+      "omega_squared": 2.0489394080327276e-05,
+      "growth_rate": null,
+      "interpretation": "no negative eigenvalue in this finite-box discretization"
+    },
+    {
+      "mu": 0.45,
+      "left": -700.0,
+      "right": 200.0,
+      "spacing": 0.025,
+      "omega_squared": 1.1769106218880424e-05,
+      "growth_rate": null,
+      "interpretation": "no negative eigenvalue in this finite-box discretization"
+    },
+    {
+      "mu": 0.5,
+      "left": -300.0,
+      "right": 100.0,
+      "spacing": 0.1,
+      "omega_squared": 8.28967967041117e-05,
+      "growth_rate": null,
+      "interpretation": "no negative eigenvalue in this finite-box discretization"
+    },
+    {
+      "mu": 0.5,
+      "left": -500.0,
+      "right": 150.0,
+      "spacing": 0.1,
+      "omega_squared": 3.3027171052171756e-05,
+      "growth_rate": null,
+      "interpretation": "no negative eigenvalue in this finite-box discretization"
+    },
+    {
+      "mu": 0.5,
+      "left": -500.0,
+      "right": 150.0,
+      "spacing": 0.05,
+      "omega_squared": 3.3027826436730256e-05,
+      "growth_rate": null,
+      "interpretation": "no negative eigenvalue in this finite-box discretization"
+    },
+    {
+      "mu": 0.5,
+      "left": -700.0,
+      "right": 200.0,
+      "spacing": 0.025,
+      "omega_squared": 1.767835837852805e-05,
+      "growth_rate": null,
+      "interpretation": "no negative eigenvalue in this finite-box discretization"
+    }
+  ],
+  "radial_zero_mode_threshold": [
+    {
+      "mu_critical": 0.4380801999676024,
+      "p_critical": 0.8761603999352048,
+      "settings": {
+        "left": -40.0,
+        "right": 60.0,
+        "match": 0.0,
+        "rtol": 1e-09
+      },
+      "matching_residual": 2.030320356283255e-13
+    },
+    {
+      "mu_critical": 0.43808020101390394,
+      "p_critical": 0.8761604020278079,
+      "settings": {
+        "left": -60.0,
+        "right": 100.0,
+        "match": 0.0,
+        "rtol": 1e-10
+      },
+      "matching_residual": 2.033095913844818e-13
+    },
+    {
+      "mu_critical": 0.4380802010168892,
+      "p_critical": 0.8761604020337784,
+      "settings": {
+        "left": -70.0,
+        "right": 150.0,
+        "match": 2.0,
+        "rtol": 1e-12
+      },
+      "matching_residual": 5.551115123125783e-16
+    }
+  ],
+  "high_precision_check": {
+    "precision_digits": 50,
+    "depth": 1600,
+    "real": "0.4350901842524126864398037108759332919977",
+    "imag": "-0.04442539353329309862183939582254958361414",
+    "residual": "2.84353e-50",
+    "difference_from_double": 4.163336342344337e-17
+  },
+  "checks_passed": true,
+  "not_claimed": [
+    "complete spectrum",
+    "all-mode or nonlinear stability",
+    "sourced waveform",
+    "quantum coupling bound"
+  ],
+  "sources": [
+    "https://arxiv.org/abs/2412.15037v3",
+    "https://arxiv.org/abs/1304.6725v3"
+  ]
+}

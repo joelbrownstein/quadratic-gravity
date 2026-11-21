@@ -1,0 +1,13 @@
+{
+  "sympy": "1.14.0",
+  "checks_passed": true,
+  "operator_transformation": "exact symbolic identity for arbitrary a,b,omega,k",
+  "coefficient_extraction_indices": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "mu_squared_substitution": "omega^2-k^2",
+  "matrix_extension": "scalar differential terms times identity; potential linear in A and B"
+}

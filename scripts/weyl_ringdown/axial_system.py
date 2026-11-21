@@ -64,10 +64,10 @@ def outgoing_k(w,mu):
     return k if k.real>0 else -k
 
 
-def infinity_series(w,mu,ell,leading=(1+0j,0j),order=6):
+def infinity_series(w,mu,ell,leading=(1+0j,0j),order=6,wave_number=None):
     """U=e^(i k r) r^chi sum b_n/r^n; local asymptotic expansion."""
     A,B=matrices(ell)
-    k=outgoing_k(w,mu)
+    k=outgoing_k(w,mu) if wave_number is None else wave_number
     chi=1j*(2*w*w-mu*mu)/k
     def mat(c,a=0,b=0):
         return tuple(tuple(c*(i==j)+a*A[i][j]+b*B[i][j] for j in range(2)) for i in range(2))
