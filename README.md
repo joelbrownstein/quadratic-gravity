@@ -2,6 +2,8 @@
 
 This repository is an Overleaf-ready JCAP manuscript scaffold for a numerical study of the perfect-square (PS) conformal sector of quadratic gravity.
 
+For a student-facing introduction to the accompanying research workbook, start with [From quadratic gravity to testable black-hole signals](notes/WORKBOOK_OVERVIEW.md). It explains the motivation, the distinction between scalar toy models and the massive spin-two sector, the current black-hole calculations, and where to find the derivations and reproducible code.
+
 ## Start on Overleaf
 
 1. In Overleaf, choose **New Project → Upload Project**.
