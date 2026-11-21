@@ -77,6 +77,60 @@ Tzanavaris, Boyle, and Turok propose a topologically different black-mirror comp
 
 A directly QQG-motivated complex-interior proposal is the powerball construction of Liu, Quintin and Afshordi~\cite{LiuPowerballs:2025}.  Their exact complex power-law solutions of pure quadratic gravity are matched to Schwarzschild-like exteriors through an effective interface, with Lorentzian and Euclidean sides.  The action uses a specified complex contour avoiding a branch cut and singularity.  Their section 6.2 also shows that the contour violates the Kontsevich--Segal metric-allowability criterion for arbitrary real matter fields and discusses possible restrictions or weakenings of that criterion.  This gives a concrete candidate and a concrete admissibility question; it does not demonstrate a universally regular quantum interior.
 
+\subsection{From quadratic couplings to potentially visible dark remnants}
+\label{sec:remnant-signals}
+
+The thermal 2-2-hole model provides a specific observational motivation.  Aydemir, Holdom and Ren find that evaporation approaches a minimum mass, leaving a cold, nearly nonradiating remnant.  Two such remnants can merge into a hotter object and release high-energy photons and neutrinos while returning toward the remnant state.  Their isolated-remnant emission is much less promising than this merger channel~\cite{AydemirHoldomRen:2020}.  Thus absence of a horizon permits emission, but does not by itself imply detectable luminosity.
+
+To expose the coupling dependence, the flat-vacuum tree-level masses in our conventions are~\cite{Salvio:2018}
+\begin{equation}
+ m_0^2=\frac{M_{\rm Pl}^2}{12\alpha}
+       =\frac{f_0^2M_{\rm Pl}^2}{2},\qquad
+ m_2^2=-\frac{M_{\rm Pl}^2}{4\beta}
+       =\frac{f_2^2M_{\rm Pl}^2}{2}.
+ \label{eq:compact-object-pole-scales}
+\end{equation}
+These are weak-coupling benchmarks, not nonperturbative pole determinations.  The thermal construction gives approximately~\cite{AydemirHoldomRen:2020}
+\begin{equation}
+ M_{\min}\simeq0.63\frac{m_{\rm Pl}^2}{m_2},
+ \qquad m_{\rm Pl}=G^{-1/2}=\sqrt{8\pi}\,M_{\rm Pl}.
+ \label{eq:two-two-remnant-scale}
+\end{equation}
+The numerical relation belongs to that solution family; it is not a universal QQG remnant theorem.  Its Weyl-sector dependence is essential.  In the perturbative translation, smaller $f_2$ at fixed $G$ implies a larger candidate remnant mass.  Extrapolation into strong coupling requires matching rather than substitution into a tree-level formula.
+
+The proposed inference chain is therefore couplings and their matching scale, compact-object solutions and thermodynamics, a formation and merger population, and finally particle spectra and fluxes.  An observational bound needs the abundance, merger rate, particle content and propagation model as well as $M_{\min}$.  Stellar-mass horizonless mergers offer a distinct possible signal: delayed gravitational-wave echoes or cavity resonances, explored by Holdom~\cite{Holdom:2020LIGO}.  That search does not establish that tiny dark-matter remnants constitute the objects in observed stellar-mass binaries, or that an echo is a confirmed detection of QQG.
+
+The PS theory retains neither the independent Weyl dynamics responsible for these solutions nor a binary geometry.  It can test its own scalar correlations, running and continuum limit; it cannot presently predict $M_{\min}$, a remnant abundance, a photon or neutrino spectrum, or a merger waveform.  Even identifying its conformal field with the physical scalaron requires the matching discussed earlier.  The compact-object predictions motivate a later parent-theory calculation rather than serving as results of the PS simulation.
+
+\subsection{Binary-merger masses and tests of possible QQG departures}
+\label{sec:merger-mass-tests}
+
+The observational baseline must be dated.  In the public literature checked on 21 November 2026, GWTC-5.0 extends the catalog through O4b, adds 161 candidates with astrophysical probability at least $0.5$, and gives a cumulative total of 390 after updates to earlier runs~\cite{LVK:GWTC5}.  Candidate counts are not interchangeable with the smaller event samples suitable for precision gravity tests.  The accompanying analysis reports seven tests, a cumulative gravity-test sample of 168 events, noise-compatible residuals, and overall consistency with GR; it reports no evidence for physics beyond GR~\cite{LVK:GWTC5Tests}.
+
+GW250114 supplies a concrete mass benchmark.  Its discovery analysis gives source-frame component masses and a remnant mass~\cite{LVK:GW250114Masses}
+\begin{equation}
+ \begin{split}
+ m_1&=33.6^{+1.2}_{-0.8}M_\odot,\qquad
+ m_2=32.2^{+0.8}_{-1.3}M_\odot,\\
+ M_f&=62.7^{+1.0}_{-1.1}M_\odot,\qquad
+ \chi_f=0.68^{+0.01}_{-0.01},
+ \end{split}
+ \label{eq:gw250114-masses}
+\end{equation}
+with quoted 90\% credible intervals.  Here $m_2$ denotes the secondary object's mass, not the spin-two pole mass in eq.~\eqref{eq:compact-object-pole-scales}.  These are GR-model-dependent posterior estimates.  Subtracting the central values suggests approximately $3.1M_\odot c^2$ of radiated energy, about $4.7\%$ of the initial total rest mass; an uncertainty requires the joint posterior, not subtraction of marginal interval endpoints.  This mass difference is expected in GR and is not evidence of a QQG correction.  Source-frame masses also require the redshift conversion from detector-frame masses.
+
+Full-signal fits infer binary parameters using inspiral--merger--ringdown waveforms and obtain remnant properties using GR numerical-relativity relations.  Such a derived remnant mass is not an independent test of those relations.  Consistency tests instead compare appropriately separated inspiral and post-inspiral information.  Ringdown spectroscopy tests whether multiple damped modes admit a common Kerr mass and spin.  For GW250114, ringdown-only and full-waveform analyses provide complementary constraints, with different assumptions and precision; the dedicated study finds consistency with GR~\cite{LVK:GW250114Spectroscopy}.  They must not be presented as a theory-independent weighing of the final object.
+
+Nor must quadratic terms produce a nonzero shift in every binary.  For the constant-coefficient, four-dimensional vacuum action in eq.~\eqref{eq:qg-cosmological-action}, with $\Lambda=0$, every Ricci-flat metric has vanishing quadratic corrections to the bulk equations.  This includes the GR vacuum binary spacetime as a solution branch, not only isolated Schwarzschild and Kerr solutions.  Consequently a classical evolution confined to that branch can reproduce the GR signal.  Additional-mode excitation, instability, matter sources, a different compact-object branch, or quantum effective terms could change this conclusion; their occurrence and magnitude require calculation.  Branch stability remains a separate issue~\cite{HeldZhang:2023}.
+
+For a specified alternative branch, a useful target is a waveform prediction for the accumulated inspiral phase, the remnant mass and spin, and the complex ringdown frequencies.  One can parameterize a mode as
+\begin{equation}
+ \omega_a=\omega_a^{\rm Kerr}(M_f,\chi_f)
+            [1+\delta\omega_a],
+ \label{eq:qqg-ringdown-target}
+\end{equation}
+where $\delta\omega_a$ is complex and must be derived from the retained sectors and boundary conditions.  A phenomenological bound on this quantity is not yet a bound on $f_0$ or $f_2$.  That translation needs the mode calculation, the excitation amplitudes, and an inference allowing masses and spins to vary together with the new parameters.  Additional radiation channels require a consistent energy balance; a GR mass deficit alone cannot determine their contribution.  For horizonless objects, even the appropriate ringdown boundary condition changes.  These requirements define a falsifiable extension of the parent-theory program, beyond what the present PS ensembles can establish.
+
 \subsection{What would count as singularity resolution?}
 \label{sec:singularity-resolution-criteria}
 
