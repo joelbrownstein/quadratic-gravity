@@ -1,0 +1,56 @@
+\section{QQG: renormalization, independent couplings, and physical states}
+\label{sec:parent-theory}
+
+\subsection{Why renormalization changes the question}
+
+We use \emph{quadratic gravity} for the action family and \emph{QQG} for its quantum formulation.  Stelle's result makes curvature-squared terms central to the ultraviolet problem: with the required independent four-derivative sectors, gravitational divergences can be absorbed into a finite set of local couplings~\cite{Stelle:1977ry}.  The fourth-order propagators improve ultraviolet power counting.  Merely adding $R^2$ while leaving the independent tensor sector untreated does not establish this result for generic quantum metric fluctuations.
+
+This motivates a substantial change of perspective.  Newton's constant need not be the sole coupling from which one attempts to extrapolate gravity to arbitrarily short distances.  The dimensionless curvature couplings have their own renormalization-group trajectories, studied in the foundational calculations~\cite{FradkinTseytlin:1982,Avramidi:1985ki}.  A physically consistent nonperturbative realization of that program would change the case for a four-dimensional field-theoretic ultraviolet completion.  This is the potentially paradigm-changing outcome to test; counterterm renormalizability is the established starting point, rather than the completion of that argument.
+
+As an effective field theory, a curvature expansion need not be extrapolated beyond its cutoff.  As a proposed fundamental theory, QQG must additionally define its states, observables and high-energy dynamics.  Perturbative renormalizability, asymptotic freedom along a specified trajectory, existence of a continuum measure, and physical probabilities are distinct targets.  A result for one is not a proof of the others.
+
+\subsection{Couplings, generated scales, and an operational definition of running}
+\label{sec:renormalization-couplings}
+
+On the branch $\alpha>0$, $\beta<0$, one commonly writes
+\begin{equation}
+ \alpha(\mu)=\frac{1}{6f_0^2(\mu)},\qquad
+ \beta(\mu)=-\frac{1}{2f_2^2(\mu)}.
+ \label{eq:parent-couplings}
+\end{equation}
+These equations define our translation of conventions: $f_0$ and $f_2$ are independent dimensionless scalar- and tensor-curvature couplings, not additional names for $G$ or for the PS scalar coupling $\lambda$.  Other sign branches require their own definitions and stability analysis.  Renormalization also concerns the lower-derivative terms, matter couplings and, on curved backgrounds, Euler and total-derivative counterterms.  The displayed bulk action is not a complete specification of a boundary-value path integral~\cite{Salvio:2018}.
+
+The conventional one-loop analysis already exposes a nontrivial branch issue: asymptotic freedom of the tensor coupling does not imply asymptotic freedom of the scalar-curvature coupling on the tachyon-free flat-vacuum branch.  Avramidi's discussion distinguishes that branch from an asymptotically free positive-Euclidean-action regime with a different proposed ground state~\cite{Avramidi:Thesis}.  The sign and vacuum assumptions must therefore accompany any parent-theory interpretation of a positive PS sampling action.
+
+Running dimensionless couplings can define an integration-constant scale through dimensional transmutation.  Identifying that scale with a measured Planck scale, a compact-object scale or a cosmological curvature requires a dynamical matching calculation; it is not fixed by dimensional analysis.  The strong-gravity analogy investigated by Holdom and Ren is a motivating proposal in this direction~\cite{HoldomRen:2016}.
+
+The meaning of running is itself consequential.  Buccio and collaborators proposed momentum-dependent beta functions differing from the conventional subtraction-scale flow~\cite{Buccio:2024}.  Kawai and Ohta discuss the role of scale choice and coupling redefinitions~\cite{KawaiOhta:2025}.  A subsequent calculation by Buccio, de Brito and Parente finds gauge dependence in the proposed momentum running of local curvature-squared operators~\cite{BuccioGauge:2025}.  Salvio, Strumia and Vitti identify process-dependent infrared logarithms in physical amplitudes that cannot generally be absorbed into universal running couplings~\cite{SalvioStrumiaVitti:2026}.  Holdom subsequently proposes an analog one-loop Callan--Symanzik equation combining ultraviolet and infrared pole contributions in the scalar setting~\cite{Holdom:2026UVIR}.  The debate remains active: its on-shell UV/IR construction is distinct from ordinary off-shell Euclidean running.  These developments require an explicit observable and scheme when interpreting a flow; they do not negate the original local-counterterm result.
+
+Our numerical response is to define a scalar finite-volume coupling operationally and calculate its perturbative matching, as in appendix~\ref{app:observables}.  A measured scalar step-scaling function can then test a specified theory and scheme.  It cannot, without further matching, measure both parent couplings or adjudicate every full-theory scattering prescription.
+
+\subsection{Field content and the probability problem}
+
+The classical modes identified in section~\ref{sec:classical-gravity} become a physical-state problem when the theory is quantized.  Removing the Einstein term, imposing Weyl symmetry, or taking a special coupling limit can change the constraint structure.  A scalar conformal reduction is a specified model or limit, not a universal replacement for all quadratic theories.
+
+The quantum literature also addresses distinct targets.  Hawking and Hertog's fourth-order path-integral prescription traces over a final derivative datum, obtaining a probability prescription with a loss of unitarity in their construction~\cite{HawkingHertog:2002}.  Bateman and Turok instead retain an indefinite state space and establish positive tree-level probabilities for their specified scalar setting~\cite{Bateman:2026}.  Salvio proposes a nonperturbative Dirac--Pauli formulation and makes broader probability claims~\cite{Salvio:2024}.  These proposals should be assessed with their own states, observables, and assumptions.  This paper does not adopt one as a demonstrated consequence of a nonnegative scalar sampling measure.
+
+Other analyses probe the assumptions behind external states.  Tseytlin exhibits one-loop nonunitarity for a related quartic-derivative scalar model with a specified massless-state prescription~\cite{Tseytlin:2023}; that sibling model is not the interacting PS specialization.  Buoninfante's November 2026 analysis proposes a persistent composite partner for a dressed ghost above threshold, while explicitly leaving the exclusion of observable negative probabilities open~\cite{Buoninfante:2026Partner}.  Its massive asymptotic setting cannot simply be transferred to the massless PS model.  These results make state definitions a research question rather than a matter settled by the sign of the action.
+
+\subsection{The solution space as a guide to the paper}
+
+The useful hierarchy is by questions and retained degrees of freedom.  It is not a claim that one solution branch dynamically evolves into the next.
+\begin{center}
+\small
+\begin{tabular}{p{0.23\textwidth}p{0.32\textwidth}p{0.34\textwidth}}
+\toprule
+Setting & What is retained & What it can address \\
+\midrule
+Generic QQG & Independent metric sectors and constraints & Parent renormalization and physical-state problem \\
+PS conformal sector & One interacting four-derivative scalar & Controlled running and continuum tests \\
+Euclidean horizon & Specified background and thermal/state data & Radiation and thermodynamic consistency \\
+Compact-object branches & Weyl-active geometry, with any sources & Horizons, interior structure, and stability \\
+FLRW and perturbations & Expansion plus specified perturbation dynamics & Cosmological consistency and observable tests \\
+\bottomrule
+\end{tabular}
+\end{center}
+The scalar stage supplies a complete, limited calculation now.  Black holes expose the missing tidal-curvature sector; cosmology exposes the additional need for matter, infrared matching, and a map to data.  Each subsequent section identifies a concrete question, its literature anchor, and the calculation required to turn a candidate answer into evidence.

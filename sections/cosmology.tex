@@ -1,31 +1,47 @@
 \section{Cosmological interpretation and an observational roadmap}
 \label{sec:cosmology}
 
-This section sets out a prospective connection between the lattice program and cosmology.  It does not report cosmological constraints or identify the PS field with an observed dark-energy component.  The immediate target of this paper remains the continuum behavior of the Euclidean theory in eq.~\eqref{eq:ps-action}.
+The cosmological solution space provides the largest-scale application of the parent theory: a near-FLRW background together with its inhomogeneous perturbations.  This section sets out a prospective connection between the lattice program and that setting.  It does not report cosmological constraints or identify the PS field with an observed dark-energy component.  The immediate target of this paper remains the continuum behavior of the Euclidean theory in eq.~\eqref{eq:ps-action}.
 
-\subsection{From curvature-squared gravity to the conformal sector}
-\label{sec:cosmological-action}
+\subsection{No-boundary probabilities and the arrow of time}
+\label{sec:no-boundary-arrow}
 
-To distinguish the relevant theories, consider the Lorentzian action, with signature $(-,+,+,+)$ and $\hbar=c=1$,
+The question at an extrapolated Big Bang singularity is how a quantum theory assigns consistent predictions when a classical spacetime description fails.  The Hartle--Hawking no-boundary proposal supplies a candidate quantum state~\cite{HartleHawking:1983}.  Hartle, Hawking and Hertog show in specified minisuperspace models how it assigns probabilities to alternative classical histories, including histories whose backward classical extrapolation is singular~\cite{HartleHawkingHertog:2008}.  This suggests a precise \emph{predictive} sense of singularity resolution: a singular extrapolation need not obstruct probabilities for observables.  It does not establish that every history has a smooth, geodesically complete metric.
+
+In their semiclassical analysis a saddle contributes schematically
 \begin{equation}
- S_{\rm QG}=\int\dd^4x\,\sqrt{-g}\left[
- \frac{M_{\rm Pl}^2}{2}(R-2\Lambda)
- +\alpha R^2+\beta C_{\mu\nu\rho\sigma}C^{\mu\nu\rho\sigma}
- \right]+S_{\rm m},
- \label{eq:qg-cosmological-action}
+ \Psi_s(q)\simeq P_s(q)\exp\left[\frac{-I_{R,s}(q)+iS_s(q)}{\hbar}\right],
+ \qquad |\nabla I_{R,s}|\ll|\nabla S_s|,
+ \label{eq:no-boundary-classicality}
 \end{equation}
-where $M_{\rm Pl}^{-2}=8\pi G$, $C_{\mu\nu\rho\sigma}$ is the Weyl tensor, and $\alpha$ and $\beta$ are dimensionless.  A constant-coefficient Euler density and boundary terms are omitted from the local bulk equations in four dimensions.  The two curvature-squared operators represent distinct sectors; generic quadratic gravity cannot be expressed as a function of $R$ alone~\cite{Salvio:2018}.
+where $q$ denotes the chosen geometry and matter configuration variables.  The displayed condition, with a slowly varying prefactor, identifies a regime in which the phase generates approximately classical Lorentzian histories~\cite{HartleHawkingHertog:2008}.  A QQG version requires its own constraints, boundary data and measure.  Probabilities require a physical prescription for decoherent alternatives and their normalization; a nonnegative Euclidean sampling weight alone does not provide one.
 
-For the Euclidean metric in eq.~\eqref{eq:conformal-metric}, the curvature identity is
+Classical evolution can also fail to connect two regions in which it is individually a good approximation.  Hartle and Hertog calculate quantum transitions between classical cosmological histories and discuss the implications for black holes~\cite{HartleHertog:2015}.  This provides a framework for asking about amplitudes across a nonclassical region without assuming one deterministic interior trajectory.  Their black-hole discussion is a proposed application, not a completed evaporation calculation.
+
+The arrow of time is a further question about the state and its fluctuations.  In Hartle and Hertog's bouncing no-boundary models, fluctuations are small near a regular minimum radius and grow away on both sides.  In their recollapsing histories the fluctuation arrow can keep one direction through expansion and recontraction~\cite{HartleHertog:2012}.  Thus an expansion-to-contraction transition does not by itself reverse that arrow.  Their connection to thermodynamic behavior is a physical argument within the model, rather than a universal entropy theorem.  Hartle's time-neutral analysis further allows local arrows within an overall time-symmetric description~\cite{Hartle:2013Arrow}.
+
+\paragraph*{Four-dimensional quantum geometry and the QQG proposal.}
+A continuation from Lorentzian signature $(-,+,+,+)$ to Euclidean signature $(+,+,+,+)$ retains four dimensions.  It can enter a complex-saddle prescription for a quantum amplitude.  It need not describe a real metric changing signature along an observer's trajectory; a continuous real change of signature would encounter a degenerate metric.  The complex geometries used to construct a state and the real Lorentzian histories assigned probabilities are distinct objects.
+
+Liu, Quintin and Afshordi propose matching a Euclidean hemisphere to a Lorentzian de Sitter region as a possible starting point for their running-driven QQG inflation~\cite{Liu:2026}.  Their text explicitly identifies the onset as speculative and a QQG instanton/path-integral analysis as further work.  The anomaly objection and revised Euler-running saddle~\cite{Shinn:2026,LiuAfshordi:2026}, discussed below, make the action and approximation essential to that proposal.  A complete probability distribution, emergence of a thermodynamic arrow, and universal replacement of the $t=0$ singularity are not results established by this saddle construction.
+
+Even in Einstein-based no-boundary models, contour choice affects the state and perturbations: Feldbrugge, Lehners and Turok find unsuppressed fluctuations for their Lorentzian contour, while Diaz Dorronsoro and collaborators obtain the standard no-boundary state with a different contour prescription~\cite{Feldbrugge:2017,Dorronsoro:2017}.  These model calculations identify a required choice for a QQG construction, rather than determining its answer.
+
+\subsection{Black-hole interiors as an anisotropic cosmological problem}
+\label{sec:interior-cosmology}
+
+The zero-spin, uncharged Schwarzschild limit gives a precise geometric bridge.  Inside its horizon, writing $T=r$ and $X=t$ yields
 \begin{equation}
- R=-6\lambda e^{-2\lambda\sigma}
- \left[\Box\sigma+\lambda(\partial\sigma)^2\right],
- \qquad
- \sqrt{g}\,R^2=36\lambda^2
- \left[\Box\sigma+\lambda(\partial\sigma)^2\right]^2.
- \label{eq:conformal-r-squared}
+ \dd s^2=-\frac{\dd T^2}{r_h/T-1}
+ +(r_h/T-1)\dd X^2+T^2\dd\Omega_2^2,
+ \qquad 0<T<r_h.
+ \label{eq:schwarzschild-kantowski-sachs}
 \end{equation}
-Thus the restricted Euclidean functional $\alpha_E\int\dd^4x\sqrt{g}R^2$ equals $72\alpha_E\lambda^2S_{\rm PS}$; the normalization of eq.~\eqref{eq:ps-action} corresponds to $\alpha_E=1/(72\lambda^2)$ for nonzero $\lambda$.  Here $\alpha_E$ denotes the Euclidean coefficient, without assuming a continuation prescription for the full quantum theory.  This identity makes the action-level connection explicit.  It does not establish equality of quantum measures or supply the tensor constraints absent from the scalar simulation.  The perturbative Ward-identity argument for the conformally flat limit is discussed in ref.~\cite{Anderson:2026}.
+This follows directly from the Schwarzschild metric and is of Kantowski--Sachs type: homogeneous but anisotropic, with spatial sections locally $\mathbb R\times S^2$~\cite{KantowskiSachs:1966}.  The exchange of coordinate roles preserves Lorentzian signature.  It does not produce a positive-definite Euclidean interior.  Finite Kerr rotation changes this symmetry reduction, so the displayed correspondence is restricted to the nonrotating case.
+
+The nonzero Weyl curvature in eq.~\eqref{eq:schwarzschild-curvature} also distinguishes this interior from an isotropic FLRW background.  Neither zero spin nor spherical symmetry places it in the flat-reference PS configuration space.  The complex powerball proposal in section~\ref{sec:black-holes} is a separate QQG-motivated construction with a prescribed interface and contour~\cite{LiuPowerballs:2025}; it is not the coordinate transformation in eq.~\eqref{eq:schwarzschild-kantowski-sachs}.
+
+A later numerical study can ask whether a specified QQG state supports a regular saddle with controlled perturbations, where a classicality condition holds, and how fluctuations evolve along its Lorentzian branches.  A fixed curved-reference scalar calculation could first test conformal fluctuation operators with stated boundary conditions.  Testing interior anisotropy requires independent metric variables, constraints and Weyl-active dynamics.  A thermodynamic-arrow claim additionally requires coarse graining and an entropy or correlation observable.  The sampling algorithm's Monte Carlo time is not cosmological time and cannot supply that arrow.
 
 \subsection{Why late-time acceleration is a separate matching problem}
 \label{sec:infrared-matching}
@@ -50,7 +66,7 @@ An exactly Friedmann--Lema\^{\i}tre--Robertson--Walker (FLRW) geometry is confor
 \subsection{Observational motivation: evolving dark energy or modified gravity?}
 \label{sec:dark-energy-motivation}
 
-Late-time observations provide a reason to develop this matching program without presupposing its outcome.  The DESI DR2 analysis reports a preference for an evolving equation of state over $\Lambda$CDM of $3.1\sigma$ for its BAO+CMB combination, and $2.8$--$4.2\sigma$ when different supernova samples are included~\cite{DESI:2025DR2}.  These statements concern specified datasets, likelihoods, and model comparisons.  They are not a detection of quadratic gravity.
+Late-time observations provide a reason to develop this matching program without presupposing its outcome.  The DESI DR2 analysis reports a preference for an evolving equation of state over $\Lambda$CDM of $3.1\sigma$ for its BAO+CMB combination, and $2.8$--$4.2\sigma$ when different supernova samples are included~\cite{DESI:2025DR2}.  These statements concern specified datasets, likelihoods, and model comparisons.  They are not a detection of quadratic gravity.  The July 2026 DESI DR2 Ly$\alpha$ full-shape/AP update reports $2.7\sigma$ for its DESI+CMB combination and $3.2\sigma$ with its supernova addition, while its high-redshift AP point is compatible with $\Lambda$CDM~\cite{DESI:2026AP}.  Those combinations differ from the 2025 BAO comparisons and must be named explicitly.  The update uses overlapping data and revised systematic treatment; its summaries must not be appended to the earlier BAO likelihood as independent measurements.
 
 The commonly used parametrization
 \begin{equation}
@@ -61,16 +77,8 @@ uses the cosmological scale factor $a_{\rm cos}$, distinct from the lattice spac
 
 Structure-growth measurements provide complementary information.  Hu--Sawicki $f(R)$ models illustrate how small changes to distance observables can accompany detectable changes to clustering~\cite{HuSawicki:2007}.  A DESI DR1 full-shape analysis explicitly tests their scale-dependent force signature and reports no evidence for a departure from general relativity within that model~\cite{Gonzalez:2026}.  The observational opportunity is to test distinguishability, including null results, rather than to presume that apparent dark-energy evolution selects a particular gravitational action.
 
-\subsection{The scalar sector as a sufficient first computational slice}
-\label{sec:scalar-vertical-slice}
-
-The immediate computational scope is a vertical slice through one interacting sector: a specified continuum action, a regulated ensemble, GPU sampling, renormalized observables, and independently reproducible conclusions.  The PS specialization of Holdom's scalar family provides this scope.  It is a toy model relative to the full gravitational field content, but its constrained interactions and perturbative benchmarks make it a substantive target in its own right.  Tensor simulations are not prerequisites for learning whether this scalar theory admits the proposed continuum behavior.
-
-Here ``sufficient'' refers to a defined scientific question.  Controlled scalar ensembles can establish numerical evidence for or against continuum scaling, test the predicted running, and expose discretization or sampling failures within the PS sector.  They cannot, by themselves, establish a physical probability interpretation, a complete quantum theory of gravity, or an explanation of dark energy.  Those limitations do not diminish a result whose claim is explicitly restricted to the scalar theory.
-
-We therefore separate the program into stages.  The first stage completes the scalar lattice calculation and its error budget.  A second stage would introduce and test a specified infrared or cosmological extension of that sector, if the first results and matching analysis justify it.  A later stage would address the remaining Weyl/tensor dynamics and coupled observables.  Increasing computational capability may enable the later stages, but additional hardware alone cannot supply their missing constraints, state prescription, or matching conditions.  Each stage must have its own independently useful question and completion criteria.
-
-For an initial GPU allocation, the priority is consequently scalar sampling across volumes, lattice spacings, and bare couplings, with validation and independent repeats.  AI assistance can be evaluated on this same calculation: reproducing benchmark analyses, proposing checked optimizations, and preserving the chain from an observable to its ensemble and code.  Any learned sampling proposal must preserve the target measure through a valid correction or demonstrate and quantify its bias.  Efficiency should be compared using effective independent samples per GPU-hour at fixed accuracy, including training and validation costs.  Cosmological inference and the full tensor theory are subsequent applications, not dependencies of this first allocation.
+\paragraph*{A related late-time proposal with different dynamics.}
+The literature also contains mechanisms outside a homogeneous $f(R)$ description.  Holdom studies negative-mass singularities in inhomogeneous, spatially closed solutions of the Einstein equations and argues that their contribution can favor positive acceleration~\cite{Holdom:2026NegativeMass}.  This is a classical Einstein-equation construction, not a derivation of evolving dark energy from the PS model.  Its retained singularities, global boundary conditions, stability and observational predictions require their own assessment.  It is useful here as a reminder to identify the actual equations behind a proposed mechanism rather than classify it by its author's other work.
 
 \subsection{A controlled comparison of cosmological models}
 \label{sec:cosmological-benchmark}
@@ -78,8 +86,6 @@ For an initial GPU allocation, the priority is consequently scalar sampling acro
 As a later observational slice, we propose a separate benchmark with three model families: general relativity with a cosmological constant; general relativity with a specified evolving-dark-energy prescription; and a viable metric $f(R)$ model with fully specified background and perturbation equations.  A Hu--Sawicki model would serve as an established modified-gravity control, not as an infrared prediction of the PS theory.  The evolving-dark-energy comparison must likewise state its perturbation prescription, including treatment of any $w=-1$ crossing; eq.~\eqref{eq:cpl-dark-energy} alone does not define it.
 
 The benchmark should first reproduce reference calculations, then assess parameter recovery on synthetic data with known generating models.  Expansion probes should be combined with growth or lensing information only through a likelihood that accounts for covariance and overlapping samples.  Model selection must retain prior dependence and distinguish a best-fit improvement from evidence averaged over parameter space.  When observables are degenerate, an inconclusive result is the correct outcome.
-
-Neural emulators or simulation-based inference could reduce the cost of repeated predictions~\cite{Cranmer:2020}.  Their evaluation would use withheld simulations, exact-solver spot checks, and tests of posterior calibration and false model preference under controlled systematic shifts.  Splits should separate independent realizations and reserve parameter regions for extrapolation tests.  Performance on a simulator's own output does not establish robustness to a different simulator or to the real sky.  Emulator error must enter the inference error budget, with its correlation structure assessed rather than replaced automatically by independent noise.
 
 \subsection{Requirements for a PS-derived cosmological prediction}
 \label{sec:ps-to-observations}
@@ -93,3 +99,32 @@ Connecting this benchmark to the present lattice calculation requires the staged
  \item Produce a distinguishing observable and confront it with observations and local-gravity bounds, propagating lattice, matching, theoretical, and observational uncertainties.
 \end{enumerate}
 These are proposed milestones, not results of this paper.  Recent quadratic-gravity work on the early universe~\cite{Liu:2026,Boyle:2026} supplies additional motivation, but its predictions cannot be transferred to late-time acceleration without the intervening calculation.  Neither a successful PS continuum limit nor a phenomenological $f(R)$ fit alone would validate the full QQG theory.
+
+\subsection{Falsifiable tests and the data-to-theory interface}
+\label{sec:observational-tests}
+
+The observational program should separate a phenomenological control from a prediction of a specified QQG completion.  For each test, the analysis record must contain the action and approximation, the predicted observable and its domain, the fixed data release and likelihood, nuisance parameters, and a decision rule.  Agreement with one compressed statistic cannot validate an action that predicts other, untested observables.
+
+\paragraph*{Late-time geometry and growth.}
+The first control compares $\Lambda$CDM, a fully specified evolving-dark-energy model, and a viable $f(R)$ model.  SDSS/eBOSS provides published BAO and redshift-space-distortion measurements and their covariance products~\cite{Alam:2021}.  DESI supplies complementary released cosmology products~\cite{DESI:2025DR2}; exact files and versions must be pinned before analysis.  Distinguish released cosmology summaries from access to the underlying survey spectra or catalogs.
+
+A useful geometry diagnostic is the Alcock--Paczynski combination
+\begin{equation}
+ F_{\rm AP}(z)=\frac{D_M(z)}{D_H(z)}
+ =\frac{D_M(z)/r_d}{D_H(z)/r_d},\qquad D_H(z)=\frac{c}{H(z)},
+ \label{eq:ap-diagnostic}
+\end{equation}
+where $D_M$ is the transverse comoving distance and $r_d$ the sound horizon at baryon drag.  The common sound-horizon factor cancels algebraically; covariance between the measured distances does not.  This cancellation does not erase modeling assumptions used to extract BAO distances.  Separate the question of expansion shape from sound-horizon calibration, especially when testing an early-universe extension.
+
+Growth provides a complementary check through clustering, lensing, and, where applicable, $f_g\sigma_8(z)$, with $f_g=\dd\ln D/\dd\ln a_{\rm cos}$ and $D$ the linear growth factor.  Growth summaries extracted under a reference gravity model need validation before reuse in a modified-gravity likelihood.  A full-shape calculation with the appropriate scale dependence is preferable when the compressed summary is inadequate; the DESI modified-gravity analysis provides a concrete example~\cite{Gonzalez:2026}.  Survey overlap and cross-covariance must be accounted for before combining SDSS and DESI or multiple supernova compilations.
+
+The falsifiable target is joint consistency: a model adjusted to fit distances must also predict acceptable growth over its stated scales.  Generate hidden synthetic observations from each competing model, including shared nuisance shifts, before examining the real-data comparison.  Report parameter coverage, false model preference, and the fraction of cases correctly judged indistinguishable.  Set detection thresholds and nuisance variations on pilot simulations; reserve independent simulations for confirmation.  This is a proposed statistical experiment, not a claim that the current PS calculation predicts late-time gravity.
+
+\paragraph*{Early-universe predictions closer to QQG.}
+Running-coupling inflation illustrates both the predictive opportunity and its assumptions.  The original Liu--Quintin--Afshordi scenario gives a tensor-to-scalar lower envelope near $r=0.01$~\cite{Liu:2026}.  Shinn identifies an Euler trace-anomaly obstruction to its proposed round Euclidean saddle for a specified conformal large-matter realization~\cite{Shinn:2026}.  A subsequent Liu--Afshordi analysis retains Gauss--Bonnet running and constructs a revised one-loop RG-improved saddle, reporting a lower envelope near $r=0.008$ in its allowed matter window~\cite{LiuAfshordi:2026}.  The follow-up changes the calculation that must be tested; its proposed resolution is not independently established here.
+
+A robust tensor upper bound below a scenario's lower envelope would challenge that scenario after its pivot, matter content, initial state, reheating, truncation and theoretical uncertainties have been specified.  Neither number is a universal lower bound for QQG.  This exchange also demonstrates why a term that is topological at fixed coupling can matter through its running and anomaly, even on a conformally flat background.
+
+Boyle, Turok, and Vaibhav relate dark-matter production and a relic graviton contribution to $N_{\rm eff}$ to quadratic-gravity couplings when the radiation era extends back to the bang~\cite{Boyle:2026}.  Testing this proposal requires its particle content, initial-state assumptions, thermal history, and joint coupling dependence.  A bound on extra radiation constrains the predicted region in that model; it is not a measurement of the PS coupling.  The scalar simulation must first supply an independently justified matching relation before it can be used in that inference.
+
+The first paper can therefore deliver the scalar observables and a reproducible specification of these observational tests.  Actual cosmological likelihood fits, bounds on tensor modes or $N_{\rm eff}$, and a matched QQG prediction remain separately identified future calculations.

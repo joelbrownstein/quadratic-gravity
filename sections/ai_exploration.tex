@@ -1,0 +1,56 @@
+\section{AI-assisted exploration of dark energy on cosmological scales}
+\label{sec:ai-exploration}
+
+\subsection{From a controlled scalar calculation to an observational question}
+
+The progression to the largest scales culminates in a computational question with an observable answer: how much can learned numerical methods reduce the cost of distinguishing evolving dark energy from modified gravity, at a controlled rate of false discovery?  The proposed outcome is a \emph{calibrated geometry--growth distinguishability frontier}: a map of where competing predictions can be separated at stated observational precision, and where they remain degenerate.  Such a map is useful before a PS-to-cosmology matching relation exists.  It becomes a test of QQG only when a specified completion supplies that relation.
+
+The three control families in section~\ref{sec:cosmological-benchmark} are $\Lambda$CDM, a fully specified $w_0w_a$ dark-energy model, and a viable $f(R)$ modification of gravity.  An equation of state alone does not define perturbations.  If the dark-energy control crosses $w=-1$, its solver must include a declared crossing prescription, such as the parameterized post-Friedmann construction of Fang, Hu and Lewis~\cite{FangHuLewis:2008}; this phenomenological prescription is not a derivation from the PS theory.  The modified-gravity control must specify its action, background approximation, screening treatment and perturbation solver.  Geometry-only and joint geometry--growth analyses then test whether models fitting the same distances predict distinguishable structure and lensing.
+
+Three uses of AI have different validation requirements.  A learned lattice proposal can accelerate sampling of a specified action.  A cosmological emulator can interpolate specified solver predictions.  A language-model agent can organize literature and executable workflows.  Their common contribution is to spend computation more effectively while retaining a reference calculation; none supplies an absent physical state or action-to-observable map.
+
+\subsection{A bridge through learned sampling, with the action retained}
+
+The scalar vertical slice offers a bounded first test of learned computation.  Normalizing-flow proposals corrected by a Metropolis step have been demonstrated in two-dimensional $\phi^4$ theory~\cite{Albergo:2019}.  For an independent proposal density $q_\psi(s)$ on the same zero-mean field subspace as the PS measure, the corresponding acceptance probability would be
+\begin{equation}
+ A(s,s')=\min\!\left[1,
+ \frac{e^{-S_{\rm lat}(s')}q_\psi(s)}
+ {e^{-S_{\rm lat}(s)}q_\psi(s')}\right].
+\label{eq:learned-ps-proposal}
+\end{equation}
+The density must be evaluable with respect to that subspace's measure and have support wherever the target has support.  A frozen, corrected proposal preserves the intended stationary distribution; this does not guarantee adequate exploration in a finite run.  Validated HMC therefore remains the first baseline, with independent starts, free-field checks and the observables of appendix~\ref{app:observables}.
+
+Transfer from a scalar theory with a potential to the noncompact, shift-symmetric four-derivative PS theory remains untested here.  Flow studies also find rapidly increasing training costs toward the continuum~\cite{DelDebbio:2021}.  Any proposed gain must consequently be measured as effective independent samples for specified observables per total cost, including training and unsuccessful trials, at matched errors.  Acceptance alone is insufficient.  A negative amortized-cost result would delimit the useful method without invalidating the scalar physics program.
+
+\subsection{Cosmological emulation and inference checked against solvers}
+
+CosmoPower-JAX and the broader CosmoPower framework provide working precedents for accelerated inference, extended-model training and native-solver fallback outside a trained domain~\cite{PirasMancini:2023,Jense:2024}.  For modified gravity, e-MANTIS emulates the nonlinear matter-power boost relative to $\Lambda$CDM within a restricted Hu--Sawicki $f(R)$ parameter domain~\cite{SaezCasares:2023}.  Its boost must be combined with a baseline spectrum and its errors; it is not a general QQG emulator.  Published speedups or accuracy figures cannot be transferred to a new theory, likelihood or GPU without measurement.
+
+For each control, a reference solver must produce $H(z)$, $D_M(z)$ and the required matter or lensing spectra over declared ranges.  The first pilot uses synthetic summary data with a fixed selection, joint covariance and nuisance model; a compressed likelihood is admissible only within its validated model range.  It can begin with linear scales and established solvers.  Nonlinear emulation and survey-volume simulations enter only when a stated observable and error budget require them.  Training, development and confirmation sets separate realizations, with parameter regions reserved to probe interpolation limits.  Held-out solver residuals, their correlations and selected independent solver comparisons enter the numerical error budget.  Out-of-domain requests trigger a reference calculation or a declared failure.
+
+Prior-predictive simulation-based calibration checks posterior computation under its assumed generative model~\cite{Talts:2018}.  Fixed-truth injections and, for learned posterior approximations, local diagnostics such as L-C2ST address errors that global checks can miss~\cite{Linhart:2023}.  Finite diagnostic power must be assessed; a passing test is not proof of exactness.  Nuisance shifts and alternative simulation prescriptions separately probe misspecification.  Calibration on a simulator's own output cannot establish that the simulator describes the sky.
+
+Posterior recovery and model comparison require distinct checks.  Piras et al.\ demonstrate accelerated evidence estimation against nested-sampling comparisons in simulated cosmic-shear analyses~\cite{Piras:2024}; an evidence estimator still requires its own validation and prior-sensitivity analysis.  Lee's single-probe mock ensembles illustrate why displaced dark-energy posterior medians need not imply exclusion of $\Lambda$CDM~\cite{Lee:2026Null}.  Their single-probe conclusions do not calibrate a joint geometry--growth likelihood.  The proposed experiment therefore measures false preference using the complete analysis and its cross-probe covariance.
+
+\subsection{A finite-budget distinguishability experiment}
+
+Bayesian emulator optimization has targeted useful new cosmological simulations~\cite{Rogers:2019}, while multi-fidelity emulation combines low- and high-resolution calculations~\cite{Ho:2022}.  These precedents motivate, rather than establish, a saving for model discrimination.  Here the adaptive rule targets uncertainty in the boundary between distinguishable and degenerate models, instead of only refining a posterior within one family.
+
+Let $\mathcal D_{\mathcal B}(d)$ be the frozen decision pipeline at computational budget $\mathcal B$, returning one of the three families or an inconclusive decision.  Its recovery probability for a generating model $M$ is
+\begin{equation}
+ \pi_M(\theta;\mathcal B)
+ =\Pr_{d\sim p_M(d\mid\theta)}
+ \left[\mathcal D_{\mathcal B}(d)=M\right],
+\label{eq:ai-recovery-power}
+\end{equation}
+where $\theta$ includes the declared nuisance truth.  A frontier is a contour of this probability at a prespecified target power.  It is reported separately for geometry-only and joint data, with Monte Carlo uncertainty, rather than equating a good distance fit with successful discrimination.  Improved computation may approach the information limit of the chosen observations; it cannot remove a physical degeneracy.
+
+Before confirmation, the pilot freezes model priors, parameter ranges, scale cuts, evidence or decision statistic, false-preference tolerance and target power.  Development null ensembles calibrate the probability of selecting \emph{either} alternative under $\Lambda$CDM, including the tested nuisance grid.  Separate hidden nulls and alternative-model injections assess that calibration and equation~\eqref{eq:ai-recovery-power}; finite grids do not establish uniform control outside their tested range.  Nonconverged and out-of-domain cases remain reported outcomes, not silently discarded realizations.
+
+The primary methodological hypothesis is that adaptive training reaches a prespecified frontier accuracy at lower total measured cost than a space-filling design, at matched calibration.  Both methods use the same initial information, allowed solvers and confirmation set; acquisition, retraining, failed runs and solver fallback count toward cost.  Development points may adapt, while confirmation truths and random realizations remain sealed.  A reference-solver analysis of a prespecified subset checks the final inference, including difficult boundary regions.  No saving, degraded calibration, or unstable frontiers falsify the proposed computational advantage.  No numerical outcome is asserted here.
+
+\subsection{Resource stages and an auditable scientific result}
+
+The first resource stage remains the scalar pilot of section~\ref{sec:gpu-scope}; a learned proposal is an optional comparison after HMC validation.  A separately costed cosmological stage establishes solver timings, reusable-emulator suitability, calibration and the frontier experiment.  Training and inference GPU-hours, CPU core-hours, memory, wall time and reference-solver counts must be reported separately, together with the number of repeated analyses needed to amortize setup.  A larger allocation follows measured bottlenecks and an explicit accuracy requirement.  The present draft supplies neither a hardware speedup nor an allocation-hour estimate.
+
+Agent orchestration requires its own evidence.  ReplicationBench documents conceptual and execution failures in expert-designed astrophysics replication tasks~\cite{Ye:2025}; its benchmark scores do not evaluate numerical emulators or establish a ceiling on future research.  Here each quantitative claim must connect to retained inputs, solver and data versions, source hashes, seeds, settings and executable analysis outputs.  An independent rerun checks the reported tables and figures, and the author evaluates the physics.  The crescendo is thus an attainable scientific product: a reproducible account of which cosmological alternatives the observations can distinguish, how reliable that conclusion is, and how much computation it costs.  A future QQG matching calculation can then turn that infrastructure into a theory-specific test.

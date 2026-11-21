@@ -1,0 +1,100 @@
+\section{Black holes, Euclidean geometry, and singularity resolution}
+\label{sec:black-holes}
+
+Between the ultraviolet scalar calculation and the cosmological applications lies the strong-curvature problem of compact objects.  Euclidean methods supply powerful tools for defining states and thermodynamic quantities, but a regular Euclidean saddle and a resolved Lorentzian singularity are different claims.  This section separates those claims and specifies a later black-hole research stage.  No black-hole solution, collapse calculation, or singularity-resolution result is reported here.
+
+\subsection{What the Hartle--Hawking construction establishes}
+\label{sec:hartle-hawking}
+
+Hartle and Hawking derived black-hole radiance through analytic continuation of particle propagation on a Schwarzschild background~\cite{HartleHawking:1976}.  Gibbons and Hawking related gravitational actions on suitable sections of complexified spacetime to partition functions and entropy~\cite{GibbonsHawking:1977}.  These results demonstrate that Euclidean geometry can encode physical thermal information without integrating through the Lorentzian curvature singularity.
+
+For an uncharged, nonrotating black hole, define $r_h=2GM$ and $f(r)=1-r_h/r$.  The standard positive-definite section is
+\begin{equation}
+ \dd s_E^2=f(r)\dd\tau^2+\frac{\dd r^2}{f(r)}+r^2\dd\Omega_2^2,
+ \qquad r\geq r_h.
+ \label{eq:euclidean-schwarzschild}
+\end{equation}
+Near $r=r_h$, set $r-r_h=\rho^2/(4r_h)$.  To leading order,
+\begin{equation}
+ \dd s_E^2\simeq\dd\rho^2+\frac{\rho^2}{4r_h^2}\dd\tau^2
+ +r_h^2\dd\Omega_2^2.
+ \label{eq:euclidean-bolt}
+\end{equation}
+The radial--time plane is smooth at its origin when
+\begin{equation}
+ \tau\sim\tau+\beta_H,\qquad
+ \beta_H=4\pi r_h=8\pi GM,\qquad T_H=\beta_H^{-1},
+ \label{eq:hawking-period}
+\end{equation}
+in units $\hbar=c=k_B=1$.  This removes a conical defect at the horizon.  It does not smooth the central singularity: $r=0$ is not part of this Euclidean manifold.  Its usual topology is $\mathbb{R}^2\times S^2$, with the thermal circle closing at a two-sphere of finite area.  Extending the same real expression to $r<r_h$ makes both its radial and time terms negative; that is not a positive-definite Euclidean interior.
+
+The equilibrium Hartle--Hawking state should also be distinguished from a state describing an isolated object formed by collapse and evaporating into empty space.  Further state and boundary conditions are needed for that problem.  The Hartle--Hawking no-boundary wave function~\cite{HartleHawking:1983}, which integrates over compact geometries with a prescribed three-boundary in a cosmological setting, is a related but distinct proposal.  It is not a theorem that every black-hole interior is replaced by a smooth Euclidean cap.
+
+\subsection{Curvature tests that the scalar sector cannot replace}
+\label{sec:black-hole-curvature}
+
+An explicit counterexample prevents an overstatement about curvature-squared corrections.  Away from $r=0$, Schwarzschild obeys
+\begin{equation}
+ R_{\mu\nu}=0,\qquad R=0,\qquad
+ C_{\mu\nu\rho\sigma}C^{\mu\nu\rho\sigma}
+ =R_{\mu\nu\rho\sigma}R^{\mu\nu\rho\sigma}
+ =\frac{48G^2M^2}{r^6}.
+ \label{eq:schwarzschild-curvature}
+\end{equation}
+For the local, constant-coefficient Einstein--Hilbert+$R^2$+$C^2$ theory with $\Lambda=0$, the Ricci-flat Schwarzschild geometry remains a vacuum solution.  The $R^2$ variation vanishes there, and Einstein metrics have vanishing Bach tensor, the bulk field equation from Weyl-squared gravity.  Higher-derivative gravity also admits additional static black-hole branches~\cite{Lu:2015}; their existence does not remove the singular Schwarzschild branch or establish which geometry collapse or a quantum state selects.  Held and Zhang find a long-wavelength linear instability on both known spherical black-hole branches below their critical intersection radius~\cite{HeldZhang:2023}.  Branch existence, perturbative stability and a nonlinear endpoint therefore remain separate questions.
+
+Equation~\eqref{eq:schwarzschild-curvature} is especially important for the PS program.  A vanishing Ricci scalar does not imply weak tidal curvature.  Four-dimensional Schwarzschild is not conformally flat, despite its spherical symmetry, so it is absent from the configuration space in eq.~\eqref{eq:conformal-metric}.  The PS simulation cannot diagnose its Weyl singularity.  Unlike the FLRW background considered below, a black-hole geometry therefore tests a sector discarded by the present restriction.  This is a scope boundary, not a reason to defer the independently useful scalar calculation.
+
+\subsection{Euclidean states require a measure, contour, and boundary problem}
+\label{sec:euclidean-state-problem}
+
+A schematic quantum amplitude has the form
+\begin{equation}
+ Z[\mathcal{B}]=\int_{\mathcal{C}(\mathcal{B})}\mathcal{D}g\,
+ \mathcal{D}\varphi\;e^{-I_E[g,\varphi]},
+ \label{eq:black-hole-amplitude}
+\end{equation}
+where $\mathcal{B}$ specifies boundary and state data, $\mathcal{C}$ an integration contour and admissible geometries, and $I_E$ includes the required boundary terms.  Gauge fixing, its measure, and renormalization are part of its definition.  Higher-derivative actions require a boundary variational problem appropriate to their additional data; the Einstein--Hilbert boundary term alone cannot be assumed sufficient.
+
+The conformal-factor problem of Euclidean Einstein gravity already shows why a formal Wick rotation is not a definition of a convergent quantum theory~\cite{GibbonsHawkingPerry:1978}.  Separately, the negative fluctuation mode of the Euclidean Schwarzschild saddle in the standard asymptotically flat thermal analysis shows that a regular saddle need not define a stable canonical equilibrium~\cite{GrossPerryYaffe:1982}.  Neither issue is settled for full QQG by positivity of the restricted PS action.  Conversely, the scalar theory offers a controlled setting in which to examine specified Euclidean observables before attempting the larger state problem.
+
+Thermodynamic checks must use the same action as the proposed solution.  For a local diffeomorphism-invariant Lagrangian scalar $\mathcal{L}(g,R_{\mu\nu\rho\sigma})$ without derivatives of curvature and a stationary bifurcate horizon, the classical Wald expression is
+\begin{equation}
+ S_{\rm W}=-2\pi\int_{\mathcal{H}}\dd^2x\sqrt{h}\,
+ \frac{\partial\mathcal{L}}{\partial R_{\mu\nu\rho\sigma}}
+ \epsilon_{\mu\nu}\epsilon_{\rho\sigma},
+ \qquad \epsilon_{\mu\nu}\epsilon^{\mu\nu}=-2.
+ \label{eq:wald-entropy}
+\end{equation}
+Here $\mathcal{H}$ is the bifurcation surface and $h$ its induced metric determinant.  Curvature-squared terms can change the entropy from the Einstein value $A/(4G)$~\cite{Wald:1993}.  Recovering temperature or a first law is a consistency check, not a demonstration of a regular interior or a unitary evaporation process.
+
+\subsection{Alternative interiors, horizonless objects, and black mirrors}
+\label{sec:alternative-interiors}
+
+Different proposals change different parts of the problem.  Holdom and Ren's matter-supported 2-2-hole solutions of quadratic gravity are horizonless and closely approximate a Schwarzschild exterior.  Their original construction retains a timelike curvature singularity~\cite{HoldomRen:2017}.  Horizon avoidance and a modified interior must therefore not be equated with elimination of singular curvature.
+
+Tzanavaris, Boyle, and Turok propose a topologically different black-mirror completion with CPT-related exteriors and bounded curvature, motivated by CPT-symmetric path-integral boundary conditions~\cite{Tzanavaris:2024}.  Their construction is not merely the usual Euclidean Schwarzschild section with a new name, nor is it a prediction derived from the PS lattice action.  The authors explicitly identify unavoidable zeros in metric eigenvalues at the joining horizon, with poles in the inverse metric.  Bounded curvature in their construction thus does not establish a conventional everywhere-nondegenerate Lorentzian geometry.  Testing its admissibility in QQG requires the full higher-derivative variational problem at that joining surface and a definition of fluctuations and propagation there.  This offers a specific alternative to investigate, rather than a universal conclusion that black-hole interiors do not exist.
+
+A directly QQG-motivated complex-interior proposal is the powerball construction of Liu, Quintin and Afshordi~\cite{LiuPowerballs:2025}.  Their exact complex power-law solutions of pure quadratic gravity are matched to Schwarzschild-like exteriors through an effective interface, with Lorentzian and Euclidean sides.  The action uses a specified complex contour avoiding a branch cut and singularity.  Their section 6.2 also shows that the contour violates the Kontsevich--Segal metric-allowability criterion for arbitrary real matter fields and discusses possible restrictions or weakenings of that criterion.  This gives a concrete candidate and a concrete admissibility question; it does not demonstrate a universally regular quantum interior.
+
+\subsection{What would count as singularity resolution?}
+\label{sec:singularity-resolution-criteria}
+
+Classical singularity theorems establish geodesic incompleteness under stated geometric, causal, and focusing assumptions~\cite{Penrose:1965}; curvature divergence is not their universal definition of a singularity.  A proposed resolution should therefore state what replaces the failed description.  We distinguish two possible targets: a regular, physically admissible spacetime extension; or a quantum description in which amplitudes and physical observables remain predictive even where no classical metric is adequate.
+
+For either target, a credible calculation must specify:
+\begin{enumerate}
+ \item \emph{Dynamics and selection.}  Derive the replacement from the stated action and boundary/state prescription, and explain its relation to collapse data.  Existence of one regular ansatz is not evidence that it is generically selected.
+ \item \emph{Geometric or quantum regularity.}  Test tidal observables and causal extendibility when a metric description applies; otherwise identify renormalized physical observables and show that their evolution or amplitudes need no arbitrary extra prescription at the former singular locus.
+ \item \emph{Boundary and junction consistency.}  Verify the constraints and matching conditions, including possible distributional sources, degenerate surfaces, or complex regions.  Specify the continuation to physical observables rather than assuming that a Euclidean region is traversed in ordinary proper time.
+ \item \emph{Control and robustness.}  Demonstrate regulator independence and stability within a defined regime, including perturbations outside the ansatz.  Finite bare lattice curvature at one cutoff is insufficient.
+ \item \emph{Recovery of known physics.}  Check the exterior limit, state-dependent radiation, and applicable thermodynamic identities.  Treat information recovery and the endpoint of evaporation as additional questions unless explicitly calculated.
+\end{enumerate}
+These are proposed assessment criteria, not a claimed theorem.  An in-principle resolution could replace an incomplete classical interior by predictive quantum dynamics or an admissible alternative saddle.  Smooth Euclidean horizon geometry establishes neither outcome on its own.  The present scalar study supplies a bounded first test of ultraviolet dynamics; it does not yet answer the full black-hole singularity question.  Sections~\ref{sec:no-boundary-arrow} and \ref{sec:interior-cosmology} develop the complementary question of predictive quantum histories and the precise nonrotating interior--cosmology correspondence.
+
+\subsection{A later strong-curvature computational stage}
+\label{sec:black-hole-stage}
+
+After the flat-background PS benchmarks, a tractable intermediate extension would study a conformal field on a fixed reference geometry $\bar g_{\mu\nu}$ with $g_{\mu\nu}=e^{2\lambda\sigma}\bar g_{\mu\nu}$.  This changes the action and boundary problem and requires a new discretization; existing periodic flat-lattice ensembles are not black-hole ensembles.  Fixed-background calculations could test specified scalar correlators or fluctuation operators near a Euclidean horizon, while leaving the nonconformal geometry nondynamical.
+
+A subsequent calculation would retain the independent metric functions and constraints needed for a spherical strong-curvature geometry, reproduce known classical branches, and test candidate continuations.  Spherical symmetry reduces computational cost but does not imply Weyl flatness or eliminate all effects of the extra sector.  Full collapse, nonspherical stability, and evaporation require further stages.  This ordering preserves the scalar-first allocation's completion criteria while making the path toward compact objects and then cosmology explicit.

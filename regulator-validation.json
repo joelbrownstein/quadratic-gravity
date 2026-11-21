@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "scope": "deterministic stencil checks only; no interacting ensemble",
+  "N": 4,
+  "dimensions": 4,
+  "directions_checked": 32,
+  "maximum_relative_force_error": 4.065759839910754e-09,
+  "maximum_relative_shift_error": 0.0,
+  "free_bilaplacian_eigenvalue_error": 7.105427357601002e-15,
+  "minimum_action_to_bound_ratio": 16.986118754259145
+}

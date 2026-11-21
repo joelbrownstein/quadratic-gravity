@@ -1,0 +1,36 @@
+\section{Classical quadratic gravity beyond Einstein--Hilbert}
+\label{sec:classical-gravity}
+
+\subsection{An additional power of curvature and an independent tensor sector}
+
+The first step is classical: extend the Einstein--Hilbert action by terms quadratic in curvature.  The simplest example adds $R^2$ to the term linear in $R$.  General curvature-squared gravity also contains an independent tensor-curvature invariant.  In four dimensions a convenient Lorentzian bulk basis, with signature $(-,+,+,+)$ and $\hbar=c=1$, is
+\begin{equation}
+ S_{\rm QG}=\int\dd^4x\sqrt{-g}\left[
+ \frac{M_{\rm Pl}^2}{2}(R-2\Lambda)+\alpha R^2
+ +\beta C_{\mu\nu\rho\sigma}C^{\mu\nu\rho\sigma}\right]+S_{\rm m},
+ \label{eq:qg-cosmological-action}
+\end{equation}
+where $M_{\rm Pl}^{-2}=8\pi G$ and $C_{\mu\nu\rho\sigma}$ is the Weyl tensor.  The coefficients $\alpha$ and $\beta$ are dimensionless.  Quadratic here refers to curvature, not to a truncation at second order in metric perturbations: the curvature-squared terms contain nonlinear interactions and generically fourth derivatives in the metric equations~\cite{Stelle:1978,Salvio:2018}.
+
+The four-dimensional Euler identity relates the alternative Ricci- and Riemann-squared basis to this one:
+\begin{equation}
+ E_4=R_{\mu\nu\rho\sigma}R^{\mu\nu\rho\sigma}
+ -4R_{\mu\nu}R^{\mu\nu}+R^2,
+ \qquad C^2=E_4+2R_{\mu\nu}R^{\mu\nu}-\frac23R^2.
+ \label{eq:quadratic-basis}
+\end{equation}
+A constant coefficient of $E_4$ does not alter the local bulk equations in four dimensions, with the appropriate boundary treatment.  It can matter for topology and thermodynamics.  Its quantum running and the Euler trace anomaly must also be retained when relevant; removing a constant topological term from classical bulk equations is not a license to remove it from every quantum question.
+
+The $R+R^2$ subclass supplies a scalar-curvature extension and a well-studied route to inflation~\cite{Starobinsky:1980,DeFeliceTsujikawa:2010}.  It does not supply the independent Weyl sector of generic QQG.  Likewise, a scalar--tensor representation of metric $f(R)$ requires an invertible curvature-to-scalar relation on the chosen branch; it is not an equivalence to generic $R^2+C^2$ gravity.  Pure $R^2$ gravity, with no Einstein term, is a further distinct case.
+
+\subsection{What lies beyond Newton's constant?}
+
+For generic nondegenerate coefficients about flat space with an Einstein term, the massless graviton is accompanied by a massive scalar and a massive spin-two excitation.  The latter has the problematic propagator residue.  Special coefficients can remove a mode or change the constraints~\cite{Stelle:1978}.  Thus specifying $G$ alone does not specify even the linear response of the extended theory.
+
+For real positive additional pole masses $m_0,m_2$, the static linearized potential of a point source takes the familiar form
+\begin{equation}
+ \Phi(r)=-\frac{GM}{r}\left[1+\frac13e^{-m_0r}
+ -\frac43e^{-m_2r}\right].
+ \label{eq:quadratic-newtonian-limit}
+\end{equation}
+This exhibits two additional response scales controlled by the curvature couplings~\cite{Stelle:1978,Salvio:2018}.  It is a weak-field result on that mass branch, not a solution for a nonlinear black-hole interior.  In particular, cancellation of the leading $1/r$ term as $r\to0$ in this approximation does not establish geodesic completeness, bounded nonlinear curvature, or quantum singularity resolution.  Compact-object solutions require the separate analysis in section~\ref{sec:black-holes}.

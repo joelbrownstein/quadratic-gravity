@@ -1,4 +1,34 @@
-\section{Observables and analysis protocol}
+\section{Proposed observables and confirmatory analysis}
 \label{app:observables}
 
-[Define all estimators, binning procedures, autocorrelation analyses, fit criteria, and uncertainty propagation conventions.]
+\subsection{Free prediction and interaction diagnostics}
+
+With unitary Fourier normalization $\widetilde s(p)=V^{-1/2}\sum_n e^{-ip\cdot n}s_n$ and $p_\mu=2\pi k_\mu/N$, the free candidate action predicts
+\begin{equation}
+ \langle|\widetilde s(p)|^2\rangle_0=\frac{1}{(\widehat p^2)^2},
+ \qquad\widehat p^2=4\sum_\mu\sin^2(p_\mu/2),\qquad p\ne0.
+ \label{eq:free-lattice-prediction}
+\end{equation}
+The excluded constant mode must not be restored by assigning it a finite propagator.  Compare momentum orientations separately before shell averaging to expose cutoff anisotropy.  Measure action density, two-point functions, and the connected correlator of $B_n$, retaining the composite-operator renormalization needed for a continuum interpretation.
+
+For a finite-volume coupling, a candidate is the amputated three-point vertex at fixed nonexceptional momentum geometry, normalized by the vertex obtained by differentiating the cubic term of eq.~\eqref{eq:proposed-lattice-action}.  Include a two-point wavefunction normalization in the same prescription so that $\lambda_R=\lambda_0$ at tree level.  Freeze the momenta, amputation, contact-term treatment, and normalization after perturbative validation.  If the estimator is too noisy or has no usable scaling window, report that failure rather than substitute an unvalidated coupling.
+
+\subsection{Step scaling and conditional predictions}
+
+Set $u(L)=\lambda_R^2(L)$.  For each $N$, tune bare parameters to a fixed $u(L)=u$, measure at extent $2L$ with the same spacing, and define $\Sigma(u,1/N)=u(2L)$.  A continuum step-scaling function requires extrapolation $\sigma(u)=\lim_{N\to\infty}\Sigma(u,1/N)$ with the relevant tuning and fixed momentum prescription.  The proposed lattice sizes $N=8,12,16$ paired with $2N$ are starting points subject to pilot cost and autocorrelation measurements; they are not an executed ensemble grid.
+
+If the matched continuum beta function is $\mu\,\dd\lambda_R/\dd\mu=-b_0\lambda_R^3+\cdots$, with $b_0>0$, then weak coupling predicts
+\begin{equation}
+ \frac{1}{u(2L)}=\frac{1}{u(L)}-2b_0\ln2+\cdots,
+ \qquad\sigma(u)=u+2b_0u^2\ln2+\cdots.
+ \label{eq:step-scaling-prediction}
+\end{equation}
+The sign is an immediate test: an asymptotically free coupling grows toward larger physical distances.  Match normalization and renormalization scheme before importing loop coefficients.  Higher-loop comparison requires the corresponding scheme conversion and precision; agreement at a few weak-coupling points does not independently verify a six-loop coefficient.  Nor does it prove a continuum limit without the scaling and tuning checks.
+
+The continuum calculation explicitly connects the PS model and the tree-level probability study, and gives its perturbative coupling map in sections 5 and 6 of ref.~\cite{Anderson:2026}.  This resolves an identification left unverified in an abstract-only literature review.  It does not equate differently contoured nonperturbative measures.  Reflection-positivity failure for the elementary free higher-derivative propagator is a known obstruction to an automatic positive-Hilbert-space reconstruction~\cite{Arici:2018}.  Reduced-dimensional Hamiltonian calculations can test a separately specified state prescription~\cite{Holdom:2024Ghosts}, but their spectrum cannot be declared the four-dimensional PS spectrum.
+
+\subsection{Uncertainty, independence, and stop conditions}
+
+Use independent chains and record thermalization criteria, acceptance, reversibility defects, and integrated autocorrelation estimates for each principal observable.  Block resampling at scales supported by autocorrelation diagnostics and propagate correlations through tuning, ratios, vertex fits, and continuum extrapolations.  Assess stability under fit ranges and additional volumes.  A nominal $N^{-2}$ cutoff ansatz is a candidate for a smooth reflection-symmetric regulator, not a substitute for testing logarithms or untuned relevant operators.
+
+Separate code-validation predictions, perturbative predictions, and new nonperturbative measurements in every table.  Stop a confirmatory claim if independent starts disagree, autocorrelation estimates are unresolved, coupling tuning fails, or acceptable extrapolations are unstable.  Label the outcome inconclusive when the available volumes do not resolve the continuum behavior.  Report effective independent samples per GPU-hour including setup and any training cost; no allocation size or speedup is a prediction of the field theory.

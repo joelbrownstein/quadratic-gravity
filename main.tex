@@ -7,12 +7,12 @@
 
 \title{Nonperturbative Tests of the Perfect-Square Theory: A Conformally Flat Sector of Quadratic Quantum Gravity}
 
-% Replace the placeholders below before circulation or submission.
+% Authorship is retained as supplied by the author.
 \author{Joel R.\ Brownstein}
 \affiliation{Department of Physics and Astronomy, University of Utah, 270 S.\ 1400 E.\ \#E2108, Salt Lake City, UT 84112, USA}
 \emailAdd{joelbrownstein@physics.utah.edu}
 
-\abstract{Quadratic gravity provides a renormalizable and asymptotically free candidate for ultraviolet completion of gravity, but its higher-derivative degrees of freedom require a careful treatment of states with indefinite norm.  The perfect-square four-derivative scalar theory is the conformally flat limit of quadratic gravity, retaining a single interacting local scale degree of freedom while decoupling gravitons.  This article develops a reproducible nonperturbative program for this sector.  We define a Euclidean lattice discretization that preserves the perfect-square structure, benchmark its weak-coupling behavior against perturbative predictions, and outline numerical tests of the continuum limit, finite-volume scaling, and stability.  We distinguish these tests from a prospective cosmological matching program comparing evolving dark energy with modified gravity.  [Replace this draft abstract with results before submission.]}
+\abstract{Classical curvature-squared gravity extends Einstein--Hilbert dynamics, while its quantum formulation introduces independent dimensionless couplings and a perturbative renormalization program.  We use this progression to motivate a controlled study of interacting higher-derivative sectors before attempting the full metric theory.  We develop a research program for its perfect-square conformal scalar setting, distinguishing perturbative results, regulator-level statements, and planned measurements.  A candidate periodic lattice action preserves the square structure and admits an elementary finite-lattice integrability bound after removal of the constant mode.  We specify free-field and running-coupling benchmarks, sampling checks, counterterm questions, and continuum-extrapolation criteria.  The parent theory then organizes a progression to Euclidean black-hole states, compact-object solution branches, and cosmological tests of expansion, growth, and selected early-universe scenarios, followed by a separately scoped AI-assisted dark-energy benchmark.  These applications require additional state prescriptions and matching calculations; no interacting production ensembles, singularity-resolution proof, or cosmological parameter constraints are reported.  The resulting framework defines an independently useful scalar calculation and identifies the evidence required for each subsequent physical claim.}
 
 \keywords{quantum gravity, higher derivative gravity, lattice field theory, renormalization group}
 
@@ -21,10 +21,14 @@
 \flushbottom
 
 \input{sections/introduction}
+\input{sections/classical_gravity}
+\input{sections/parent_theory}
 \input{sections/model}
 \input{sections/numerics}
-\input{sections/results}
+\input{sections/predictions}
+\input{sections/black_holes}
 \input{sections/cosmology}
+\input{sections/ai_exploration}
 \input{sections/conclusions}
 
 \appendix
@@ -33,7 +37,7 @@
 \input{sections/cosmological_identities}
 
 \acknowledgments
-% Add computational allocations, collaborators, and funding information here.
+AI tools assisted literature discovery and drafting during development of this research design.  Their output is not treated as primary scientific evidence.  Source verification and responsibility for the submitted manuscript remain with the author.  No computational allocation or funding award is claimed here.
 
 \bibliographystyle{JHEP}
 \bibliography{references}

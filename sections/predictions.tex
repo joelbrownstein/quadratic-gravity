@@ -1,0 +1,22 @@
+\section{Predictions and numerical decision criteria}
+\label{sec:results}
+
+This section distinguishes predictions available before simulation from the new measurements the program is designed to obtain.  It replaces a results placeholder; interacting results will be reported only after the validation and analysis protocol is executed.
+
+\subsection{Known structure and new regulator-level statements}
+
+The perturbative literature supplies running-coupling benchmarks and the PS relation~\cite{Holdom:2023,Holdom:2024,Anderson:2026}.  The candidate regulator in appendix~\ref{app:lattice-action} adds an explicit finite-volume measure and an elementary coercivity bound.  Equation~\eqref{eq:free-lattice-prediction} and the derivative force in eq.~\eqref{eq:lattice-force} are deterministic checks of that definition, not discoveries from an interacting ensemble.  Agreement with these checks is a prerequisite for sampling.
+
+\subsection{Conditional predictions with informative failure modes}
+
+Three questions organize production analysis.  First, after a coupling definition and scheme matching are fixed, does weak-coupling step scaling have the sign and magnitude expected from asymptotic freedom?  Equation~\eqref{eq:step-scaling-prediction} gives the leading conditional prediction.  A mismatch requires separating normalization, tuning, and cutoff effects before interpreting it as a failure of the target theory.
+
+Second, can renormalized vertices recover the PS relation consistently across regulators?  Start with the square-preserving action but allow the symmetry-allowed operators listed in appendix~\ref{app:lattice-action}.  A bare square is not an independent test of its own renormalized Ward identity.  Any claimed restoration must specify the common scheme and the precision with which regulator-dependent violations disappear.
+
+Third, are correlation functions and fitted scaling quantities stable as volume and lattice resolution increase?  Persistence of a fit over a small range supplies evidence within that range, not a proof of a unique continuum theory.  Failure to thermalize, unresolved autocorrelation, or unstable extrapolation is an informative limit on the calculation and should be reported as such.
+
+\subsection{A bounded first deliverable}
+
+The first deliverable consists of a reference action and force, pilot ensembles with independent starts, the chosen finite-volume coupling, a perturbative matching calculation, and a measured uncertainty-and-cost budget.  Scale to paired volumes only after those gates pass.  Reduced-dimensional Hamiltonian work is a parallel conceptual cross-check with separately specified states, not a prerequisite for the initial Euclidean measurement and not a substitute for four-dimensional evidence~\cite{Holdom:2024Ghosts,Arici:2018}.
+
+Each later results table should retain the exact bare parameters, lattice sizes, effective sample sizes, tuning uncertainty, and analysis revision.  This makes the scalar stage assessable on its own terms before the following sections widen the physical setting to compact objects and the universe.

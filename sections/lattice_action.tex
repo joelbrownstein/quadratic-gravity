@@ -1,4 +1,49 @@
-\section{Lattice action}
+\section{Proposed lattice action and finite-volume definition}
 \label{app:lattice-action}
 
-[Define the lattice derivatives, boundary conditions, bare coupling convention, and action used in the simulations.  Include enough information to reconstruct the code implementation.]
+The following prescription defines a candidate regulator for the scalar study; production sampling has not been performed.  Let $n$ label a periodic $N^4$ lattice, with $V=N^4$ sites, physical extent $L=Na$, and real dimensionless field $s_n=\sigma(an)$.  Use dimensionless operators
+\begin{align}
+ (\Delta s)_n&=\sum_{\mu=1}^4(s_{n+\hat\mu}+s_{n-\hat\mu}-2s_n),\\
+ q_n&=\frac12\sum_{\mu=1}^4\left[(s_{n+\hat\mu}-s_n)^2+(s_{n-\hat\mu}-s_n)^2\right],\\
+ B_n&=(\Delta s)_n+\lambda_0 q_n,\qquad S_{\rm lat}=\frac12\sum_n B_n^2.
+ \label{eq:proposed-lattice-action}
+\end{align}
+Both operators approach their continuum counterparts with the appropriate factors of $a^2$ for smooth fields; those factors cancel the four-volume factor in four dimensions.  The symmetric definition of $q_n$ preserves lattice-axis reflections and permutations as well as field-shift invariance.  The proposed measure is the flat measure on the subspace $\sum_n s_n=0$.  This removes the noncompact constant mode and makes no assertion about a full gravitational functional measure.
+
+\subsection{A finite-lattice coercivity check}
+\label{app:coercivity}
+
+For this particular stencil, telescoping and discrete integration by parts give
+\begin{align}
+ \sum_n\Delta s_n&=0,\qquad Q\equiv\sum_n q_n=-\sum_n s_n\Delta s_n,\\
+ Q&\geq\widehat p_{\min}^{\,2}\sum_n s_n^2,
+ \qquad\widehat p_{\min}^{\,2}=4\sin^2(\pi/N).
+\end{align}
+Consequently, for real nonzero $\lambda_0$, Cauchy--Schwarz implies
+\begin{equation}
+ S_{\rm lat}\geq\frac{(\sum_n B_n)^2}{2V}
+ =\frac{\lambda_0^2 Q^2}{2V}
+ \geq\frac{\lambda_0^2\widehat p_{\min}^{\,4}}{2V}
+ \left(\sum_n s_n^2\right)^2.
+ \label{eq:finite-lattice-bound}
+\end{equation}
+For $\lambda_0=0$, the zero-mode constraint instead gives the Gaussian bound
+$S_{\rm lat}\geq\widehat p_{\min}^{\,4}\sum_n s_n^2/2$.
+These elementary bounds establish integrability of this finite-dimensional, fixed-volume measure.  They do not prove a continuum or infinite-volume limit: the constants deteriorate as $N$ increases.  Positivity of a generic square would not suffice for this argument; the nonnegative gradient stencil and telescoping Laplacian are essential.  The bound should not be transferred to another discretization or contour without a new proof.
+
+\subsection{Force and regulator dependence}
+
+The HMC force follows by differentiating the stated action.  Writing $m=n\pm\hat\mu$ for nearest neighbors,
+\begin{equation}
+ \frac{\partial S_{\rm lat}}{\partial s_n}
+ =(\Delta B)_n+\lambda_0\sum_{m\sim n}(B_n+B_m)(s_n-s_m).
+ \label{eq:lattice-force}
+\end{equation}
+It has zero sum, consistent with the shift symmetry.  Finite-difference force checks and the nonzero-momentum free eigenvalues are deterministic implementation checks, not interacting-ensemble results.
+
+Algebraic preservation of the square does not establish the continuum Ward identity.  A comparison regulator and a symmetry-allowed counterterm analysis are required.  A useful enlarged local basis is
+\begin{equation}
+ S_{\rm gen}=\sum_n\left[\frac{Z_4}{2}(\Delta s_n)^2
+ +g_3(\Delta s_n)q_n+g_4 q_n^2+\frac{c_2}{2}q_n\right].
+\end{equation}
+The candidate PS action has $(Z_4,g_3,g_4,c_2)=(1,\lambda_0,\lambda_0^2/2,0)$.  The two-derivative operator is allowed by lattice shift symmetry and may require tuning; its absence from the bare square must not be assumed to establish its absence from a matched effective action.  The stability region must be checked for every deformed action used in a scan.  Renormalized coupling relations are to be compared in a common scheme rather than inferred from bare coefficients alone.
