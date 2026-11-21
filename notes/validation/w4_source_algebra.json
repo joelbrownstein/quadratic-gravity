@@ -1,0 +1,9 @@
+{
+  "null_source_from_W3": "exact identity; all three remaining wave rows consistent",
+  "radial_source_per_kappa_E_Y00_phase": "2*(mu**2*r + 2*I*omega)/(r*(r - 2)*(mu**4*r**3 + 2*mu**2*r - 4*mu**2 + 4*omega**2*r))",
+  "Wronskian_r": "D/(r^5 F), up to a constant",
+  "Wronskian_tortoise": "D/r^5, up to the same constant",
+  "AGP_equation_35_mapping": "equals F^2 times radial source after stripping 4 sqrt(pi) E; symmetric Fourier prefactor must be handled separately",
+  "horizon_forcing_coefficient": "1/[16 (mu^2-i omega)]",
+  "passed": true
+}

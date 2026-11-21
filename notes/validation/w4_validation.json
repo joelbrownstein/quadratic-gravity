@@ -1,0 +1,433 @@
+{
+  "gate": "W4 initial null-infall monopole benchmark",
+  "full_W4_complete": false,
+  "versions": {
+    "python": "3.11.16",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1"
+  },
+  "solver_sha256": "525c23a22707ebaa0ac7e6248ab59797d21f8d1f7bb42799a12226f8cbdfc992",
+  "algebra": {
+    "null_source_from_W3": "exact identity; all three remaining wave rows consistent",
+    "radial_source_per_kappa_E_Y00_phase": "2*(mu**2*r + 2*I*omega)/(r*(r - 2)*(mu**4*r**3 + 2*mu**2*r - 4*mu**2 + 4*omega**2*r))",
+    "Wronskian_r": "D/(r^5 F), up to a constant",
+    "Wronskian_tortoise": "D/r^5, up to the same constant",
+    "AGP_equation_35_mapping": "equals F^2 times radial source after stripping 4 sqrt(pi) E; symmetric Fourier prefactor must be handled separately",
+    "horizon_forcing_coefficient": "1/[16 (mu^2-i omega)]",
+    "passed": true
+  },
+  "series": [
+    {
+      "omega": 0.55,
+      "r": 200.0,
+      "homogeneous_scaled_residual": 4.4197143039937844e-14,
+      "forced_tail_relative_residual": 2.7917642495238904e-10
+    },
+    {
+      "omega": 0.55,
+      "r": 400.0,
+      "homogeneous_scaled_residual": 4.228388472693467e-17,
+      "forced_tail_relative_residual": 1.3553006926232751e-13
+    },
+    {
+      "omega": 0.55,
+      "r": 800.0,
+      "homogeneous_scaled_residual": 6.942281208919283e-18,
+      "forced_tail_relative_residual": 1.2305631429234692e-16
+    },
+    {
+      "omega": 0.7,
+      "r": 200.0,
+      "homogeneous_scaled_residual": 7.850462293418876e-17,
+      "forced_tail_relative_residual": 1.3114390237479452e-08
+    },
+    {
+      "omega": 0.7,
+      "r": 400.0,
+      "homogeneous_scaled_residual": 2.7755575615628914e-17,
+      "forced_tail_relative_residual": 6.387199945652789e-12
+    },
+    {
+      "omega": 0.7,
+      "r": 800.0,
+      "homogeneous_scaled_residual": 2.7758963540648015e-17,
+      "forced_tail_relative_residual": 3.1480309409924117e-15
+    },
+    {
+      "omega": 1.0,
+      "r": 200.0,
+      "homogeneous_scaled_residual": 2.2228841655759984e-16,
+      "forced_tail_relative_residual": 1.3652957415501451e-06
+    },
+    {
+      "omega": 1.0,
+      "r": 400.0,
+      "homogeneous_scaled_residual": 3.3307142486596306e-16,
+      "forced_tail_relative_residual": 6.65692896721187e-10
+    },
+    {
+      "omega": 1.0,
+      "r": 800.0,
+      "homogeneous_scaled_residual": 8.673617379884035e-19,
+      "forced_tail_relative_residual": 3.2490452141239787e-13
+    }
+  ],
+  "numerical": {
+    "points": [
+      {
+        "mu": 0.44,
+        "omega": 0.484,
+        "runs": [
+          {
+            "settings": {
+              "outer": 200.0,
+              "order": 6,
+              "tail_order": 10,
+              "left": -25.0,
+              "rtol": 2e-10
+            },
+            "outgoing": [
+              -0.0010179820391354511,
+              -0.00042843228958122827
+            ],
+            "K_at_r25": [
+              -1.1638812183007612e-05,
+              0.00013892990178396145
+            ],
+            "Wronskian_relative_error": 2.9071064304701954e-10
+          },
+          {
+            "settings": {
+              "outer": 400.0,
+              "order": 8,
+              "tail_order": 14,
+              "left": -35.0,
+              "rtol": 2e-11
+            },
+            "outgoing": [
+              -0.0010179820359167396,
+              -0.00042843229082295927
+            ],
+            "K_at_r25": [
+              -1.1638812206766472e-05,
+              0.00013892990184326
+            ],
+            "Wronskian_relative_error": 5.4378442900155665e-11
+          },
+          {
+            "settings": {
+              "outer": 800.0,
+              "order": 10,
+              "tail_order": 16,
+              "left": -40.0,
+              "rtol": 5e-12
+            },
+            "outgoing": [
+              -0.0010179820358480198,
+              -0.0004284322908788271
+            ],
+            "K_at_r25": [
+              -1.1638812208571118e-05,
+              0.00013892990184433877
+            ],
+            "Wronskian_relative_error": 4.061422099467455e-11
+          }
+        ],
+        "shooting_outgoing": [
+          -0.001017982036083309,
+          -0.0004284322905482258
+        ],
+        "final_refinement_relative_change": 8.018749530541876e-11,
+        "independent_method_relative_difference": 2.9089638185888975e-10
+      },
+      {
+        "mu": 0.5,
+        "omega": 0.55,
+        "runs": [
+          {
+            "settings": {
+              "outer": 200.0,
+              "order": 6,
+              "tail_order": 10,
+              "left": -25.0,
+              "rtol": 2e-10
+            },
+            "outgoing": [
+              -0.00037316239509117377,
+              -0.00014966147079927922
+            ],
+            "K_at_r25": [
+              5.845360404549327e-05,
+              4.3603137528160674e-06
+            ],
+            "Wronskian_relative_error": 4.376768541425963e-10
+          },
+          {
+            "settings": {
+              "outer": 400.0,
+              "order": 8,
+              "tail_order": 14,
+              "left": -35.0,
+              "rtol": 2e-11
+            },
+            "outgoing": [
+              -0.00037316239851259317,
+              -0.00014966147167913937
+            ],
+            "K_at_r25": [
+              5.845360398994041e-05,
+              4.3603138223498584e-06
+            ],
+            "Wronskian_relative_error": 7.267031454386179e-11
+          },
+          {
+            "settings": {
+              "outer": 800.0,
+              "order": 10,
+              "tail_order": 16,
+              "left": -40.0,
+              "rtol": 5e-12
+            },
+            "outgoing": [
+              -0.00037316239848572653,
+              -0.00014966147170319838
+            ],
+            "K_at_r25": [
+              5.845360399108893e-05,
+              4.3603138233714225e-06
+            ],
+            "Wronskian_relative_error": 3.7444678068069973e-11
+          }
+        ],
+        "shooting_outgoing": [
+          -0.000373162398509304,
+          -0.0001496614715610359
+        ],
+        "final_refinement_relative_change": 8.97004217149387e-11,
+        "independent_method_relative_difference": 2.9386297100550974e-10
+      },
+      {
+        "mu": 0.5,
+        "omega": 0.7,
+        "runs": [
+          {
+            "settings": {
+              "outer": 200.0,
+              "order": 6,
+              "tail_order": 10,
+              "left": -25.0,
+              "rtol": 2e-10
+            },
+            "outgoing": [
+              -1.1318132902196495e-05,
+              -2.967927512899997e-05
+            ],
+            "K_at_r25": [
+              -1.4150596793375159e-05,
+              6.14856134477245e-05
+            ],
+            "Wronskian_relative_error": 5.318485607331556e-10
+          },
+          {
+            "settings": {
+              "outer": 400.0,
+              "order": 8,
+              "tail_order": 14,
+              "left": -35.0,
+              "rtol": 2e-11
+            },
+            "outgoing": [
+              -1.1318130329735488e-05,
+              -2.9679275042997084e-05
+            ],
+            "K_at_r25": [
+              -1.4150596451517106e-05,
+              6.148561359603735e-05
+            ],
+            "Wronskian_relative_error": 1.9042815891913869e-10
+          },
+          {
+            "settings": {
+              "outer": 800.0,
+              "order": 10,
+              "tail_order": 16,
+              "left": -40.0,
+              "rtol": 5e-12
+            },
+            "outgoing": [
+              -1.131813032581324e-05,
+              -2.9679275042450988e-05
+            ],
+            "K_at_r25": [
+              -1.41505964520005e-05,
+              6.148561359644351e-05
+            ],
+            "Wronskian_relative_error": 2.365287996049478e-10
+          }
+        ],
+        "shooting_outgoing": [
+          -1.1318130366687522e-05,
+          -2.9679275024651177e-05
+        ],
+        "final_refinement_relative_change": 1.246715121818031e-10,
+        "independent_method_relative_difference": 1.2988115155893414e-09
+      },
+      {
+        "mu": 0.5,
+        "omega": 1.0,
+        "runs": [
+          {
+            "settings": {
+              "outer": 200.0,
+              "order": 6,
+              "tail_order": 10,
+              "left": -25.0,
+              "rtol": 2e-10
+            },
+            "outgoing": [
+              -1.789506806904456e-07,
+              -2.9773974236223606e-07
+            ],
+            "K_at_r25": [
+              3.942423482486355e-05,
+              -3.557754880806326e-05
+            ],
+            "Wronskian_relative_error": 1.1671944324189076e-09
+          },
+          {
+            "settings": {
+              "outer": 400.0,
+              "order": 8,
+              "tail_order": 14,
+              "left": -35.0,
+              "rtol": 2e-11
+            },
+            "outgoing": [
+              -1.7895575265489168e-07,
+              -2.9775014086667904e-07
+            ],
+            "K_at_r25": [
+              3.942423546500976e-05,
+              -3.557755535166554e-05
+            ],
+            "Wronskian_relative_error": 5.518891488733038e-10
+          },
+          {
+            "settings": {
+              "outer": 800.0,
+              "order": 10,
+              "tail_order": 16,
+              "left": -40.0,
+              "rtol": 5e-12
+            },
+            "outgoing": [
+              -1.7895575233591723e-07,
+              -2.977501409919991e-07
+            ],
+            "K_at_r25": [
+              3.942423546561613e-05,
+              -3.557755535176615e-05
+            ],
+            "Wronskian_relative_error": 5.703193953920607e-10
+          }
+        ],
+        "shooting_outgoing": [
+          -1.7895575339980927e-07,
+          -2.9775014120489167e-07
+        ],
+        "final_refinement_relative_change": 9.865247096443772e-10,
+        "independent_method_relative_difference": 2.3549894468391487e-09
+      },
+      {
+        "mu": 0.6,
+        "omega": 0.84,
+        "runs": [
+          {
+            "settings": {
+              "outer": 200.0,
+              "order": 6,
+              "tail_order": 10,
+              "left": -25.0,
+              "rtol": 2e-10
+            },
+            "outgoing": [
+              -2.044114304491219e-06,
+              -3.7024566682126096e-06
+            ],
+            "K_at_r25": [
+              -2.53528535744541e-05,
+              -1.942609757096914e-05
+            ],
+            "Wronskian_relative_error": 4.5221094933786407e-10
+          },
+          {
+            "settings": {
+              "outer": 400.0,
+              "order": 8,
+              "tail_order": 14,
+              "left": -35.0,
+              "rtol": 2e-11
+            },
+            "outgoing": [
+              -2.0441132823220857e-06,
+              -3.702456631391327e-06
+            ],
+            "K_at_r25": [
+              -2.5352853576797572e-05,
+              -1.9426097487475944e-05
+            ],
+            "Wronskian_relative_error": 2.2418329162921059e-10
+          },
+          {
+            "settings": {
+              "outer": 800.0,
+              "order": 10,
+              "tail_order": 16,
+              "left": -40.0,
+              "rtol": 5e-12
+            },
+            "outgoing": [
+              -2.044113281264513e-06,
+              -3.7024566314669583e-06
+            ],
+            "K_at_r25": [
+              -2.5352853576809925e-05,
+              -1.9426097487788255e-05
+            ],
+            "Wronskian_relative_error": 2.510893516133118e-10
+          }
+        ],
+        "shooting_outgoing": [
+          -2.0441132865137722e-06,
+          -3.7024566285809574e-06
+        ],
+        "final_refinement_relative_change": 2.50699951111385e-10,
+        "independent_method_relative_difference": 1.1932659459233962e-09
+      }
+    ],
+    "sourced_ODE_relative_residual": 6.245140309856738e-07,
+    "sharp_cutoff_r200_relative_amplitude_error_at_omega1": 0.8788906588171106
+  },
+  "band_benchmark": {
+    "mu": 0.5,
+    "extraction_radius": 200.0,
+    "frequency_band": [
+      0.52,
+      1.0
+    ],
+    "frequency_step": 0.002,
+    "coarse_frequency_step": 0.004,
+    "tukey_alpha": 0.25,
+    "time_range": [
+      -200.0,
+      1200.0
+    ],
+    "waveform_quadrature_relative_L2_difference": 0.0002224235217061955,
+    "signed_energy_in_sampled_band_over_E2": -2.660779198569589e-08,
+    "max_Wronskian_relative_error": 7.018822619144502e-10,
+    "outgoing_amplitude_units": "per kappa E Y00*; raw Fourier transform",
+    "waveform_scope": "above-threshold tapered band only; excludes subthreshold response and omitted continuum bands",
+    "flux_scope": "AGP Eq.(58) convention conversion; not an independent stress-energy derivation"
+  },
+  "initial_benchmark_passed": true
+}

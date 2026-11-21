@@ -1,0 +1,842 @@
+{
+  "gate": "W3",
+  "units": "GM=1, exp(-i omega t)",
+  "operator_sha256": "359d7e20b9645e5b20295ff755d1abab5584a80e8ba31cb909c5fc5b95d2f1a0",
+  "versions": {
+    "python": "3.11.16",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0"
+  },
+  "source": {
+    "stress_conservation": "exact symbolic zero (time, radial); angular components identically zero",
+    "trace_and_fixed_energy_null_limit": "exact symbolic identities",
+    "source_implementation_max_relative_error": 4.709936252723796e-16,
+    "GR_Zerilli_Regge_Wheeler_intertwining": "exact symbolic identity; applies to massless sector only"
+  },
+  "compact_equations": "all seven compact equations agree exactly with the coordinate-derived operator",
+  "local_checks": [
+    {
+      "ell": 0,
+      "r": 2.3,
+      "source": "vacuum",
+      "equation_residual": 7.743857108697773e-14,
+      "condition_number": 868.6694615263348,
+      "eliminated_rank": 10,
+      "retained_second_order_channels": 1,
+      "jet_derivative_relative_residual": 2.8908823177280166e-11,
+      "source_jet_derivative_scaled_residual": 0.0,
+      "AGP_monopole_coefficient_relative_error": 8.953146480095047e-15
+    },
+    {
+      "ell": 0,
+      "r": 2.3,
+      "source": "null",
+      "equation_residual": 7.743879220644558e-14,
+      "condition_number": 868.6694615263348,
+      "eliminated_rank": 10,
+      "retained_second_order_channels": 1,
+      "jet_derivative_relative_residual": 2.8908823177280166e-11,
+      "source_jet_derivative_scaled_residual": 1.3643135082275952e-11,
+      "AGP_monopole_coefficient_relative_error": 8.953146480095047e-15
+    },
+    {
+      "ell": 0,
+      "r": 2.3,
+      "source": "massive",
+      "equation_residual": 7.743875188501154e-14,
+      "condition_number": 868.6694615263348,
+      "eliminated_rank": 10,
+      "retained_second_order_channels": 1,
+      "jet_derivative_relative_residual": 2.8908823177280166e-11,
+      "source_jet_derivative_scaled_residual": 1.3771869682977686e-11,
+      "AGP_monopole_coefficient_relative_error": 8.953146480095047e-15
+    },
+    {
+      "ell": 0,
+      "r": 4.0,
+      "source": "vacuum",
+      "equation_residual": 2.97493772279343e-15,
+      "condition_number": 21.408685788560984,
+      "eliminated_rank": 10,
+      "retained_second_order_channels": 1,
+      "jet_derivative_relative_residual": 4.288270394236272e-12,
+      "source_jet_derivative_scaled_residual": 0.0,
+      "AGP_monopole_coefficient_relative_error": 3.0984006676493336e-15
+    },
+    {
+      "ell": 0,
+      "r": 4.0,
+      "source": "null",
+      "equation_residual": 2.9749378377897815e-15,
+      "condition_number": 21.408685788560984,
+      "eliminated_rank": 10,
+      "retained_second_order_channels": 1,
+      "jet_derivative_relative_residual": 4.288270394236272e-12,
+      "source_jet_derivative_scaled_residual": 1.0168696819627164e-14,
+      "AGP_monopole_coefficient_relative_error": 3.0984006676493336e-15
+    },
+    {
+      "ell": 0,
+      "r": 4.0,
+      "source": "massive",
+      "equation_residual": 2.9749378633477026e-15,
+      "condition_number": 21.408685788560984,
+      "eliminated_rank": 10,
+      "retained_second_order_channels": 1,
+      "jet_derivative_relative_residual": 4.288270394236272e-12,
+      "source_jet_derivative_scaled_residual": 6.002451592154779e-15,
+      "AGP_monopole_coefficient_relative_error": 3.0984006676493336e-15
+    },
+    {
+      "ell": 0,
+      "r": 11.0,
+      "source": "vacuum",
+      "equation_residual": 2.2732924790079785e-15,
+      "condition_number": 17.02701050657332,
+      "eliminated_rank": 10,
+      "retained_second_order_channels": 1,
+      "jet_derivative_relative_residual": 7.458984992989835e-12,
+      "source_jet_derivative_scaled_residual": 0.0,
+      "AGP_monopole_coefficient_relative_error": 8.887542154634023e-16
+    },
+    {
+      "ell": 0,
+      "r": 11.0,
+      "source": "null",
+      "equation_residual": 2.273292479080234e-15,
+      "condition_number": 17.02701050657332,
+      "eliminated_rank": 10,
+      "retained_second_order_channels": 1,
+      "jet_derivative_relative_residual": 7.458984992989835e-12,
+      "source_jet_derivative_scaled_residual": 3.2575115282128624e-16,
+      "AGP_monopole_coefficient_relative_error": 8.887542154634023e-16
+    },
+    {
+      "ell": 0,
+      "r": 11.0,
+      "source": "massive",
+      "equation_residual": 2.2732924790491353e-15,
+      "condition_number": 17.02701050657332,
+      "eliminated_rank": 10,
+      "retained_second_order_channels": 1,
+      "jet_derivative_relative_residual": 7.458984992989835e-12,
+      "source_jet_derivative_scaled_residual": 2.8835434098158337e-16,
+      "AGP_monopole_coefficient_relative_error": 8.887542154634023e-16
+    },
+    {
+      "ell": 1,
+      "r": 2.3,
+      "source": "vacuum",
+      "equation_residual": 3.138111904382425e-14,
+      "condition_number": 851.6624133268155,
+      "eliminated_rank": 14,
+      "retained_second_order_channels": 2,
+      "jet_derivative_relative_residual": 1.5263909360815277e-11,
+      "source_jet_derivative_scaled_residual": 0.0
+    },
+    {
+      "ell": 1,
+      "r": 2.3,
+      "source": "null",
+      "equation_residual": 3.138118375583194e-14,
+      "condition_number": 851.6624133268155,
+      "eliminated_rank": 14,
+      "retained_second_order_channels": 2,
+      "jet_derivative_relative_residual": 1.5263909360815277e-11,
+      "source_jet_derivative_scaled_residual": 3.984534429274412e-12
+    },
+    {
+      "ell": 1,
+      "r": 2.3,
+      "source": "massive",
+      "equation_residual": 3.13812110588692e-14,
+      "condition_number": 851.6624133268155,
+      "eliminated_rank": 14,
+      "retained_second_order_channels": 2,
+      "jet_derivative_relative_residual": 1.5263909360815277e-11,
+      "source_jet_derivative_scaled_residual": 3.935862492297839e-12
+    },
+    {
+      "ell": 1,
+      "r": 4.0,
+      "source": "vacuum",
+      "equation_residual": 1.2883498361979925e-15,
+      "condition_number": 20.12263474147743,
+      "eliminated_rank": 14,
+      "retained_second_order_channels": 2,
+      "jet_derivative_relative_residual": 1.0563041604079154e-11,
+      "source_jet_derivative_scaled_residual": 0.0
+    },
+    {
+      "ell": 1,
+      "r": 4.0,
+      "source": "null",
+      "equation_residual": 1.2883498588397723e-15,
+      "condition_number": 20.12263474147743,
+      "eliminated_rank": 14,
+      "retained_second_order_channels": 2,
+      "jet_derivative_relative_residual": 1.0563041604079154e-11,
+      "source_jet_derivative_scaled_residual": 1.3360836762661988e-14
+    },
+    {
+      "ell": 1,
+      "r": 4.0,
+      "source": "massive",
+      "equation_residual": 1.2883498515733483e-15,
+      "condition_number": 20.12263474147743,
+      "eliminated_rank": 14,
+      "retained_second_order_channels": 2,
+      "jet_derivative_relative_residual": 1.0563041604079154e-11,
+      "source_jet_derivative_scaled_residual": 1.2916539342423832e-14
+    },
+    {
+      "ell": 1,
+      "r": 11.0,
+      "source": "vacuum",
+      "equation_residual": 1.930065275820162e-15,
+      "condition_number": 16.804949350834356,
+      "eliminated_rank": 14,
+      "retained_second_order_channels": 2,
+      "jet_derivative_relative_residual": 1.6718657847703262e-11,
+      "source_jet_derivative_scaled_residual": 0.0
+    },
+    {
+      "ell": 1,
+      "r": 11.0,
+      "source": "null",
+      "equation_residual": 1.9300652758485393e-15,
+      "condition_number": 16.804949350834356,
+      "eliminated_rank": 14,
+      "retained_second_order_channels": 2,
+      "jet_derivative_relative_residual": 1.6718657847703262e-11,
+      "source_jet_derivative_scaled_residual": 3.56061292517542e-16
+    },
+    {
+      "ell": 1,
+      "r": 11.0,
+      "source": "massive",
+      "equation_residual": 1.9300652758502054e-15,
+      "condition_number": 16.804949350834356,
+      "eliminated_rank": 14,
+      "retained_second_order_channels": 2,
+      "jet_derivative_relative_residual": 1.6718657847703262e-11,
+      "source_jet_derivative_scaled_residual": 3.6193153193405907e-16
+    },
+    {
+      "ell": 2,
+      "r": 2.3,
+      "source": "vacuum",
+      "equation_residual": 3.9822981530863606e-14,
+      "condition_number": 956.1707717357662,
+      "eliminated_rank": 15,
+      "retained_second_order_channels": 3,
+      "jet_derivative_relative_residual": 8.170897169913157e-12,
+      "source_jet_derivative_scaled_residual": 0.0,
+      "AGP_G_row_relative_error": 1.7147994457843276e-15
+    },
+    {
+      "ell": 2,
+      "r": 2.3,
+      "source": "null",
+      "equation_residual": 3.98229826947124e-14,
+      "condition_number": 956.1707717357662,
+      "eliminated_rank": 15,
+      "retained_second_order_channels": 3,
+      "jet_derivative_relative_residual": 8.170897169913157e-12,
+      "source_jet_derivative_scaled_residual": 7.485921209042876e-13,
+      "AGP_G_row_relative_error": 1.7147994457843276e-15
+    },
+    {
+      "ell": 2,
+      "r": 2.3,
+      "source": "massive",
+      "equation_residual": 3.982298405314914e-14,
+      "condition_number": 956.1707717357662,
+      "eliminated_rank": 15,
+      "retained_second_order_channels": 3,
+      "jet_derivative_relative_residual": 8.170897169913157e-12,
+      "source_jet_derivative_scaled_residual": 6.791654874095627e-13,
+      "AGP_G_row_relative_error": 1.7147994457843276e-15
+    },
+    {
+      "ell": 2,
+      "r": 4.0,
+      "source": "vacuum",
+      "equation_residual": 2.422617355443554e-15,
+      "condition_number": 17.45687859202116,
+      "eliminated_rank": 15,
+      "retained_second_order_channels": 3,
+      "jet_derivative_relative_residual": 4.683575773445933e-12,
+      "source_jet_derivative_scaled_residual": 0.0,
+      "AGP_G_row_relative_error": 9.770346299606676e-16
+    },
+    {
+      "ell": 2,
+      "r": 4.0,
+      "source": "null",
+      "equation_residual": 2.4226173573603842e-15,
+      "condition_number": 17.45687859202116,
+      "eliminated_rank": 15,
+      "retained_second_order_channels": 3,
+      "jet_derivative_relative_residual": 4.683575773445933e-12,
+      "source_jet_derivative_scaled_residual": 3.2094582041319045e-15,
+      "AGP_G_row_relative_error": 9.770346299606676e-16
+    },
+    {
+      "ell": 2,
+      "r": 4.0,
+      "source": "massive",
+      "equation_residual": 2.4226173570247874e-15,
+      "condition_number": 17.45687859202116,
+      "eliminated_rank": 15,
+      "retained_second_order_channels": 3,
+      "jet_derivative_relative_residual": 4.683575773445933e-12,
+      "source_jet_derivative_scaled_residual": 3.749350172591255e-15,
+      "AGP_G_row_relative_error": 9.770346299606676e-16
+    },
+    {
+      "ell": 2,
+      "r": 11.0,
+      "source": "vacuum",
+      "equation_residual": 2.031273706717543e-15,
+      "condition_number": 14.927190987119445,
+      "eliminated_rank": 15,
+      "retained_second_order_channels": 3,
+      "jet_derivative_relative_residual": 1.0016124446789686e-11,
+      "source_jet_derivative_scaled_residual": 0.0,
+      "AGP_G_row_relative_error": 1.7652672125507568e-15
+    },
+    {
+      "ell": 2,
+      "r": 11.0,
+      "source": "null",
+      "equation_residual": 2.031273706725657e-15,
+      "condition_number": 14.927190987119445,
+      "eliminated_rank": 15,
+      "retained_second_order_channels": 3,
+      "jet_derivative_relative_residual": 1.0016124446789686e-11,
+      "source_jet_derivative_scaled_residual": 3.1278563506375874e-16,
+      "AGP_G_row_relative_error": 1.7652672125507568e-15
+    },
+    {
+      "ell": 2,
+      "r": 11.0,
+      "source": "massive",
+      "equation_residual": 2.0312737067218184e-15,
+      "condition_number": 14.927190987119445,
+      "eliminated_rank": 15,
+      "retained_second_order_channels": 3,
+      "jet_derivative_relative_residual": 1.0016124446789686e-11,
+      "source_jet_derivative_scaled_residual": 3.396721930726996e-16,
+      "AGP_G_row_relative_error": 1.7652672125507568e-15
+    },
+    {
+      "ell": 3,
+      "r": 2.3,
+      "source": "vacuum",
+      "equation_residual": 6.049920747554165e-14,
+      "condition_number": 1175.2539110170376,
+      "eliminated_rank": 15,
+      "retained_second_order_channels": 3,
+      "jet_derivative_relative_residual": 3.890818097127998e-12,
+      "source_jet_derivative_scaled_residual": 0.0,
+      "AGP_G_row_relative_error": 8.68435207201086e-15
+    },
+    {
+      "ell": 3,
+      "r": 2.3,
+      "source": "null",
+      "equation_residual": 6.04992075291657e-14,
+      "condition_number": 1175.2539110170376,
+      "eliminated_rank": 15,
+      "retained_second_order_channels": 3,
+      "jet_derivative_relative_residual": 3.890818097127998e-12,
+      "source_jet_derivative_scaled_residual": 1.9407918887402104e-13,
+      "AGP_G_row_relative_error": 8.68435207201086e-15
+    },
+    {
+      "ell": 3,
+      "r": 2.3,
+      "source": "massive",
+      "equation_residual": 6.049920759896701e-14,
+      "condition_number": 1175.2539110170376,
+      "eliminated_rank": 15,
+      "retained_second_order_channels": 3,
+      "jet_derivative_relative_residual": 3.890818097127998e-12,
+      "source_jet_derivative_scaled_residual": 1.998769702662432e-13,
+      "AGP_G_row_relative_error": 8.68435207201086e-15
+    },
+    {
+      "ell": 3,
+      "r": 4.0,
+      "source": "vacuum",
+      "equation_residual": 3.487534787820633e-15,
+      "condition_number": 19.6362928737309,
+      "eliminated_rank": 15,
+      "retained_second_order_channels": 3,
+      "jet_derivative_relative_residual": 4.7095906171928435e-12,
+      "source_jet_derivative_scaled_residual": 0.0,
+      "AGP_G_row_relative_error": 1.0009655142523066e-14
+    },
+    {
+      "ell": 3,
+      "r": 4.0,
+      "source": "null",
+      "equation_residual": 3.487534788012603e-15,
+      "condition_number": 19.6362928737309,
+      "eliminated_rank": 15,
+      "retained_second_order_channels": 3,
+      "jet_derivative_relative_residual": 4.7095906171928435e-12,
+      "source_jet_derivative_scaled_residual": 2.6422169630180453e-15,
+      "AGP_G_row_relative_error": 1.0009655142523066e-14
+    },
+    {
+      "ell": 3,
+      "r": 4.0,
+      "source": "massive",
+      "equation_residual": 3.4875347880588744e-15,
+      "condition_number": 19.6362928737309,
+      "eliminated_rank": 15,
+      "retained_second_order_channels": 3,
+      "jet_derivative_relative_residual": 4.7095906171928435e-12,
+      "source_jet_derivative_scaled_residual": 2.2525391567970116e-15,
+      "AGP_G_row_relative_error": 1.0009655142523066e-14
+    },
+    {
+      "ell": 3,
+      "r": 11.0,
+      "source": "vacuum",
+      "equation_residual": 2.4469038064733e-15,
+      "condition_number": 12.88555179242058,
+      "eliminated_rank": 15,
+      "retained_second_order_channels": 3,
+      "jet_derivative_relative_residual": 1.0346636552345806e-11,
+      "source_jet_derivative_scaled_residual": 0.0,
+      "AGP_G_row_relative_error": 8.446138144517507e-15
+    },
+    {
+      "ell": 3,
+      "r": 11.0,
+      "source": "null",
+      "equation_residual": 2.446903806473746e-15,
+      "condition_number": 12.88555179242058,
+      "eliminated_rank": 15,
+      "retained_second_order_channels": 3,
+      "jet_derivative_relative_residual": 1.0346636552345806e-11,
+      "source_jet_derivative_scaled_residual": 2.567681262420411e-16,
+      "AGP_G_row_relative_error": 8.446138144517507e-15
+    },
+    {
+      "ell": 3,
+      "r": 11.0,
+      "source": "massive",
+      "equation_residual": 2.4469038064741516e-15,
+      "condition_number": 12.88555179242058,
+      "eliminated_rank": 15,
+      "retained_second_order_channels": 3,
+      "jet_derivative_relative_residual": 1.0346636552345806e-11,
+      "source_jet_derivative_scaled_residual": 2.447303373297523e-16,
+      "AGP_G_row_relative_error": 8.446138144517507e-15
+    },
+    {
+      "ell": 4,
+      "r": 2.3,
+      "source": "vacuum",
+      "equation_residual": 2.8142094512258957e-13,
+      "condition_number": 1491.0052820192668,
+      "eliminated_rank": 15,
+      "retained_second_order_channels": 3,
+      "jet_derivative_relative_residual": 5.2116055534964425e-12,
+      "source_jet_derivative_scaled_residual": 0.0,
+      "AGP_G_row_relative_error": 1.2590785613364678e-15
+    },
+    {
+      "ell": 4,
+      "r": 2.3,
+      "source": "null",
+      "equation_residual": 2.814209451482388e-13,
+      "condition_number": 1491.0052820192668,
+      "eliminated_rank": 15,
+      "retained_second_order_channels": 3,
+      "jet_derivative_relative_residual": 5.2116055534964425e-12,
+      "source_jet_derivative_scaled_residual": 1.1526773159243212e-13,
+      "AGP_G_row_relative_error": 1.2590785613364678e-15
+    },
+    {
+      "ell": 4,
+      "r": 2.3,
+      "source": "massive",
+      "equation_residual": 2.8142094513984096e-13,
+      "condition_number": 1491.0052820192668,
+      "eliminated_rank": 15,
+      "retained_second_order_channels": 3,
+      "jet_derivative_relative_residual": 5.2116055534964425e-12,
+      "source_jet_derivative_scaled_residual": 1.519112833536422e-13,
+      "AGP_G_row_relative_error": 1.2590785613364678e-15
+    },
+    {
+      "ell": 4,
+      "r": 4.0,
+      "source": "vacuum",
+      "equation_residual": 5.81351253212198e-15,
+      "condition_number": 25.09360194061835,
+      "eliminated_rank": 15,
+      "retained_second_order_channels": 3,
+      "jet_derivative_relative_residual": 3.2906855763112794e-12,
+      "source_jet_derivative_scaled_residual": 0.0,
+      "AGP_G_row_relative_error": 6.303498943589865e-14
+    },
+    {
+      "ell": 4,
+      "r": 4.0,
+      "source": "null",
+      "equation_residual": 5.813512532151165e-15,
+      "condition_number": 25.09360194061835,
+      "eliminated_rank": 15,
+      "retained_second_order_channels": 3,
+      "jet_derivative_relative_residual": 3.2906855763112794e-12,
+      "source_jet_derivative_scaled_residual": 2.4606313687913074e-15,
+      "AGP_G_row_relative_error": 6.303498943589865e-14
+    },
+    {
+      "ell": 4,
+      "r": 4.0,
+      "source": "massive",
+      "equation_residual": 5.813512532157954e-15,
+      "condition_number": 25.09360194061835,
+      "eliminated_rank": 15,
+      "retained_second_order_channels": 3,
+      "jet_derivative_relative_residual": 3.2906855763112794e-12,
+      "source_jet_derivative_scaled_residual": 2.097624026588852e-15,
+      "AGP_G_row_relative_error": 6.303498943589865e-14
+    },
+    {
+      "ell": 4,
+      "r": 11.0,
+      "source": "vacuum",
+      "equation_residual": 2.2247535987041057e-15,
+      "condition_number": 11.134318989119357,
+      "eliminated_rank": 15,
+      "retained_second_order_channels": 3,
+      "jet_derivative_relative_residual": 7.448368936824166e-12,
+      "source_jet_derivative_scaled_residual": 0.0,
+      "AGP_G_row_relative_error": 6.71637360948987e-15
+    },
+    {
+      "ell": 4,
+      "r": 11.0,
+      "source": "null",
+      "equation_residual": 2.2247535987042595e-15,
+      "condition_number": 11.134318989119357,
+      "eliminated_rank": 15,
+      "retained_second_order_channels": 3,
+      "jet_derivative_relative_residual": 7.448368936824166e-12,
+      "source_jet_derivative_scaled_residual": 2.7901716618685865e-16,
+      "AGP_G_row_relative_error": 6.71637360948987e-15
+    },
+    {
+      "ell": 4,
+      "r": 11.0,
+      "source": "massive",
+      "equation_residual": 2.224753598704248e-15,
+      "condition_number": 11.134318989119357,
+      "eliminated_rank": 15,
+      "retained_second_order_channels": 3,
+      "jet_derivative_relative_residual": 7.448368936824166e-12,
+      "source_jet_derivative_scaled_residual": 1.9407778338166245e-16,
+      "AGP_G_row_relative_error": 6.71637360948987e-15
+    },
+    {
+      "ell": 7,
+      "r": 2.3,
+      "source": "vacuum",
+      "equation_residual": 5.921832482561688e-13,
+      "condition_number": 3057.558408726342,
+      "eliminated_rank": 15,
+      "retained_second_order_channels": 3,
+      "jet_derivative_relative_residual": 7.308127307521566e-12,
+      "source_jet_derivative_scaled_residual": 0.0,
+      "AGP_G_row_relative_error": 1.557085776025804e-14
+    },
+    {
+      "ell": 7,
+      "r": 2.3,
+      "source": "null",
+      "equation_residual": 5.921832482602333e-13,
+      "condition_number": 3057.558408726342,
+      "eliminated_rank": 15,
+      "retained_second_order_channels": 3,
+      "jet_derivative_relative_residual": 7.308127307521566e-12,
+      "source_jet_derivative_scaled_residual": 1.5925759948075262e-13,
+      "AGP_G_row_relative_error": 1.557085776025804e-14
+    },
+    {
+      "ell": 7,
+      "r": 2.3,
+      "source": "massive",
+      "equation_residual": 5.921832482675205e-13,
+      "condition_number": 3057.558408726342,
+      "eliminated_rank": 15,
+      "retained_second_order_channels": 3,
+      "jet_derivative_relative_residual": 7.308127307521566e-12,
+      "source_jet_derivative_scaled_residual": 7.042760782397369e-13,
+      "AGP_G_row_relative_error": 1.557085776025804e-14
+    },
+    {
+      "ell": 7,
+      "r": 4.0,
+      "source": "vacuum",
+      "equation_residual": 1.3880478517836731e-14,
+      "condition_number": 55.53790608506826,
+      "eliminated_rank": 15,
+      "retained_second_order_channels": 3,
+      "jet_derivative_relative_residual": 5.382853319019446e-12,
+      "source_jet_derivative_scaled_residual": 0.0,
+      "AGP_G_row_relative_error": 1.248623482991524e-13
+    },
+    {
+      "ell": 7,
+      "r": 4.0,
+      "source": "null",
+      "equation_residual": 1.3880478517837117e-14,
+      "condition_number": 55.53790608506826,
+      "eliminated_rank": 15,
+      "retained_second_order_channels": 3,
+      "jet_derivative_relative_residual": 5.382853319019446e-12,
+      "source_jet_derivative_scaled_residual": 1.3367318054720218e-15,
+      "AGP_G_row_relative_error": 1.248623482991524e-13
+    },
+    {
+      "ell": 7,
+      "r": 4.0,
+      "source": "massive",
+      "equation_residual": 1.3880478517843865e-14,
+      "condition_number": 55.53790608506826,
+      "eliminated_rank": 15,
+      "retained_second_order_channels": 3,
+      "jet_derivative_relative_residual": 5.382853319019446e-12,
+      "source_jet_derivative_scaled_residual": 4.713649631487247e-15,
+      "AGP_G_row_relative_error": 1.248623482991524e-13
+    },
+    {
+      "ell": 7,
+      "r": 11.0,
+      "source": "vacuum",
+      "equation_residual": 3.646338407768295e-15,
+      "condition_number": 8.922957773408292,
+      "eliminated_rank": 15,
+      "retained_second_order_channels": 3,
+      "jet_derivative_relative_residual": 7.399879743974907e-12,
+      "source_jet_derivative_scaled_residual": 0.0,
+      "AGP_G_row_relative_error": 1.5719677384630354e-14
+    },
+    {
+      "ell": 7,
+      "r": 11.0,
+      "source": "null",
+      "equation_residual": 3.646338407768301e-15,
+      "condition_number": 8.922957773408292,
+      "eliminated_rank": 15,
+      "retained_second_order_channels": 3,
+      "jet_derivative_relative_residual": 7.399879743974907e-12,
+      "source_jet_derivative_scaled_residual": 8.422149043208857e-17,
+      "AGP_G_row_relative_error": 1.5719677384630354e-14
+    },
+    {
+      "ell": 7,
+      "r": 11.0,
+      "source": "massive",
+      "equation_residual": 3.646338407768302e-15,
+      "condition_number": 8.922957773408292,
+      "eliminated_rank": 15,
+      "retained_second_order_channels": 3,
+      "jet_derivative_relative_residual": 7.399879743974907e-12,
+      "source_jet_derivative_scaled_residual": 1.4391617911928162e-16,
+      "AGP_G_row_relative_error": 1.5719677384630354e-14
+    }
+  ],
+  "spectral_checks": [
+    {
+      "mu": 0.3,
+      "family": "polar monopole unstable bound state",
+      "literature_anchor": "AGP2026 Appendix B.2 Fig.7; BCP2013 Eq.(30)",
+      "reference_type": "independent published-potential computation, not digitized author frequencies",
+      "K_equation_matching": [
+        {
+          "mu": 0.3,
+          "omega_rg": [
+            0.0,
+            0.03427946181679857
+          ],
+          "settings": {
+            "epsilon": 1e-05,
+            "outer": 60.0,
+            "match": 4.0,
+            "rtol": 1e-09
+          },
+          "matching_residual": 1.5191070623643554e-11
+        },
+        {
+          "mu": 0.3,
+          "omega_rg": [
+            0.0,
+            0.03427946175392712
+          ],
+          "settings": {
+            "epsilon": 1e-06,
+            "outer": 80.0,
+            "match": 4.0,
+            "rtol": 2e-10
+          },
+          "matching_residual": 6.868294821771315e-11
+        },
+        {
+          "mu": 0.3,
+          "omega_rg": [
+            0.0,
+            0.03427946174556065
+          ],
+          "settings": {
+            "epsilon": 1e-07,
+            "outer": 100.0,
+            "match": 5.0,
+            "rtol": 5e-11
+          },
+          "matching_residual": 9.998384342679856e-10
+        }
+      ],
+      "independent_master_potential_finite_difference": [
+        {
+          "mu": 0.3,
+          "left": -900.0,
+          "right": 150.0,
+          "spacing": 0.1,
+          "omega_squared": -0.0011753334575076088,
+          "growth_rate": 0.034283136634613944,
+          "interpretation": "unstable bound state"
+        },
+        {
+          "mu": 0.3,
+          "left": -900.0,
+          "right": 150.0,
+          "spacing": 0.05,
+          "omega_squared": -0.0011751444808014728,
+          "growth_rate": 0.03428038040631219,
+          "interpretation": "unstable bound state"
+        },
+        {
+          "mu": 0.3,
+          "left": -900.0,
+          "right": 150.0,
+          "spacing": 0.025,
+          "omega_squared": -0.0011750972428203517,
+          "growth_rate": 0.034279691404975506,
+          "interpretation": "unstable bound state"
+        }
+      ],
+      "finite_difference_inner_boundary_check": {
+        "mu": 0.3,
+        "left": -700.0,
+        "right": 150.0,
+        "spacing": 0.025,
+        "omega_squared": -0.0011750972431488129,
+        "growth_rate": 0.03427969140976641,
+        "interpretation": "unstable bound state"
+      },
+      "Richardson_growth_reference": 0.034279461737863275,
+      "absolute_frequency_difference": 7.697377457649424e-12
+    },
+    {
+      "mu": 0.4,
+      "family": "polar monopole unstable bound state",
+      "literature_anchor": "AGP2026 Appendix B.2 Fig.7; BCP2013 Eq.(30)",
+      "reference_type": "independent published-potential computation, not digitized author frequencies",
+      "K_equation_matching": [
+        {
+          "mu": 0.4,
+          "omega_rg": [
+            0.0,
+            0.011220446899784036
+          ],
+          "settings": {
+            "epsilon": 1e-05,
+            "outer": 60.0,
+            "match": 4.0,
+            "rtol": 1e-09
+          },
+          "matching_residual": 3.3676395005954873e-11
+        },
+        {
+          "mu": 0.4,
+          "omega_rg": [
+            0.0,
+            0.011220446785497764
+          ],
+          "settings": {
+            "epsilon": 1e-06,
+            "outer": 80.0,
+            "match": 4.0,
+            "rtol": 2e-10
+          },
+          "matching_residual": 8.663625372662409e-12
+        },
+        {
+          "mu": 0.4,
+          "omega_rg": [
+            0.0,
+            0.011220446773979266
+          ],
+          "settings": {
+            "epsilon": 1e-07,
+            "outer": 100.0,
+            "match": 5.0,
+            "rtol": 5e-11
+          },
+          "matching_residual": 4.682543242040538e-10
+        }
+      ],
+      "independent_master_potential_finite_difference": [
+        {
+          "mu": 0.4,
+          "left": -900.0,
+          "right": 150.0,
+          "spacing": 0.1,
+          "omega_squared": -0.0001259787855478871,
+          "growth_rate": 0.011224027153739744,
+          "interpretation": "unstable bound state"
+        },
+        {
+          "mu": 0.4,
+          "left": -900.0,
+          "right": 150.0,
+          "spacing": 0.05,
+          "omega_squared": -0.00012591851142959007,
+          "growth_rate": 0.011221341783832718,
+          "interpretation": "unstable bound state"
+        },
+        {
+          "mu": 0.4,
+          "left": -900.0,
+          "right": 150.0,
+          "spacing": 0.025,
+          "omega_squared": -0.00012590344659395227,
+          "growth_rate": 0.011220670505542539,
+          "interpretation": "unstable bound state"
+        }
+      ],
+      "finite_difference_inner_boundary_check": {
+        "mu": 0.4,
+        "left": -700.0,
+        "right": 150.0,
+        "spacing": 0.025,
+        "omega_squared": -0.00012590337232249815,
+        "growth_rate": 0.011220667195960236,
+        "interpretation": "unstable bound state"
+      },
+      "Richardson_growth_reference": 0.01122044674611248,
+      "absolute_frequency_difference": 2.786678700295031e-11
+    }
+  ],
+  "passed": true
+}
