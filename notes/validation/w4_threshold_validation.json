@@ -1,0 +1,415 @@
+{
+  "stage": "W4 threshold and extended inversion",
+  "versions": {
+    "python": "3.11.16",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1"
+  },
+  "threshold_solver_sha256": "44d1821c54435621ba4661b43de1b53a6ebca678087ce927569a5b03a906fe05",
+  "inversion_sha256": "13ca633b347c3f78ab6f939a36d9231b58a36dba33e5b31e6e131f4ee4f76845",
+  "algebra": {
+    "normal_form_coefficients": "exact symbolic identities through 1/r^2",
+    "threshold_boundary_residuals": [
+      {
+        "r": 200.0,
+        "Riccati_relative_residual": 1.1372220399603052e-10
+      },
+      {
+        "r": 400.0,
+        "Riccati_relative_residual": 9.979681080732514e-13
+      },
+      {
+        "r": 800.0,
+        "Riccati_relative_residual": 1.0546981704072352e-13
+      }
+    ]
+  },
+  "points": {
+    "boundary_refinements": [
+      {
+        "omega": [
+          0.0,
+          0.0
+        ],
+        "radii": [
+          400.0,
+          800.0
+        ],
+        "K": [
+          [
+            -2.001588234115058e-08,
+            -0.0
+          ],
+          [
+            -2.0015882341150584e-08,
+            -0.0
+          ]
+        ],
+        "boundary": "inverse-radius outgoing/decaying",
+        "last_relative_change": 1.6530485110864784e-16
+      },
+      {
+        "omega": [
+          0.2,
+          0.0
+        ],
+        "radii": [
+          400.0,
+          800.0
+        ],
+        "K": [
+          [
+            1.1385010721712271e-08,
+            -1.6446942722416513e-08
+          ],
+          [
+            1.1385010721712274e-08,
+            -1.6446942722416636e-08
+          ]
+        ],
+        "boundary": "inverse-radius outgoing/decaying",
+        "last_relative_change": 6.1224504341414155e-15
+      },
+      {
+        "omega": [
+          0.49,
+          0.0
+        ],
+        "radii": [
+          400.0,
+          800.0
+        ],
+        "K": [
+          [
+            6.275616067664668e-09,
+            1.8903411119589216e-08
+          ],
+          [
+            6.2756160676736405e-09,
+            1.890341111960954e-08
+          ]
+        ],
+        "boundary": "Whittaker Coulomb",
+        "last_relative_change": 1.1154685314234226e-12
+      },
+      {
+        "omega": [
+          0.499,
+          0.0
+        ],
+        "radii": [
+          800.0,
+          1600.0
+        ],
+        "K": [
+          [
+            -6.532638824781577e-07,
+            5.876001532113542e-06
+          ],
+          [
+            -6.532638853242849e-07,
+            5.876001539534625e-06
+          ]
+        ],
+        "boundary": "Whittaker Coulomb",
+        "last_relative_change": 1.344361656532683e-09
+      },
+      {
+        "omega": [
+          0.4999,
+          0.0
+        ],
+        "radii": [
+          3200.0,
+          6400.0,
+          12800.0
+        ],
+        "K": [
+          [
+            4.466493996256155e-06,
+            -9.578561325500755e-06
+          ],
+          [
+            4.466563242636931e-06,
+            -9.578257486329664e-06
+          ],
+          [
+            4.466563242645244e-06,
+            -9.578257486290934e-06
+          ]
+        ],
+        "boundary": "Whittaker Coulomb",
+        "last_relative_change": 3.748117076769592e-12
+      },
+      {
+        "omega": [
+          0.5,
+          0.0
+        ],
+        "radii": [
+          300.0,
+          400.0,
+          800.0
+        ],
+        "K": [
+          [
+            -1.8188881960751657e-06,
+            -8.800401203788567e-06
+          ],
+          [
+            -1.818888196086388e-06,
+            -8.800401203794563e-06
+          ],
+          [
+            -1.8188881960865242e-06,
+            -8.800401203796335e-06
+          ]
+        ],
+        "boundary": "threshold Riccati",
+        "last_relative_change": 1.9776731512631376e-13
+      },
+      {
+        "omega": [
+          0.501,
+          0.0
+        ],
+        "radii": [
+          1600.0,
+          3200.0,
+          6400.0
+        ],
+        "K": [
+          [
+            7.545803479484306e-06,
+            -2.987149107869891e-06
+          ],
+          [
+            7.545805145626128e-06,
+            -2.9871508867975864e-06
+          ],
+          [
+            7.545804942382154e-06,
+            -2.987151114898564e-06
+          ]
+        ],
+        "boundary": "Whittaker Coulomb",
+        "last_relative_change": 3.764535320829001e-08
+      },
+      {
+        "omega": [
+          0.5,
+          0.004
+        ],
+        "radii": [
+          400.0,
+          800.0
+        ],
+        "K": [
+          [
+            4.95133243840412e-08,
+            -6.361186268948274e-08
+          ],
+          [
+            4.951332438392851e-08,
+            -6.361186268963034e-08
+          ]
+        ],
+        "boundary": "Whittaker Coulomb",
+        "last_relative_change": 2.3036269018389846e-12
+      },
+      {
+        "omega": [
+          2.0,
+          0.004
+        ],
+        "radii": [
+          400.0,
+          800.0
+        ],
+        "K": [
+          [
+            4.2353276971460894e-08,
+            -1.0680328165681341e-08
+          ],
+          [
+            4.2353277506676945e-08,
+            -1.0680324871703461e-08
+          ]
+        ],
+        "boundary": "inverse-radius outgoing/decaying",
+        "last_relative_change": 7.640201971591913e-08
+      }
+    ],
+    "independent_collocation": [
+      {
+        "omega": [
+          0.2,
+          0.0
+        ],
+        "relative_difference": 2.7598366432391603e-08,
+        "green_K": [
+          1.1385010721712271e-08,
+          -1.6446942722416513e-08
+        ],
+        "collocation_K": [
+          1.1385010709691925e-08,
+          -1.6446942170497005e-08
+        ],
+        "collocation_residual": 1.9994067940513876e-12,
+        "collocation_tolerance": 2e-12,
+        "mesh_nodes": 14688
+      },
+      {
+        "omega": [
+          0.49,
+          0.0
+        ],
+        "relative_difference": 9.514276682287447e-06,
+        "green_K": [
+          6.275616067664668e-09,
+          1.8903411119589216e-08
+        ],
+        "collocation_K": [
+          6.275531338692066e-09,
+          1.8903241611819076e-08
+        ],
+        "collocation_residual": 1.9989959041217714e-12,
+        "collocation_tolerance": 2e-12,
+        "mesh_nodes": 30093
+      },
+      {
+        "omega": [
+          0.5,
+          0.0
+        ],
+        "relative_difference": 4.354838317413164e-08,
+        "green_K": [
+          -1.818888196086388e-06,
+          -8.800401203794563e-06
+        ],
+        "collocation_K": [
+          -1.8188885830584297e-06,
+          -8.800401262122857e-06
+        ],
+        "collocation_residual": 1.9994560032921863e-12,
+        "collocation_tolerance": 2e-12,
+        "mesh_nodes": 30192
+      },
+      {
+        "omega": [
+          0.5,
+          0.004
+        ],
+        "relative_difference": 9.470218801702587e-07,
+        "green_K": [
+          4.95133243840412e-08,
+          -6.361186268948274e-08
+        ],
+        "collocation_K": [
+          4.951339355884835e-08,
+          -6.361183039993903e-08
+        ],
+        "collocation_residual": 1.9991745124553997e-12,
+        "collocation_tolerance": 2e-12,
+        "mesh_nodes": 30419
+      },
+      {
+        "omega": [
+          0.7,
+          0.004
+        ],
+        "relative_difference": 8.80301061343094e-06,
+        "green_K": [
+          -3.676885727678183e-08,
+          3.271289733275361e-08
+        ],
+        "collocation_K": [
+          -3.6769273957430326e-08,
+          3.27130159568138e-08
+        ],
+        "collocation_residual": 1.999796036315798e-12,
+        "collocation_tolerance": 2e-12,
+        "mesh_nodes": 32865
+      }
+    ],
+    "legacy_above_threshold_overlap": [
+      {
+        "omega": 0.55,
+        "relative_difference": 4.2826168074687385e-10
+      },
+      {
+        "omega": 0.7,
+        "relative_difference": 3.2021854777401916e-09
+      },
+      {
+        "omega": 1.0,
+        "relative_difference": 3.623207877873405e-09
+      }
+    ],
+    "segment_rescaling_relative_difference": 1.7475660746418032e-10
+  },
+  "waveform": {
+    "mu": 0.5,
+    "extraction": 200.0,
+    "validated_time_window": [
+      0.0,
+      900.0
+    ],
+    "frequency_interval": [
+      0.0,
+      2.0
+    ],
+    "fine_step": 0.001,
+    "coarse_step": 0.002,
+    "contour_heights": [
+      0.004,
+      0.003
+    ],
+    "high_frequency_tail_terms": 3,
+    "tail_model": "post-passage, phase-aware endpoint expansion matched to trapezoidal quadrature",
+    "peak_abs_K_per_kappa_E_Y00": 2.8577505122517642e-08,
+    "peak_time": 574.0,
+    "comparisons": {
+      "frequency_step_002": {
+        "relative_L2": 1.2644103786403445e-06,
+        "max_absolute": 2.932811119344233e-14,
+        "max_relative_to_peak": 1.0262656263276548e-06
+      },
+      "contour_sigma003": {
+        "relative_L2": 2.9260652364901158e-05,
+        "max_absolute": 6.78689120232974e-13,
+        "max_relative_to_peak": 2.3749068273220288e-05
+      },
+      "cutoff_15": {
+        "relative_L2": 4.2691767299354253e-07,
+        "max_absolute": 2.6396416794480127e-14,
+        "max_relative_to_peak": 9.236781405974125e-07
+      },
+      "cutoff_12": {
+        "relative_L2": 2.9510966474259015e-05,
+        "max_absolute": 2.1830787705902324e-12,
+        "max_relative_to_peak": 7.639151007867638e-05
+      },
+      "two_tail_terms": {
+        "relative_L2": 1.0342013410756832e-09,
+        "max_absolute": 6.54147008725452e-17,
+        "max_relative_to_peak": 2.289027701756991e-09
+      },
+      "one_tail_term": {
+        "relative_L2": 1.8250366217325114e-06,
+        "max_absolute": 6.474708408738564e-14,
+        "max_relative_to_peak": 2.2656660828088938e-06
+      },
+      "endpoint_fit_width008": {
+        "relative_L2": 6.492597473900614e-11,
+        "max_absolute": 2.9269670169903127e-18,
+        "max_relative_to_peak": 1.0242206254331171e-10
+      }
+    },
+    "maximum_tail_correction": 4.0587598241465496e-10,
+    "null_front_resolved": false,
+    "full_W4_complete": false,
+    "scope": "finite-radius auxiliary monopole; all frequency sectors included by causal contour, with an estimated high-frequency tail on the stated time window"
+  },
+  "checks_passed": true
+}

@@ -64,3 +64,25 @@ uv run --no-project --with numpy==2.4.6 --with matplotlib==3.10.8 python scripts
 - `plot_w4.py`: creates PNG/PDF figures from the saved CSV files. It does not rerun the solver.
 
 The analytic source tail matters: a sharp outer cutoff can dominate a weak outgoing signal even when two solvers agree. Both source-tail order and boundary radius must be refined. The code's `tail_order=0` is a diagnostic for this error, not the production boundary condition. The saved band waveform excludes subthreshold and omitted continuum frequencies; it is not a complete published-waveform reproduction. Threshold treatment, full frequency coverage, absolute literature normalization, a physical metric observable and a convergence-controlled suppression scan remain W4 work. No TeX changes are made by these scripts.
+
+## W4 threshold and extended post-passage waveform
+
+The initial files above remain a separate reproducible benchmark. The [threshold continuation](../../notes/WEYL_RINGDOWN_THRESHOLD_RESPONSE.md) extends them with finite-radius threshold/subthreshold response and a contour-inverted post-passage waveform. Reproduce the saved extension from the repository root:
+
+```sh
+uv run --no-project --with-requirements scripts/weyl_ringdown/requirements-w4.txt python scripts/weyl_ringdown/compute_w4_contour.py --sigma .004 --step .002 --maximum 2 --output notes/validation/w4_contour_sigma004.csv
+uv run --no-project --with-requirements scripts/weyl_ringdown/requirements-w4.txt python scripts/weyl_ringdown/compute_w4_contour.py --sigma .003 --step .002 --maximum 2 --output notes/validation/w4_contour_sigma003.csv
+uv run --no-project --with-requirements scripts/weyl_ringdown/requirements-w4.txt python scripts/weyl_ringdown/compute_w4_contour.py --sigma .004 --step .002 --offset .001 --maximum 2 --output notes/validation/w4_contour_sigma004_midpoints.csv
+uv run --no-project --with-requirements scripts/weyl_ringdown/requirements-w4.txt python scripts/weyl_ringdown/validate_w4_threshold.py --directory notes/validation
+uv run --no-project --with numpy==2.4.6 --with matplotlib==3.10.8 python scripts/weyl_ringdown/plot_w4_threshold.py
+```
+
+The three spectra are independent jobs; each defaults to two worker processes (`--workers 1` is supported). Interleaving the first and third grids yields spacing 0.001 without recomputing the original points. Each CSV has generation metadata and a solver hash.
+
+- `w4_threshold.py`: normal-form Whittaker boundary near threshold; inverse-radius outgoing/decaying boundary away from it; a Riccati series exactly at omega=mu; scaled Green propagation to the observer; and independent real/imaginary collocation. `response` returns K and its tortoise derivative for real frequencies or small positive imaginary shifts. It does not return a subthreshold radiation amplitude. Production contour settings use mu=0.5, r_obs=200, r_outer=400 and sigma=0.003 or 0.004. Real frequencies very close below threshold can require much larger outer radii; the saved omega=0.4999 check extends to 12800.
+- `compute_w4_contour.py`: finite-radius spectra on a specified upper-half-plane contour, including its imaginary-axis endpoint. The validated frequency interval is 0≤Re(omega)≤2.
+- `w4_inversion.py`: post-passage inversion with phase-aware endpoint-tail terms matched to the trapezoidal grid. It checks uniform spacing and rejects use near the null front or an alias point. The tail is an empirically checked asymptotic estimate, not a rigorous remainder bound.
+- `validate_w4_threshold.py`: exact long-range algebra; boundary, collocation and legacy-overlap checks; rescaling checks; and frequency-step, contour, cutoff, tail-order and endpoint-fit comparisons. It writes the extended waveform, an explicitly unvalidated raw front trace, and the final JSON ledger. `--points-only` runs the point checks without requiring the contour datasets.
+- `plot_w4_threshold.py`: plots the saved waveform and convergence evidence without rerunning the solvers.
+
+The accepted post-passage time window is 0≤t/(GM)≤900. The fine-grid, contour and cutoff comparisons pass the stated tolerances. The null particle crosses r=200 at t≈−209.19; its sharp front is not resolved by this calculation. The full W4 gate, physical metric/flux normalization, literature-waveform reproduction and suppression scan remain open. The original above-threshold solver and validation artifacts are unchanged.

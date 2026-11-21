@@ -8,6 +8,7 @@
 *.out
 *.pdf
 !notes/validation/w4_monopole_benchmark.pdf
+!notes/validation/w4_threshold_waveform.pdf
 *.synctex.gz
 *.toc
 
