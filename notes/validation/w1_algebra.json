@@ -1,0 +1,31 @@
+{
+  "sympy": "1.14.0",
+  "checks": "exact symbolic coordinate identities",
+  "massive_axial_projection": [
+    {
+      "ell": 1,
+      "trace": true,
+      "divergence": true,
+      "radial_angular_equation": true,
+      "tensor_angular_equation": false,
+      "time_angular_equation_on_shell": true
+    },
+    {
+      "ell": 2,
+      "trace": true,
+      "divergence": true,
+      "radial_angular_equation": true,
+      "tensor_angular_equation": true,
+      "time_angular_equation_on_shell": true
+    },
+    {
+      "ell": 3,
+      "trace": true,
+      "divergence": true,
+      "radial_angular_equation": true,
+      "tensor_angular_equation": true,
+      "time_angular_equation_on_shell": true
+    }
+  ],
+  "GR_transformed_equation": true
+}

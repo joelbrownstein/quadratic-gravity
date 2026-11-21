@@ -1,0 +1,398 @@
+{
+  "gate": "W1",
+  "model": "vacuum massless GR axial l=2 fundamental",
+  "python": "3.14.7",
+  "units": "r_g=1; exp(-i omega t)",
+  "method": "derived scalar continued fraction; analytic horizon/infinity factors",
+  "reference_url": "https://pages.jh.edu/eberti2/ringdown/s2l2.dat",
+  "reference_omega_rg": [
+    0.3736716844180419,
+    -0.0889623156889357
+  ],
+  "precision_note": "double-precision numerical agreement, not certified error bounds",
+  "runs": [
+    {
+      "depth": 12,
+      "omega_rg": [
+        0.37367672405926955,
+        -0.08895344874937196
+      ],
+      "abs_error_vs_reference": 1.0199049020896927e-05,
+      "continued_fraction_residual": 0.0,
+      "iterations": 6,
+      "diagnostics": {
+        "radial_equation": [
+          {
+            "r_over_rg": 2.1,
+            "normalized_RW_residual": 3.710572061555629e-17
+          },
+          {
+            "r_over_rg": 3.0,
+            "normalized_RW_residual": 2.829005957731266e-08
+          },
+          {
+            "r_over_rg": 6.0,
+            "normalized_RW_residual": 0.00010992394315193842
+          },
+          {
+            "r_over_rg": 10.0,
+            "normalized_RW_residual": 0.000334879581713358
+          },
+          {
+            "r_over_rg": 20.0,
+            "normalized_RW_residual": 0.0003331346741130809
+          }
+        ],
+        "metric_constraint": [
+          {
+            "centered_difference_step_over_rg": 0.02,
+            "max_normalized_angular_Einstein_constraint": 5.675467545528759e-05
+          },
+          {
+            "centered_difference_step_over_rg": 0.01,
+            "max_normalized_angular_Einstein_constraint": 1.4185270726106491e-05
+          },
+          {
+            "centered_difference_step_over_rg": 0.005,
+            "max_normalized_angular_Einstein_constraint": 3.5461052789431256e-06
+          },
+          {
+            "centered_difference_step_over_rg": 0.0025,
+            "max_normalized_angular_Einstein_constraint": 8.865129318756668e-07
+          }
+        ]
+      }
+    },
+    {
+      "depth": 25,
+      "omega_rg": [
+        0.37367174736945,
+        -0.08896232978852577
+      ],
+      "abs_error_vs_reference": 6.451107057737099e-08,
+      "continued_fraction_residual": 0.0,
+      "iterations": 6,
+      "diagnostics": {
+        "radial_equation": [
+          {
+            "r_over_rg": 2.1,
+            "normalized_RW_residual": 1.6592919315223942e-17
+          },
+          {
+            "r_over_rg": 3.0,
+            "normalized_RW_residual": 2.0677375865021544e-15
+          },
+          {
+            "r_over_rg": 6.0,
+            "normalized_RW_residual": 6.375608070445816e-08
+          },
+          {
+            "r_over_rg": 10.0,
+            "normalized_RW_residual": 2.0773337967931386e-06
+          },
+          {
+            "r_over_rg": 20.0,
+            "normalized_RW_residual": 9.540287895162095e-06
+          }
+        ],
+        "metric_constraint": [
+          {
+            "centered_difference_step_over_rg": 0.02,
+            "max_normalized_angular_Einstein_constraint": 5.6759545253191024e-05
+          },
+          {
+            "centered_difference_step_over_rg": 0.01,
+            "max_normalized_angular_Einstein_constraint": 1.4186487722902385e-05
+          },
+          {
+            "centered_difference_step_over_rg": 0.005,
+            "max_normalized_angular_Einstein_constraint": 3.5464095642808507e-06
+          },
+          {
+            "centered_difference_step_over_rg": 0.0025,
+            "max_normalized_angular_Einstein_constraint": 8.865889779821193e-07
+          }
+        ]
+      }
+    },
+    {
+      "depth": 50,
+      "omega_rg": [
+        0.373671684470966,
+        -0.08896231562164349
+      ],
+      "abs_error_vs_reference": 8.561076663577723e-11,
+      "continued_fraction_residual": 6.753223014464259e-16,
+      "iterations": 6,
+      "diagnostics": {
+        "radial_equation": [
+          {
+            "r_over_rg": 2.1,
+            "normalized_RW_residual": 6.841438626619414e-17
+          },
+          {
+            "r_over_rg": 3.0,
+            "normalized_RW_residual": 8.816307634580357e-17
+          },
+          {
+            "r_over_rg": 6.0,
+            "normalized_RW_residual": 1.3219416875020427e-13
+          },
+          {
+            "r_over_rg": 10.0,
+            "normalized_RW_residual": 4.106011573791149e-10
+          },
+          {
+            "r_over_rg": 20.0,
+            "normalized_RW_residual": 3.583349323273416e-08
+          }
+        ],
+        "metric_constraint": [
+          {
+            "centered_difference_step_over_rg": 0.02,
+            "max_normalized_angular_Einstein_constraint": 5.675948701529589e-05
+          },
+          {
+            "centered_difference_step_over_rg": 0.01,
+            "max_normalized_angular_Einstein_constraint": 1.4186473185844372e-05
+          },
+          {
+            "centered_difference_step_over_rg": 0.005,
+            "max_normalized_angular_Einstein_constraint": 3.546405911838869e-06
+          },
+          {
+            "centered_difference_step_over_rg": 0.0025,
+            "max_normalized_angular_Einstein_constraint": 8.865881548676035e-07
+          }
+        ]
+      }
+    },
+    {
+      "depth": 100,
+      "omega_rg": [
+        0.3736716844180483,
+        -0.08896231568894147
+      ],
+      "abs_error_vs_reference": 8.648345192941086e-15,
+      "continued_fraction_residual": 4.965068306494546e-16,
+      "iterations": 6,
+      "diagnostics": {
+        "radial_equation": [
+          {
+            "r_over_rg": 2.1,
+            "normalized_RW_residual": 1.4273774594708056e-16
+          },
+          {
+            "r_over_rg": 3.0,
+            "normalized_RW_residual": 7.27308272881533e-17
+          },
+          {
+            "r_over_rg": 6.0,
+            "normalized_RW_residual": 1.2285743743785145e-16
+          },
+          {
+            "r_over_rg": 10.0,
+            "normalized_RW_residual": 1.5894503779779788e-16
+          },
+          {
+            "r_over_rg": 20.0,
+            "normalized_RW_residual": 2.7149435209360925e-12
+          }
+        ],
+        "metric_constraint": [
+          {
+            "centered_difference_step_over_rg": 0.02,
+            "max_normalized_angular_Einstein_constraint": 5.675948705042241e-05
+          },
+          {
+            "centered_difference_step_over_rg": 0.01,
+            "max_normalized_angular_Einstein_constraint": 1.4186473181100553e-05
+          },
+          {
+            "centered_difference_step_over_rg": 0.005,
+            "max_normalized_angular_Einstein_constraint": 3.546405930588102e-06
+          },
+          {
+            "centered_difference_step_over_rg": 0.0025,
+            "max_normalized_angular_Einstein_constraint": 8.865879857787423e-07
+          }
+        ]
+      }
+    },
+    {
+      "depth": 200,
+      "omega_rg": [
+        0.3736716844180418,
+        -0.08896231568893571
+      ],
+      "abs_error_vs_reference": 5.721958498152797e-17,
+      "continued_fraction_residual": 2.482534153247273e-16,
+      "iterations": 6,
+      "diagnostics": {
+        "radial_equation": [
+          {
+            "r_over_rg": 2.1,
+            "normalized_RW_residual": 1.1732970441975734e-17
+          },
+          {
+            "r_over_rg": 3.0,
+            "normalized_RW_residual": 2.5975295460056096e-16
+          },
+          {
+            "r_over_rg": 6.0,
+            "normalized_RW_residual": 2.1886509926593248e-16
+          },
+          {
+            "r_over_rg": 10.0,
+            "normalized_RW_residual": 8.3771390370436e-17
+          },
+          {
+            "r_over_rg": 20.0,
+            "normalized_RW_residual": 1.1159346501459432e-16
+          }
+        ],
+        "metric_constraint": [
+          {
+            "centered_difference_step_over_rg": 0.02,
+            "max_normalized_angular_Einstein_constraint": 5.6759487046404946e-05
+          },
+          {
+            "centered_difference_step_over_rg": 0.01,
+            "max_normalized_angular_Einstein_constraint": 1.418647317751617e-05
+          },
+          {
+            "centered_difference_step_over_rg": 0.005,
+            "max_normalized_angular_Einstein_constraint": 3.5464059373234593e-06
+          },
+          {
+            "centered_difference_step_over_rg": 0.0025,
+            "max_normalized_angular_Einstein_constraint": 8.865880950774652e-07
+          }
+        ]
+      }
+    },
+    {
+      "depth": 400,
+      "omega_rg": [
+        0.3736716844180418,
+        -0.08896231568893571
+      ],
+      "abs_error_vs_reference": 5.721958498152797e-17,
+      "continued_fraction_residual": 2.482534153247273e-16,
+      "iterations": 6,
+      "diagnostics": {
+        "radial_equation": [
+          {
+            "r_over_rg": 2.1,
+            "normalized_RW_residual": 1.1732970441975734e-17
+          },
+          {
+            "r_over_rg": 3.0,
+            "normalized_RW_residual": 2.5975295460056096e-16
+          },
+          {
+            "r_over_rg": 6.0,
+            "normalized_RW_residual": 2.1886509926593248e-16
+          },
+          {
+            "r_over_rg": 10.0,
+            "normalized_RW_residual": 8.3771390370436e-17
+          },
+          {
+            "r_over_rg": 20.0,
+            "normalized_RW_residual": 1.1159346501459432e-16
+          }
+        ],
+        "metric_constraint": [
+          {
+            "centered_difference_step_over_rg": 0.02,
+            "max_normalized_angular_Einstein_constraint": 5.6759487046404946e-05
+          },
+          {
+            "centered_difference_step_over_rg": 0.01,
+            "max_normalized_angular_Einstein_constraint": 1.418647317751617e-05
+          },
+          {
+            "centered_difference_step_over_rg": 0.005,
+            "max_normalized_angular_Einstein_constraint": 3.5464059373234593e-06
+          },
+          {
+            "centered_difference_step_over_rg": 0.0025,
+            "max_normalized_angular_Einstein_constraint": 8.865880950774652e-07
+          }
+        ]
+      }
+    }
+  ],
+  "tail_variations": [
+    {
+      "tail": [
+        0.0,
+        0.0
+      ],
+      "omega_rg": [
+        0.3736716844180418,
+        -0.08896231568893571
+      ],
+      "abs_error_vs_reference": 5.721958498152797e-17
+    },
+    {
+      "tail": [
+        0.5,
+        0.0
+      ],
+      "omega_rg": [
+        0.3736716844180418,
+        -0.08896231568893571
+      ],
+      "abs_error_vs_reference": 5.721958498152797e-17
+    },
+    {
+      "tail": [
+        1.0,
+        0.0
+      ],
+      "omega_rg": [
+        0.3736716844180418,
+        -0.08896231568893571
+      ],
+      "abs_error_vs_reference": 5.721958498152797e-17
+    }
+  ],
+  "seed_variations": [
+    {
+      "guesses": [
+        [
+          0.36,
+          -0.1
+        ],
+        [
+          0.39,
+          -0.07
+        ]
+      ],
+      "omega_rg": [
+        0.3736716844180419,
+        -0.0889623156889357
+      ]
+    },
+    {
+      "guesses": [
+        [
+          0.35,
+          -0.08
+        ],
+        [
+          0.4,
+          -0.1
+        ]
+      ],
+      "omega_rg": [
+        0.3736716844180418,
+        -0.08896231568893571
+      ]
+    }
+  ],
+  "checks_passed": true,
+  "massive_roots_computed": false
+}

@@ -1,0 +1,81 @@
+{
+  "test": "local massive axial boundary series, not a QNM",
+  "omega": [
+    0.5,
+    -0.08
+  ],
+  "mu": 0.2,
+  "ell": 2,
+  "runs": [
+    {
+      "order": 2,
+      "horizon": [
+        {
+          "r_minus_2": 0.1,
+          "factored_operator_residual": 0.01911655912620089
+        },
+        {
+          "r_minus_2": 0.05,
+          "factored_operator_residual": 0.005003574510776161
+        }
+      ],
+      "infinity": [
+        {
+          "r": 20.0,
+          "factored_operator_residual": 0.002004957642652365
+        },
+        {
+          "r": 40.0,
+          "factored_operator_residual": 0.00013940558122135658
+        }
+      ]
+    },
+    {
+      "order": 4,
+      "horizon": [
+        {
+          "r_minus_2": 0.1,
+          "factored_operator_residual": 1.9437787584463382e-05
+        },
+        {
+          "r_minus_2": 0.05,
+          "factored_operator_residual": 1.1809936177469637e-06
+        }
+      ],
+      "infinity": [
+        {
+          "r": 20.0,
+          "factored_operator_residual": 4.4684776436571105e-05
+        },
+        {
+          "r": 40.0,
+          "factored_operator_residual": 7.783644969281411e-07
+        }
+      ]
+    },
+    {
+      "order": 6,
+      "horizon": [
+        {
+          "r_minus_2": 0.1,
+          "factored_operator_residual": 2.406833269127244e-07
+        },
+        {
+          "r_minus_2": 0.05,
+          "factored_operator_residual": 3.979990884881085e-09
+        }
+      ],
+      "infinity": [
+        {
+          "r": 20.0,
+          "factored_operator_residual": 3.1022389265966768e-06
+        },
+        {
+          "r": 40.0,
+          "factored_operator_residual": 1.3566023826137595e-08
+        }
+      ]
+    }
+  ],
+  "checks_passed": true
+}
