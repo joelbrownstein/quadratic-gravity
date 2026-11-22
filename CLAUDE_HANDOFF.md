@@ -1,4 +1,4 @@
-# Handoff: give the scalar calculation its first numerical evidence
+#    Handoff: give the scalar calculation its first numerical evidence
 
 Prepared 20 November 2026. Joel is conserving his Codex weekly allowance and will continue in Claude. The working manuscript and this handoff are saved in `/software/github/joelbrownstein/quadratic-gravity/main` (resolved `/private/software/github/joelbrownstein/quadratic-gravity/main`). Changes are local and uncommitted. Preserve the existing working tree. No Overleaf or GitHub sync has been performed by Codex.
 
