@@ -2,6 +2,8 @@
 
 21 November 2026. Classical working calculation, excluded from TeX. This extends the [initial null-infall benchmark](WEYL_RINGDOWN_NULL_INFALL.md), retaining its W0/W3 Einstein–Weyl conventions and independently derived source. The new result is a **threshold-inclusive finite-radius auxiliary waveform with convergence evidence on 0≤t/(GM)≤900**. The sharp null-particle-passage front and the remainder of the full W4 gate are not declared complete.
 
+Subsequent work: the [null-front continuation](WEYL_RINGDOWN_NULL_FRONT.md) derives the leading passage behavior and adds a separate local reconstruction. The time window and validation claims in this threshold note remain unchanged.
+
 ## 1. What changes relative to the initial benchmark
 
 The initial inversion retained only 0.52≤GM omega≤1 at mu=GM m2=0.5 and applied a Tukey taper. It could not include subthreshold fields or the mass threshold, and its outgoing power series contained inverse powers of k=sqrt(omega²−mu²).

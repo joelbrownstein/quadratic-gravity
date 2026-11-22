@@ -1,0 +1,10 @@
+{
+  "mu": 0.5,
+  "extraction": 200.0,
+  "sigma": 0.004,
+  "frequency_step": 0.05,
+  "maximum": 12.0,
+  "outer_rule": "max(800,200*Re_omega)",
+  "rtol": 2e-11,
+  "threshold_solver_sha256": "44d1821c54435621ba4661b43de1b53a6ebca678087ce927569a5b03a906fe05"
+}

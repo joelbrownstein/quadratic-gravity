@@ -51,7 +51,7 @@ $$
 
 Below that threshold, the homogeneous field decays at infinity but can still contribute at a finite observation radius. A waveform calculation must retain that response.
 
-The current workbook includes threshold-aware boundaries, scaled Green-function integration, an independent boundary-value solver, and causal-contour frequency inversion. These produce a convergence-tested auxiliary-field waveform over a specified post-passage time window. The sharp particle-passage front remains unresolved, and the result is not yet detector strain.
+The current workbook includes threshold-aware boundaries, scaled Green-function integration, an independent boundary-value solver, and causal-contour frequency inversion. These produce a convergence-tested auxiliary-field waveform over a specified post-passage time window. A subsequent [sharp-front calculation](WEYL_RINGDOWN_NULL_FRONT.md) derives a continuous angular auxiliary field with a logarithmically divergent slope at particle passage. It treats the dominant front analytically and tests the smaller curved-space remainder numerically in a separate local time window. The gap between these windows remains to be validated, and the result is not yet detector strain.
 
 The motivating destination is a defensible chain:
 

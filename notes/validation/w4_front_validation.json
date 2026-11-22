@@ -1,0 +1,105 @@
+{
+  "stage": "W4 null-particle-passage front",
+  "algebra": {
+    "tt_characteristic_transport": "2 F A_prime + 2 A/r",
+    "log_coefficient_A": "1/[2(r-2)]",
+    "K_vlogv_coefficient": "1/(2r^2)",
+    "K_v_coefficient": "[log(mu/sqrt(2))+EulerGamma+log(r)/2]/r^2",
+    "flat_all_tensor_wave_equations_and_divergences": true,
+    "passed": true
+  },
+  "transforms": {
+    "max_transform_relative_error_70_digit_reference": 1.4838194613695455e-12,
+    "max_transform_relative_error_direct_Laplace_quadrature": 2.5815713159741287e-13,
+    "leading_front_max_relative_error_v_1e_12_to_1e_8": 2.855937798729662e-07
+  },
+  "waveform": {
+    "mu": 0.5,
+    "extraction": 200.0,
+    "v_window": [
+      -0.1,
+      1.0
+    ],
+    "frequency_maximum": 12.0,
+    "sigma": [
+      0.004,
+      0.003
+    ],
+    "peak_abs_K_per_kappa_E_Y00": 1.2037768333876242e-07,
+    "v_at_peak": 0.023988329190194897,
+    "comparison_tolerance_relative_to_peak": 0.001,
+    "comparisons": {
+      "cutoff_2": {
+        "max_absolute": 6.964547664269727e-11,
+        "max_relative_to_peak": 0.0005785580409177967
+      },
+      "cutoff_4": {
+        "max_absolute": 4.9584713216346425e-11,
+        "max_relative_to_peak": 0.0004119095154606603
+      },
+      "cutoff_8": {
+        "max_absolute": 1.3089052962580875e-11,
+        "max_relative_to_peak": 0.0001087332186460687
+      },
+      "coarser_grid": {
+        "max_absolute": 2.559808847967281e-13,
+        "max_relative_to_peak": 2.1264812355323053e-06
+      },
+      "contour_sigma003": {
+        "max_absolute": 1.2925709955962655e-12,
+        "max_relative_to_peak": 1.0737629764470215e-05
+      }
+    },
+    "unprojected_max_prefront_leakage": 4.344879492147296e-12,
+    "zeroth_residual_moment": -4.344879492147296e-12,
+    "first_residual_moment": -7.5441049210907e-11,
+    "max_corrected_remainder_postfront": 7.484307311313891e-11,
+    "causality_imposed_from_characteristics_not_an_independent_test": true,
+    "radial_checks": [
+      {
+        "u": 2.0,
+        "outer": 800.0,
+        "refined_outer": 1600.0,
+        "relative_difference": 3.712936354785348e-11,
+        "absolute_phase_removed_difference": 7.02410775637882e-19,
+        "B_real": -1.8063829819107717e-08,
+        "B_imag": -5.62016052040895e-09,
+        "reference_residual": 1.2275264703236836e-11
+      },
+      {
+        "u": 6.0,
+        "outer": 1200.0,
+        "refined_outer": 2400.0,
+        "relative_difference": 4.364863491177335e-09,
+        "absolute_phase_removed_difference": 6.435158932140659e-17,
+        "B_real": -1.1102592811127278e-08,
+        "B_imag": -9.70006342340243e-09,
+        "reference_residual": 5.271311580890287e-12
+      },
+      {
+        "u": 12.0,
+        "outer": 2400.0,
+        "refined_outer": 4800.0,
+        "relative_difference": 7.595846659554341e-10,
+        "absolute_phase_removed_difference": 7.746610745754254e-18,
+        "B_real": -4.913236218707363e-09,
+        "B_imag": -8.936954201630879e-09,
+        "reference_residual": 1.925865739916843e-12
+      }
+    ],
+    "scope": "analytic leading front plus convergence-tested moment-corrected local auxiliary waveform; no metric strain or flux",
+    "full_W4_complete": false
+  },
+  "versions": {
+    "python": "3.11.16",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1"
+  },
+  "source_sha256": {
+    "w4_front.py": "5e436c65caeeb9a8a81e71a474530b5523b192fbca26a8670bd05d1d32eafa4b",
+    "compute_w4_front.py": "2245b5a3ec887e8bdebb1caadceb544cc06e2b8259f1042d43a429bf493b3b76",
+    "validate_w4_front.py": "94a381a48796b2e07c8b2120022eda34a5a87cb4cab2a27e625d6921b6f39149",
+    "w4_threshold.py": "44d1821c54435621ba4661b43de1b53a6ebca678087ce927569a5b03a906fe05"
+  },
+  "checks_passed": true
+}
