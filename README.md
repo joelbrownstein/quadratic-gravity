@@ -4,7 +4,7 @@ This repository is an Overleaf-ready JCAP manuscript scaffold for a numerical st
 
 For a student-facing introduction to the accompanying research workbook, start with [From quadratic gravity to testable black-hole signals](notes/WORKBOOK_OVERVIEW.md). It explains the motivation, the distinction between scalar toy models and the massive spin-two sector, the current black-hole calculations, and where to find the derivations and reproducible code.
 
-The latest W4 calculation derives the [sharp null-particle-passage front](notes/WEYL_RINGDOWN_NULL_FRONT.md), with an analytic subtraction solver and saved convergence diagnostics. It remains a finite-radius auxiliary-field benchmark; the full waveform, metric observable and flux program is tracked in the [Weyl ringdown roadmap](notes/WEYL_RINGDOWN_ROADMAP.md).
+The latest W4 calculation validates the [interval connecting the sharp front and late-time waveform](notes/WEYL_RINGDOWN_TIME_BRIDGE.md), with overlapping reconstructions and an explicit numerical floor for the weak middle interval. It builds on the [sharp null-particle-passage derivation](notes/WEYL_RINGDOWN_NULL_FRONT.md). These remain finite-radius auxiliary-field benchmarks; the metric observable and flux program is tracked in the [Weyl ringdown roadmap](notes/WEYL_RINGDOWN_ROADMAP.md).
 
 ## Start on Overleaf
 

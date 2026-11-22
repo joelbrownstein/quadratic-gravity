@@ -4,6 +4,8 @@
 
 Subsequent work: the [null-front continuation](WEYL_RINGDOWN_NULL_FRONT.md) derives the leading passage behavior and adds a separate local reconstruction. The time window and validation claims in this threshold note remain unchanged.
 
+The [time-bridge continuation](WEYL_RINGDOWN_TIME_BRIDGE.md) now connects that local front to this late-time window and checks an overlap through t≈300.81. Its independent inversion retains the same radial source and normalization.
+
 ## 1. What changes relative to the initial benchmark
 
 The initial inversion retained only 0.52≤GM omega≤1 at mu=GM m2=0.5 and applied a Tukey taper. It could not include subthreshold fields or the mass threshold, and its outgoing power series contained inverse powers of k=sqrt(omega²−mu²).

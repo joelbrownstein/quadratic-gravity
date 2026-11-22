@@ -1,0 +1,144 @@
+{
+  "stage": "W4 connecting time interval",
+  "mu": 0.5,
+  "extraction": 200.0,
+  "amplitude_units": "per kappa E Y00*, auxiliary angular K",
+  "validated_v_window": [
+    0.5,
+    510.0
+  ],
+  "validated_t_window": [
+    -208.6902397002692,
+    300.8097602997308
+  ],
+  "quiet_diagnostic_v_window": [
+    10.0,
+    400.0
+  ],
+  "absolute_comparison_target": 2e-12,
+  "quiet_absolute_comparison_target": 2e-13,
+  "comparisons": {
+    "cutoff_4": {
+      "max_absolute": 9.433456524222784e-13,
+      "quiet_interval_max_absolute": 2.36963040162832e-17,
+      "required": true
+    },
+    "cutoff_8": {
+      "max_absolute": 3.54051983866505e-13,
+      "quiet_interval_max_absolute": 3.490348615786874e-18,
+      "required": true
+    },
+    "tail_terms_1": {
+      "max_absolute": 5.213721528835587e-13,
+      "quiet_interval_max_absolute": 7.267682714601879e-16,
+      "required": true
+    },
+    "tail_terms_2": {
+      "max_absolute": 1.7980227043152288e-13,
+      "quiet_interval_max_absolute": 2.2650495873098227e-17,
+      "required": true
+    },
+    "endpoint_width_05": {
+      "max_absolute": 7.987106192403102e-17,
+      "quiet_interval_max_absolute": 1.2123705010854737e-20,
+      "required": true
+    },
+    "endpoint_degree_3": {
+      "max_absolute": 2.368942942183931e-15,
+      "quiet_interval_max_absolute": 3.8830655552514e-19,
+      "required": true
+    },
+    "gauss_order_12": {
+      "max_absolute": 8.544190956474635e-16,
+      "quiet_interval_max_absolute": 1.0285798867600014e-18,
+      "required": true
+    },
+    "gauss_order_20": {
+      "max_absolute": 7.213428531768678e-21,
+      "quiet_interval_max_absolute": 2.3946884886525212e-23,
+      "required": true
+    },
+    "spline_order_7": {
+      "max_absolute": 4.922825718038774e-15,
+      "quiet_interval_max_absolute": 4.585703075891644e-16,
+      "required": true
+    },
+    "gauss_order_8_diagnostic": {
+      "max_absolute": 4.763272642147412e-12,
+      "quiet_interval_max_absolute": 8.255458377501158e-14,
+      "required": false
+    },
+    "coarser_spectral_grid": {
+      "max_absolute": 4.578482965137111e-13,
+      "quiet_interval_max_absolute": 3.133494712566616e-14,
+      "required": true
+    },
+    "refined_contour_sigma003": {
+      "max_absolute": 1.1984988314805462e-14,
+      "quiet_interval_max_absolute": 1.1984988314805462e-14,
+      "required": true
+    },
+    "old_coarse_sigma003_diagnostic": {
+      "max_absolute": 7.949596908000147e-13,
+      "quiet_interval_max_absolute": 7.207045272081863e-13,
+      "required": false
+    }
+  },
+  "front_overlap": {
+    "v_window": [
+      0.5,
+      1.0
+    ],
+    "max_absolute": 7.95266754947691e-11,
+    "relative_to_previous_front_peak": 0.0006606430136304257,
+    "acceptance": "previous front tolerance, 1e-3 of front peak"
+  },
+  "late_overlap": {
+    "t_window": [
+      0.0,
+      300.8097602997308
+    ],
+    "max_absolute": 4.956473570818498e-15,
+    "absolute_target": 2e-12
+  },
+  "manufactured_inverse_max_absolute_error": 9.042420206960825e-16,
+  "rejected_initial_cubic_grid_check": {
+    "max_absolute": 1.3537216625624597e-11,
+    "target": 2e-12,
+    "passed": false,
+    "resolution": "quintic interpolation; independent seventh-order and spectral-grid checks"
+  },
+  "quiet_max_abs_K": 9.689527972594471e-17,
+  "quiet_max_required_comparison": 3.133494712566616e-14,
+  "quiet_interpretation": "values below the empirical comparison floor are not evidence of exact vanishing",
+  "max_abs_residual_tail": 1.0984706714549663e-12,
+  "full_W4_complete": false,
+  "checks_passed": true,
+  "versions": {
+    "python": "3.11.16",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1"
+  },
+  "source_sha256": {
+    "w4_bridge.py": "412a2bc8e3c82e420421a2fc5a9f8006b34ed0b73cad18ed18230065705c5b48",
+    "validate_w4_bridge.py": "24d5fedeb64695832bf1e5dd498c400dc19d6c9b8eb9919008be68e42f6dd0eb",
+    "w4_threshold.py": "44d1821c54435621ba4661b43de1b53a6ebca678087ce927569a5b03a906fe05",
+    "w4_front.py": "5e436c65caeeb9a8a81e71a474530b5523b192fbca26a8670bd05d1d32eafa4b",
+    "w4_inversion.py": "13ca633b347c3f78ab6f939a36d9231b58a36dba33e5b31e6e131f4ee4f76845"
+  },
+  "input_sha256": {
+    "w4_bridge_sigma003_midpoints.csv": "ef1db6fb0ca53745dc16c3c00dd31705688ad64ec1ba82a67f5d41f9c329f3ff",
+    "w4_bridge_sigma003_midpoints.json": "8220f7a2c518ff23642aa9c0f68b4f0071623956f21a2996c9116f46cff54a1d",
+    "w4_contour_sigma003.csv": "e97fad35eb84a88dfcb21de7172d009fed3c823fceb4404704897de723ac153a",
+    "w4_contour_sigma003.json": "0c71aa0bb2c81e8266640b5d5c3dcb339dc0d8e12341b9ec2002c76653a1a707",
+    "w4_contour_sigma004.csv": "d22658c5d2a46fa6b73ebe592060fee9554f98ae7fe6a3acc9195b74dde449f8",
+    "w4_contour_sigma004.json": "a4901dcbced333e90f6b5d99b43a0d32934c781cd61014e8bcd89bcca0a98110",
+    "w4_contour_sigma004_midpoints.csv": "dbe5788fd201dc47c2216a78d1162b6231f146ab0989ae89d7f935563bc5b30f",
+    "w4_contour_sigma004_midpoints.json": "f4d2ac11e9f57c2b19149ace06d80b46300a7bdb8704f2299b8e21b1f8c2bd61",
+    "w4_front_high_sigma003.csv": "01759352af86c045451430e76a38f35c31c7fd8ae2c638e183a1b4bc7048d124",
+    "w4_front_high_sigma003.json": "0191eda4f0a19d2d722c6a66613bc01999d4f120696412cffa94d648cfd92c9d",
+    "w4_front_high_sigma004.csv": "2b6965b7851dd3262d2adf32552a284b52ff12be18673eabe5e8c42e4c590ff6",
+    "w4_front_high_sigma004.json": "a748ed91291c4976b11128acf2786873805f302e9ce52d7ea77212f53df32998",
+    "w4_front_validation.json": "90c0c56337abd3e3247cb77b51495ec868d33d3babb2a09fae6e075e608f29f1"
+  }
+}

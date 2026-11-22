@@ -2,6 +2,8 @@
 
 21 November 2026. Working derivation and reproducible numerical benchmark, excluded from TeX. Read the [source derivation](WEYL_RINGDOWN_NULL_INFALL.md) and [threshold continuation](WEYL_RINGDOWN_THRESHOLD_RESPONSE.md) first. The result concerns the angular **auxiliary massive spin-two field**, not detector strain.
 
+Subsequent work: the [time bridge](WEYL_RINGDOWN_TIME_BRIDGE.md) now validates the interval to the earlier late-time window, with an explicit front overlap and without extending this note's polynomial moment correction. The original local validation and saved data below are retained unchanged.
+
 ## 1. The question and conventions
 
 A finite frequency band blurs a sharp particle-passage feature. Increasing that band alone is expensive, and a late-time inverse-frequency tail expansion is singular at passage. Here we derive the leading characteristic behavior, invert it analytically, and compute the remaining Schwarzschild response.
