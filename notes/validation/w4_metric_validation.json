@@ -1,0 +1,355 @@
+{
+  "stage": "W4 monopole metric and observer curvature",
+  "algebra_and_geometry": {
+    "exact_divergence_and_mass_constraints": true,
+    "coordinate_geometry_checks": {
+      "general_geometric_tidal_identities": true,
+      "pure_gauge_Ricci_mass_and_relational_tides": true
+    },
+    "full_sourced_W3_rowwise_relative_residual": 2.712840473116715e-15,
+    "independent_full_metric_curvature_max_scaled_error": 2.4216353031372815e-14,
+    "independent_overdetermined_reconstruction_max_scaled_error": 2.7273148707334925e-14,
+    "radial_boost_tidal_trace_identity": true,
+    "sample_radii": [
+      2.7,
+      8.0,
+      30.0,
+      200.0
+    ],
+    "sample_complex_frequencies": [
+      [
+        0.3,
+        0.004
+      ],
+      [
+        0.5,
+        0.004
+      ],
+      [
+        0.8,
+        0.003
+      ],
+      [
+        1.5,
+        0.004
+      ]
+    ]
+  },
+  "waveforms": {
+    "t_window": [
+      0.0,
+      900.0
+    ],
+    "mu": 0.5,
+    "extraction": 200.0,
+    "comparison_target_relative_to_each_massive_quantity_peak": 0.001,
+    "massless_sector_added_analytically": true,
+    "quantities": {
+      "a": {
+        "peak_abs": 1.6570274934301518e-08,
+        "comparisons": {
+          "grid_002": {
+            "max_absolute": 8.572396942687147e-17,
+            "relative_to_peak": 5.173358303754962e-09
+          },
+          "contour_003": {
+            "max_absolute": 2.3187124590436526e-16,
+            "relative_to_peak": 1.399320450769209e-08
+          },
+          "cutoff_15": {
+            "max_absolute": 4.943099426617364e-13,
+            "relative_to_peak": 2.983112498866772e-05
+          },
+          "two_tail_terms": {
+            "max_absolute": 4.244045548498196e-14,
+            "relative_to_peak": 2.5612402723099985e-06
+          },
+          "endpoint_width_08": {
+            "max_absolute": 8.310875520222381e-17,
+            "relative_to_peak": 5.015532665072649e-09
+          }
+        }
+      },
+      "b": {
+        "peak_abs": 3.022057733406875e-08,
+        "comparisons": {
+          "grid_002": {
+            "max_absolute": 1.4335344947404981e-15,
+            "relative_to_peak": 4.743570842124259e-08
+          },
+          "contour_003": {
+            "max_absolute": 1.4130500087627777e-16,
+            "relative_to_peak": 4.675787603732491e-09
+          },
+          "cutoff_15": {
+            "max_absolute": 5.200818372333419e-13,
+            "relative_to_peak": 1.7209526855962304e-05
+          },
+          "two_tail_terms": {
+            "max_absolute": 4.240499280951882e-14,
+            "relative_to_peak": 1.4031827499772526e-06
+          },
+          "endpoint_width_08": {
+            "max_absolute": 8.898758737264229e-17,
+            "relative_to_peak": 2.944602493491193e-09
+          }
+        }
+      },
+      "c": {
+        "peak_abs": 6.582800505461898e-08,
+        "comparisons": {
+          "grid_002": {
+            "max_absolute": 5.865224676118082e-14,
+            "relative_to_peak": 8.909923172138625e-07
+          },
+          "contour_003": {
+            "max_absolute": 2.9923225571881274e-16,
+            "relative_to_peak": 4.545667994503753e-09
+          },
+          "cutoff_15": {
+            "max_absolute": 5.471027769386524e-13,
+            "relative_to_peak": 8.311094593930181e-06
+          },
+          "two_tail_terms": {
+            "max_absolute": 4.232269074731974e-14,
+            "relative_to_peak": 6.429283511205246e-07
+          },
+          "endpoint_width_08": {
+            "max_absolute": 8.896217638422466e-17,
+            "relative_to_peak": 1.3514335777061866e-09
+          }
+        }
+      },
+      "K": {
+        "peak_abs": 2.8577505122517642e-08,
+        "comparisons": {
+          "grid_002": {
+            "max_absolute": 2.932811119344233e-14,
+            "relative_to_peak": 1.0262656263276548e-06
+          },
+          "contour_003": {
+            "max_absolute": 4.7130294576852234e-17,
+            "relative_to_peak": 1.6492095574751878e-09
+          },
+          "cutoff_15": {
+            "max_absolute": 2.6396416794480127e-14,
+            "relative_to_peak": 9.236781405974125e-07
+          },
+          "two_tail_terms": {
+            "max_absolute": 6.54147008725452e-17,
+            "relative_to_peak": 2.289027701756991e-09
+          },
+          "endpoint_width_08": {
+            "max_absolute": 2.9269670169903127e-18,
+            "relative_to_peak": 1.0242206254331171e-10
+          }
+        }
+      },
+      "mass_q": {
+        "peak_abs": 0.00026078710069789464,
+        "comparisons": {
+          "grid_002": {
+            "max_absolute": 1.4209044875150199e-11,
+            "relative_to_peak": 5.448522889792191e-08
+          },
+          "contour_003": {
+            "max_absolute": 6.001978563674806e-13,
+            "relative_to_peak": 2.3014859813283937e-09
+          },
+          "cutoff_15": {
+            "max_absolute": 1.637239852589692e-09,
+            "relative_to_peak": 6.278070687577185e-06
+          },
+          "two_tail_terms": {
+            "max_absolute": 2.3932608146778542e-11,
+            "relative_to_peak": 9.177067455687908e-08
+          },
+          "endpoint_width_08": {
+            "max_absolute": 2.1637504071456148e-13,
+            "relative_to_peak": 8.296999358308688e-10
+          }
+        }
+      },
+      "Ricci_uu": {
+        "peak_abs": 4.1425687335753794e-09,
+        "comparisons": {
+          "grid_002": {
+            "max_absolute": 2.1430992356717866e-17,
+            "relative_to_peak": 5.173358303754962e-09
+          },
+          "contour_003": {
+            "max_absolute": 5.796781147609131e-17,
+            "relative_to_peak": 1.399320450769209e-08
+          },
+          "cutoff_15": {
+            "max_absolute": 1.235774856654341e-13,
+            "relative_to_peak": 2.983112498866772e-05
+          },
+          "two_tail_terms": {
+            "max_absolute": 1.061011387124549e-14,
+            "relative_to_peak": 2.5612402723099985e-06
+          },
+          "endpoint_width_08": {
+            "max_absolute": 2.0777188800555953e-17,
+            "relative_to_peak": 5.015532665072649e-09
+          }
+        }
+      },
+      "Ricci_angular": {
+        "peak_abs": 7.1443762806294105e-09,
+        "comparisons": {
+          "grid_002": {
+            "max_absolute": 7.332027798360583e-15,
+            "relative_to_peak": 1.0262656263276548e-06
+          },
+          "contour_003": {
+            "max_absolute": 1.1782573644213059e-17,
+            "relative_to_peak": 1.6492095574751878e-09
+          },
+          "cutoff_15": {
+            "max_absolute": 6.599104198620032e-15,
+            "relative_to_peak": 9.236781405974125e-07
+          },
+          "two_tail_terms": {
+            "max_absolute": 1.63536752181363e-17,
+            "relative_to_peak": 2.289027701756991e-09
+          },
+          "endpoint_width_08": {
+            "max_absolute": 7.317417542475782e-19,
+            "relative_to_peak": 1.0242206254331171e-10
+          }
+        }
+      },
+      "Ricci_null_out": {
+        "peak_abs": 8.107894661940917e-09,
+        "comparisons": {
+          "grid_002": {
+            "max_absolute": 1.4421746596129215e-14,
+            "relative_to_peak": 1.7787289052762373e-06
+          },
+          "contour_003": {
+            "max_absolute": 1.191892617910436e-16,
+            "relative_to_peak": 1.4700395942553028e-08
+          },
+          "cutoff_15": {
+            "max_absolute": 3.3739733686060497e-16,
+            "relative_to_peak": 4.1613433687585274e-08
+          },
+          "two_tail_terms": {
+            "max_absolute": 4.2393283002539506e-14,
+            "relative_to_peak": 5.228642547804284e-06
+          },
+          "endpoint_width_08": {
+            "max_absolute": 2.6291902682773483e-18,
+            "relative_to_peak": 3.2427533631128315e-10
+          }
+        }
+      },
+      "Ricci_null_in": {
+        "peak_abs": 3.4008985825838584e-08,
+        "comparisons": {
+          "grid_002": {
+            "max_absolute": 1.490238763050619e-14,
+            "relative_to_peak": 4.3818970982615976e-07
+          },
+          "contour_003": {
+            "max_absolute": 1.6962482616623116e-16,
+            "relative_to_peak": 4.987647295185069e-09
+          },
+          "cutoff_15": {
+            "max_absolute": 5.203940985256749e-13,
+            "relative_to_peak": 1.5301664718572745e-05
+          },
+          "two_tail_terms": {
+            "max_absolute": 2.3176654982966447e-17,
+            "relative_to_peak": 6.81486213721722e-10
+          },
+          "endpoint_width_08": {
+            "max_absolute": 8.751127429284643e-17,
+            "relative_to_peak": 2.573180945206519e-09
+          }
+        }
+      },
+      "tidal_radial_q": {
+        "peak_abs": 1.4286533830623864e-08,
+        "comparisons": {
+          "grid_002": {
+            "max_absolute": 1.4660694475862354e-14,
+            "relative_to_peak": 1.0261897427097718e-06
+          },
+          "contour_003": {
+            "max_absolute": 2.3637878798146067e-17,
+            "relative_to_peak": 1.6545565970296555e-09
+          },
+          "cutoff_15": {
+            "max_absolute": 1.3466952431763779e-14,
+            "relative_to_peak": 9.426325931414327e-07
+          },
+          "two_tail_terms": {
+            "max_absolute": 3.8690502467024975e-17,
+            "relative_to_peak": 2.708179809443355e-09
+          },
+          "endpoint_width_08": {
+            "max_absolute": 1.4586990958321496e-18,
+            "relative_to_peak": 1.021030792441312e-10
+          }
+        }
+      },
+      "tidal_transverse_q": {
+        "peak_abs": 8.227063335442592e-09,
+        "comparisons": {
+          "grid_002": {
+            "max_absolute": 7.329850225901131e-15,
+            "relative_to_peak": 8.909436972879226e-07
+          },
+          "contour_003": {
+            "max_absolute": 3.7384424475611636e-17,
+            "relative_to_peak": 4.544078847011874e-09
+          },
+          "cutoff_15": {
+            "max_absolute": 6.852221907081649e-14,
+            "relative_to_peak": 8.328879489187766e-06
+          },
+          "two_tail_terms": {
+            "max_absolute": 5.287443626638421e-15,
+            "relative_to_peak": 6.426890630414689e-07
+          },
+          "endpoint_width_08": {
+            "max_absolute": 1.1117519190949506e-17,
+            "relative_to_peak": 1.351335067891685e-09
+          }
+        }
+      }
+    },
+    "tidal_trace_max_absolute_error": 1.1567293685941539e-20,
+    "angular_Ricci_bridge": "-mu^2 K; inherited bridge errors scale by mu^2",
+    "limits": "No full-component metric front or complete bridge inversion; no detector transfer function or flux",
+    "input_sha256": {
+      "w4_contour_sigma004.csv": "d22658c5d2a46fa6b73ebe592060fee9554f98ae7fe6a3acc9195b74dde449f8",
+      "w4_contour_sigma004.json": "a4901dcbced333e90f6b5d99b43a0d32934c781cd61014e8bcd89bcca0a98110",
+      "w4_contour_sigma004_midpoints.csv": "dbe5788fd201dc47c2216a78d1162b6231f146ab0989ae89d7f935563bc5b30f",
+      "w4_contour_sigma004_midpoints.json": "f4d2ac11e9f57c2b19149ace06d80b46300a7bdb8704f2299b8e21b1f8c2bd61",
+      "w4_contour_sigma003.csv": "e97fad35eb84a88dfcb21de7172d009fed3c823fceb4404704897de723ac153a",
+      "w4_contour_sigma003.json": "0c71aa0bb2c81e8266640b5d5c3dcb339dc0d8e12341b9ec2002c76653a1a707",
+      "w4_bridge_sigma003_midpoints.csv": "ef1db6fb0ca53745dc16c3c00dd31705688ad64ec1ba82a67f5d41f9c329f3ff",
+      "w4_bridge_sigma003_midpoints.json": "8220f7a2c518ff23642aa9c0f68b4f0071623956f21a2996c9116f46cff54a1d",
+      "w4_bridge_waveform.csv": "ed011825217452844c5d23ec269e4dab06e111cdbea64b9a4339deb99dce05e6",
+      "w4_bridge_validation.json": "4956c281d10199a0b5ca97bcfc43248d6877983270de610da53420ad4b21f4c6"
+    }
+  },
+  "versions": {
+    "python": "3.11.16",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0"
+  },
+  "checks_passed": true,
+  "full_W4_complete": false,
+  "source_sha256": {
+    "w4_metric.py": "97f08e4148dd49c079fe197913e5278b2913f9fcc9c5418ff9e29d83f7c79b87",
+    "derive_w4_metric_geometry.py": "436ce9cc07fc4187cff21fabf8ab9b8706723cc247c8b0553aac3e66f9488155",
+    "validate_w4_metric.py": "4b010f2457ad910729c92734e6597b4a6c9097836dbc67de25dad26988b5f52f",
+    "w4_inversion.py": "13ca633b347c3f78ab6f939a36d9231b58a36dba33e5b31e6e131f4ee4f76845"
+  },
+  "geometry_sha256": "e243bc34f381141802a191210b7c619fda0828742516560b4a9b9112ee054c32"
+}
